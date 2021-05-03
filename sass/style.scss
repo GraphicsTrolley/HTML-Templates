@@ -467,6 +467,10 @@ to {bottom: 20px; opacity: 1}
                     }
                 }
                 .PriceRange{
+                    .ui-slider{background: $Primary-Bg-Color; background-image: none; height: 4px; border:none;
+                        .ui-slider-range{background: $Primary-Bg-Color; background-image: none; height: 4px; border:none;}
+                        .ui-slider-handle{width: 10px; height: 10px; cursor: default; border-radius: 50px; border: none; background: $Primary-Bg-Color; top: -3px; margin-left: -5px;}
+                    }
                     .PriceResult{display: flex; flex-direction: row; padding: 25px 0 5px;
                         label{color: #333333; font-size: 15px; font-weight: 500; flex: 1; margin: 0; line-height: 24px;}
                         input{flex: 1; border: none; font-size: 15px; color: #333; font-weight: 500;}
@@ -480,6 +484,50 @@ to {bottom: 20px; opacity: 1}
     .RightProductList{width: calc(100% - 300px); display: flex;}
 }
 
+.Product_Items_Main{width: 100%;
+    .ProductList{background-color: #f4fbff; border:1px solid #d3eefe; border-radius: 12px 12px 0 0;
+        .ProductImg{ text-align: center; padding: 15px 0; position: relative;
+            img{ margin: auto;}
+            span{position: absolute; top: 10px; right: 10px; font-size: 12px; font-weight: 600; background-color: #70e4e8; color: #050748; padding: 4px 7px; border-radius: 4px; line-height: 16px;}
+        }
+    }
+    .ProductDetails{background-color: #fff; width: 100%; float: left; padding: 8px 12px;
+        .ProDetails_1{@include ClearFlex;
+            h6{font-size: 15px; font-weight: 500; color: $Secondary-Font-Color; margin: 0; line-height: 14px; padding: 3px 0; flex: 2;}
+            .rating-group { flex: 1; text-align: center;
+                .rating-group {display: inline-flex;}    
+                .rating__icon {pointer-events: none;}
+                .rating__input {position: absolute !important;left: -9999px !important;}
+                .rating__label {cursor: pointer;padding: 0 0;font-size: 0.8rem; margin: 0; line-height: 14px;}
+                .rating__icon--star {color: orange;}
+                .rating__icon--none {color: #eee;}
+                .rating__input--none:checked + .rating__label .rating__icon--none {color: red;}
+                .rating__input:checked ~ .rating__label .rating__icon--star {color: #ddd;}
+                .rating-group:hover .rating__label .rating__icon--star {color: orange;}
+                .rating__input:hover ~ .rating__label .rating__icon--star {color: #ddd;}
+                .rating-group:hover .rating__input--none:not(:hover) + .rating__label .rating__icon--none {color: #eee;}
+                .rating__input--none:hover + .rating__label .rating__icon--none {color: red;}
+            }
+        }   
+        .ProDetails_2{@include ClearFlex; padding: 18px 0;
+            label{font-size: 20px; font-weight: 600; color: #005890; margin: 0; display: inline-block; line-height: 20px; padding-left: 20px; position: relative;
+                &::after{content: ''; position: absolute; background-image: url(../Images/rupee.svg); background-repeat: no-repeat; background-size: 17px; top: 2px; left: 0; height: 17px; width: 17px;}
+            }
+            span{font-size: 14px; font-weight: 500; color: $Primary-Font-Color; margin: 0; display: inline-block; line-height: 18px; padding-left: 14px; position: relative; margin-left: 10px; text-decoration: line-through;
+                &::after{content: ''; position: absolute; background-image: url(../Images/rupee.svg); background-repeat: no-repeat; background-size: 12px; top: 3px; left: 0; height: 12px; width: 12px;}
+            }
+        } 
+        .ProDetails_3{@include ClearFlex; padding-bottom: 2px; justify-content: space-between;
+            span{
+                a{width: 28px; height: 28px; background-color: $Primary-Bg-Color; border-radius: 50px; float: left; padding: 7px 0px;
+                    &:nth-child(2){margin: 0 6px; }
+                    img{height: 15px; margin: auto;}
+                }
+            }                       
+            button{font-size: 14px; color: #fff; background-image: linear-gradient(to right, #005c97, #363795); border: none; border-radius: 4px; padding: 5px 15px; line-height: 18px;}         
+        }    
+    }
+}
 
   
 
