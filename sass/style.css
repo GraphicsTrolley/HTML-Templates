@@ -1,0 +1,227 @@
+/*BG COLOR*/
+/*FONT COLOR*/
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6a6a8e;
+}
+
+.TopBar {
+  background-color: #f6fbff;
+  height: 50px;
+  border: 1px solid #ddf0ff;
+}
+
+.TopBar .navbar-brand {
+  font-size: 15px;
+  color: #6a6a8e;
+  font-weight: 400;
+}
+
+.TopBar .navbar-brand span {
+  font-size: 16px;
+  color: #161616;
+  font-weight: 500;
+}
+
+.TopBar ul li:last-child a::after {
+  display: none;
+}
+
+.TopBar ul li a {
+  color: #32355d;
+  font-weight: 500;
+  font-size: 15px;
+  position: relative;
+  padding: 0.5rem 0.9rem !important;
+}
+
+.TopBar ul li a::after {
+  content: '';
+  position: absolute;
+  height: 50%;
+  width: 1px;
+  right: 0;
+  background-color: #c0cad2;
+  top: 10px;
+}
+
+.TopBar ul li a i img {
+  width: 16px;
+  margin-right: 8px;
+}
+
+.SecondaryNavbar .Menu {
+  padding-right: 30px;
+}
+
+.SecondaryNavbar .Menu li a {
+  color: #050748;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0.5rem 0.7rem !important;
+}
+
+.SecondaryNavbar .Information {
+  padding-left: 50px;
+  background-image: url(../Images/headphones.svg);
+  background-size: 45px;
+  background-repeat: no-repeat;
+}
+
+.SecondaryNavbar .Information .Info a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #252525;
+  padding: 0.1rem 0.8rem 0.1rem 0.3rem;
+}
+
+.SecondaryNavbar .Information .Info a span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #5c5c5c;
+}
+
+.caption-title {
+  text-align: left;
+}
+
+.caption-title h5 {
+  font-size: 45px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+  line-height: 46px;
+  display: inline-block;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  padding: 10px;
+}
+
+.caption-title p {
+  font-size: 15px;
+  color: #fff;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  line-height: 22px;
+  padding: 25px 0;
+}
+
+.caption-title a {
+  padding: 22px 38px 22px 20px;
+  display: inline-block !important;
+  border: 1px solid #fff;
+  line-height: 14px;
+  border-radius: 15px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 15px;
+  color: #fff;
+  position: relative;
+}
+
+.caption-title a::after {
+  content: '';
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #2F5B06;
+  right: -17px;
+  top: 10px;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.caption-title a::before {
+  content: '';
+  position: absolute;
+  background-image: url(../img/Arrow.png);
+  right: -6px;
+  top: 21px;
+  width: 15px;
+  height: 15px;
+  z-index: 1;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.caption-title a:hover::after {
+  right: -28px;
+}
+
+.caption-title a:hover::before {
+  right: -17px;
+}
+
+#bannersection {
+  position: relative;
+  display: table;
+  width: 100%;
+  background-image: url(../Images/Banner.jpg);
+  height: calc(100vh - 136px);
+  background-size: cover;
+}
+
+.bannercontent {
+  display: table-cell;
+  vertical-align: middle;
+  color: #FFF;
+  text-align: center;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 0 5%;
+  position: relative;
+}
+
+.animateArrow {
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  margin: 0;
+  width: 25px;
+  height: 25px;
+  opacity: 1;
+  -webkit-animation: example 1.2s infinite;
+  animation: example 1.2s infinite;
+}
+
+@-webkit-keyframes example {
+  from {
+    bottom: 80px;
+    opacity: 0;
+  }
+  to {
+    bottom: 20px;
+    opacity: 1;
+  }
+}
+
+@keyframes example {
+  from {
+    bottom: 80px;
+    opacity: 0;
+  }
+  to {
+    bottom: 20px;
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=Style.css.map */

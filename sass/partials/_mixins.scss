@@ -1,0 +1,15 @@
+@mixin reset_VerticalAlign {
+    display: table !important; width: 100%;
+}
+
+@mixin reset_VerticalAlignMiddle {
+    display: table-cell; vertical-align: middle;
+}
+
+@mixin ClearFloat {
+    float: left; width: 100%;
+}
+
+@mixin ClearFlex {
+    display:flex; flex-direction: row;
+}

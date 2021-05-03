@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Graphic Trolley</title>
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/nivo-slider.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script type="text/javascript" src="js/greensock/TweenMax.min.js"></script>
+
+</head>
+
+<body>
+
+    <header class="MainHeader">
+        <nav class="navbar navbar-expand-lg TopBar fixed-top navWrapper">
+            <a class="navbar-brand" href="javascript:void(0)"><span>20% Discount</span> on Selected Items</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Topnavbar"
+                aria-controls="Topnavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="Topnavbar">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Account.html"><i><img src="Images/User.svg"></i>Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)"><i><img src="Images/Wishlist.svg"></i>Wishlist</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)"><i><img src="Images/Cart.svg"></i>Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg SecondaryNavbar fixed-top navWrapper">
+            <a class="navbar-brand" href="Index.html"><img src="Images/GT_WebPage.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto Menu">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="javascript:void(0)">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">About us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            3D Models
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="javascript:void(0)">Action</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Contact us</a>
+                    </li>
+                </ul>
+                <div class="Information">
+                    <div class="Info">
+                        <a class="nav-link" href="javascript:void(0)">Call us now <span>: (+91 95952225121)</span></a>
+                    </div>
+                    <div class="Info">
+                        <a class="nav-link" href="javascript:void(0)">Email <span>: arockiadass85@gmail.com</span></a>
+                    </div>
+                </div>
+                <div class="ScrollCart">
+                    <a href="javascript:void(0)">
+                        <img src="Images/shopping-cart.svg" />
+                        <span>0</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="container-fluid" id="banner">
+                <div class="row">
+                    <div id="bannersection" class="slider-panel">
+                        <div class="bannercontent">
+
+                            <div class="slider-content">
+                                <div class="tg-container">
+                                    <div class="caption-title">
+                                        <h5>BUY OR SELL YOUR 3D MODELS</h5>
+                                        <p>Find everything from GRAPHICS TROLLEY assets to animated rigs & digital scans
+                                            for
+                                            <br />your 3D,
+                                            Virtual Reality and Augmented Reality projects.
+                                        </p>
+
+                                        <div class="SelectCategory">
+                                            <div class="Search">
+                                                <input class="form-control" type="text"
+                                                    placeholder="What are you looking for?" aria-label="Search">
+                                            </div>
+                                            <div class="CategoryAdd">
+                                                <select name="category" id="drpModelCategory">
+                                                    <option>Select Category</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="JavaScript:Void(0);" class="animateArrow"><i class="fa fa-chevron-down"></i></a>
+                    </div>
+
+                    <!-- FOR OTHER PAGES -->
+
+                    <div id="slider-panel-inner" class="fixed_margin slider-panel-inner">
+                        <div class="slider-wrapper theme-default">
+                            <div id="slider2" class="nivoSlider">
+                                <img src="img/bannerInner.jpg" title="#sli-cap-2" data-transition="fade"
+                                    class="img-responsive" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="multiple-items slider">
+                        <div class="CustomSlide">
+                            <div class="ProductCat">
+                                <img src="Images/Categories/Aircraft.svg" />
+                                <span>Aircarft</span>
+                                <label>5 Products</label>
+                            </div>
+                            <div class="ProductCatDes">
+                                <div class="VerticalMiddle">
+                                    <a href="#">
+                                        <span>Aircarft</span>
+                                        <p>Lorem ipsum dolor consectetur adipiscing eiusmod tempor</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CustomSlide">
+                            <div class="ProductCat">
+                                <img src="Images/Categories/Animal.svg" />
+                                <span>Animals</span>
+                                <label>5 Products</label>
+                            </div>
+                            <div class="ProductCatDes">
+                                <div class="VerticalMiddle">
+                                    <a href="#">
+                                        <span>Animals</span>
+                                        <p>Lorem ipsum dolor consectetur adipiscing eiusmod tempor</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CustomSlide">
+                            <div class="ProductCat">
+                                <img src="Images/Categories/Architec.svg" />
+                                <span>Architectural</span>
+                                <label>5 Products</label>
+                            </div>
+                            <div class="ProductCatDes">
+                                <div class="VerticalMiddle">
+                                    <a href="#">
+                                        <span>Architectural</span>
+                                        <p>Lorem ipsum dolor consectetur adipiscing eiusmod tempor</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CustomSlide">
+                            <div class="ProductCat">
+                                <img src="Images/Categories/Exterior.svg" />
+                                <span>Exterior</span>
+                                <label>5 Products</label>
+                            </div>
+                            <div class="ProductCatDes">
+                                <div class="VerticalMiddle">
+                                    <a href="#">
+                                        <span>Exterior</span>
+                                        <p>Lorem ipsum dolor consectetur adipiscing eiusmod tempor</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CustomSlide">
+                            <div class="ProductCat">
+                                <img src="Images/Categories/Interior.svg" />
+                                <span>Interior</span>
+                                <label>5 Products</label>
+                            </div>
+                            <div class="ProductCatDes">
+                                <div class="VerticalMiddle">
+                                    <a href="#">
+                                        <span>Interior</span>
+                                        <p>Lorem ipsum dolor consectetur adipiscing eiusmod tempor</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CustomSlide">
+                            <div class="ProductCat">
+                                <img src="Images/Categories/Car.svg" />
+                                <span>Car</span>
+                                <label>5 Products</label>
+                            </div>
+                            <div class="ProductCatDes">
+                                <div class="VerticalMiddle">
+                                    <a href="#">
+                                        <span>Car</span>
+                                        <p>Lorem ipsum dolor consectetur adipiscing eiusmod tempor</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CustomSlide">
+                            <div class="ProductCat">
+                                <img src="Images/Categories/Character.svg" />
+                                <span>Character</span>
+                                <label>5 Products</label>
+                            </div>
+                            <div class="ProductCatDes">
+                                <div class="VerticalMiddle">
+                                    <a href="#">
+                                        <span>Character</span>
+                                        <p>Lorem ipsum dolor consectetur adipiscing eiusmod tempor</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CustomSlide">
+                            <div class="ProductCat">
+                                <img src="Images/Categories/Furniture.svg" />
+                                <span>Furniture</span>
+                                <label>5 Products</label>
+                            </div>
+                            <div class="ProductCatDes">
+                                <div class="VerticalMiddle">
+                                    <a href="#">
+                                        <span>Furniture</span>
+                                        <p>Lorem ipsum dolor consectetur adipiscing eiusmod tempor</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CustomSlide">
+                            <div class="ProductCat">
+                                <img src="Images/Categories/Household.svg" />
+                                <span>Household</span>
+                                <label>5 Products</label>
+                            </div>
+                            <div class="ProductCatDes">
+                                <div class="VerticalMiddle">
+                                    <a href="#">
+                                        <span>Household</span>
+                                        <p>Lorem ipsum dolor consectetur adipiscing eiusmod tempor</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CustomSlide">
+                            <div class="ProductCat">
+                                <img src="Images/Categories/Industrial.svg" />
+                                <span>Industrial</span>
+                                <label>5 Products</label>
+                            </div>
+                            <div class="ProductCatDes">
+                                <div class="VerticalMiddle">
+                                    <a href="#">
+                                        <span>Industrial</span>
+                                        <p>Lorem ipsum dolor consectetur adipiscing eiusmod tempor</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CustomSlide">
+                            <div class="ProductCat">
+                                <img src="Images/Categories/Plant.svg" />
+                                <span>Plant</span>
+                                <label>5 Products</label>
+                            </div>
+                            <div class="ProductCatDes">
+                                <div class="VerticalMiddle">
+                                    <a href="#">
+                                        <span>Plant</span>
+                                        <p>Lorem ipsum dolor consectetur adipiscing eiusmod tempor</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CustomSlide">
+                            <div class="ProductCat">
+                                <img src="Images/Categories/Vechicle.svg" />
+                                <span>Vehicle</span>
+                                <label>5 Products</label>
+                            </div>
+                            <div class="ProductCatDes">
+                                <div class="VerticalMiddle">
+                                    <a href="#">
+                                        <span>Vehicle</span>
+                                        <p>Lorem ipsum dolor consectetur adipiscing eiusmod tempor</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="clear"></div>
+
+        <section class="BG_Info" id="BG_Info">
+            <div class="container">
+                <div class="row InfoControl">
+                    <div class="Info_Items">
+                        <div class="InformationData">
+                            <div class="VerticalMiddle">
+                                <i><img src="Images/Quality.svg" /></i>
+                                <h5>HIGH QUALITY</h5>
+                                <span>Great Value</span>
+                                <p>Aliquam dictum elit vitae mauris facisis at dictum urna digim </p>
+                            </div>
+                        </div>
+                        <div class="InformationData">
+                            <div class="VerticalMiddle">
+                                <i><img src="Images/Support.svg" /></i>
+                                <h5>24/7 SUPPORT</h5>
+                                <span>Here to help</span>
+                                <p>Aliquam dictum elit vitae mauris facisis at dictum urna digim </p>
+                            </div>
+                        </div>
+                        <div class="InformationData">
+                            <div class="VerticalMiddle">
+                                <i><img src="Images/Price.svg" /></i>
+                                <h5>BEST PRICE</h5>
+                                <span>Guarantee</span>
+                                <p>Aliquam dictum elit vitae mauris facisis at dictum urna digim </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="clear"></div>
+
+        <section style="padding:80px 0" id="Categories">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="Title">
+                            <div class="VerticalMiddle">
+                                <label>THE WORLD'S PREFERRED SOURCE FOR 3D CONTENT</label>
+                                <h6>Thousands of 3D <br />Models with <br /> Popular Categories</h6>
+                                <p>Find the exact right 3D content for your needs, <br /> including AR/VR, gaming,
+                                    advertising, entertainment <br /> and 3D printing</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-7">
+                        <div class="MainCategory">
+                            <a class="cd1" href="javascript:void(0)">
+                                <div class="VerticalAlign">
+                                    <div class="VerticalMiddle">
+                                        <span>
+                                            <img class="atG" src="Images/Categories/Aircraft_Blue.svg" />
+                                            <img class="atW" src="Images/Categories/Aircraft_Pink.svg" />
+                                        </span>
+                                        <h5>Aircarft</h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="cd2" href="javascript:void(0)">
+                                <div class="VerticalAlign">
+                                    <div class="VerticalMiddle">
+                                        <span>
+                                            <img class="atG" src="Images/Categories/Animal_Blue.svg" />
+                                            <img class="atW" src="Images/Categories/Animal_Pink.svg" />
+                                        </span>
+                                        <h5>Animals</h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="cd3" href="javascript:void(0)">
+                                <div class="VerticalAlign">
+                                    <div class="VerticalMiddle">
+                                        <span>
+                                            <img class="atG" src="Images/Categories/Architec_Blue.svg" />
+                                            <img class="atW" src="Images/Categories/Architec_Pink.svg" />
+                                        </span>
+                                        <h5>Architectural</h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="cd4" href="javascript:void(0)">
+                                <div class="VerticalAlign">
+                                    <div class="VerticalMiddle">
+                                        <span>
+                                            <img class="atG" src="Images/Categories/Exterior_Blue.svg" />
+                                            <img class="atW" src="Images/Categories/Exterior_Pink.svg" />
+                                        </span>
+                                        <h5>Exterior</h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="cd5" href="javascript:void(0)">
+                                <div class="VerticalAlign">
+                                    <div class="VerticalMiddle">
+                                        <span>
+                                            <img class="atG" src="Images/Categories/Interior_Blue.svg" />
+                                            <img class="atW" src="Images/Categories/Interior_Pink.svg" />
+                                        </span>
+                                        <h5>Interior</h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="cd6" href="javascript:void(0)">
+                                <div class="VerticalAlign">
+                                    <div class="VerticalMiddle">
+                                        <span>
+                                            <img class="atG" src="Images/Categories/Car_Blue.svg" />
+                                            <img class="atW" src="Images/Categories/Car_Pink.svg" />
+                                        </span>
+                                        <h5>Car</h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="cd7" href="javascript:void(0)">
+                                <div class="VerticalAlign">
+                                    <div class="VerticalMiddle">
+                                        <span>
+                                            <img class="atG" src="Images/Categories/Character_Blue.svg" />
+                                            <img class="atW" src="Images/Categories/Character_Pink.svg" />
+                                        </span>
+                                        <h5>Character</h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="cd8" href="javascript:void(0)">
+                                <div class="VerticalAlign">
+                                    <div class="VerticalMiddle">
+                                        <span>
+                                            <img class="atG" src="Images/Categories/Furniture_Blue.svg" />
+                                            <img class="atW" src="Images/Categories/Furniture_Pink.svg" />
+                                        </span>
+                                        <h5>Furniture</h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="cd9" href="javascript:void(0)">
+                                <div class="VerticalAlign">
+                                    <div class="VerticalMiddle">
+                                        <span>
+                                            <img class="atG" src="Images/Categories/Household_Blue.svg" />
+                                            <img class="atW" src="Images/Categories/Household_Pink.svg" />
+                                        </span>
+                                        <h5>Household</h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="cd10" href="javascript:void(0)">
+                                <div class="VerticalAlign">
+                                    <div class="VerticalMiddle">
+                                        <span>
+                                            <img class="atG" src="Images/Categories/Industrial_Blue.svg" />
+                                            <img class="atW" src="Images/Categories/Industrial_Pink.svg" />
+                                        </span>
+                                        <h5>Industrial</h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="cd11" href="javascript:void(0)">
+                                <div class="VerticalAlign">
+                                    <div class="VerticalMiddle">
+                                        <span>
+                                            <img class="atG" src="Images/Categories/Plant_Blue.svg" />
+                                            <img class="atW" src="Images/Categories/Plant_Pink.svg" />
+                                        </span>
+                                        <h5>Plant</h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="cd12" href="javascript:void(0)">
+                                <div class="VerticalAlign">
+                                    <div class="VerticalMiddle">
+                                        <span>
+                                            <img class="atG" src="Images/Categories/Vehicle_Blue.svg" />
+                                            <img class="atW" src="Images/Categories/Vechicle_Pink.svg" />
+                                        </span>
+                                        <h5>Vehicle</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="clear"></div>
+
+        <section class="BG_Subscribe" id="BG_Subscribe">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="Content">
+                            <h6>Get New Insights Weekly</h6>
+                            <p>News letter dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt. Enter your email</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 v-center">
+                        <div class="email-subs-form">
+                            <form>
+                                <input type="email" placeholder="Email Your Address" name="emails">
+                                <button type="submit" name="submit" class="lnk btn-main bg-btn">Subscribe <i
+                                        class="fas fa-chevron-right"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="clear"></div>
+
+        <section style="padding:80px 0">
+            <div class="container">
+                <div class="row">
+                    <div class="Title_Product">
+                        <h5>Weekly Featured Items</h5>
+                    </div>
+                    <div class="Product_Items">
+                        <div class="ProductList">
+                            <div class="ProductImg">
+                                <img src="Images/Product_Img.png" />
+                                <span>45% Off</span>
+                            </div>
+                            <div class="ProductDetails">
+                                <div class="ProDetails_1">
+                                    <h6>3D Character Model</h6>
+                                    <div class="rating-group">
+                                        <input class="rating__input rating__input--none" name="rating" id="rating-none"
+                                            value="0" type="radio">
+                                        <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating" id="rating-1" value="1" type="radio">
+                                        <label aria-label="2 stars" class="rating__label" for="rating-2"><i
+                                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating" id="rating-2" value="2" type="radio">
+                                        <label aria-label="3 stars" class="rating__label" for="rating-3"><i
+                                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating" id="rating-3" value="3" type="radio"
+                                            checked>
+                                        <label aria-label="4 stars" class="rating__label" for="rating-4"><i
+                                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating" id="rating-4" value="4" type="radio">
+                                        <label aria-label="5 stars" class="rating__label" for="rating-5"><i
+                                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating" id="rating-5" value="5" type="radio">
+                                    </div>
+                                </div>
+                                <div class="ProDetails_2">
+                                    <label>2,158.00</label>
+                                    <span>3,500.00</span>
+                                </div>
+                                <div class="ProDetails_3">
+                                    <span>
+                                        <a href=""><img src="Images/like.svg" /></a>
+                                        <a href=""><img src="Images/vision.svg" /></a>
+                                    </span>
+                                    <button type="button">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ProductList">
+                            <div class="ProductImg">
+                                <img src="Images/Product_Img.png" />
+                                <span>45% Off</span>
+                            </div>
+                            <div class="ProductDetails">
+                                <div class="ProDetails_1">
+                                    <h6>3D Character Model</h6>
+                                    <div class="rating-group">
+                                        <input class="rating__input rating__input--none" name="rating" id="rating-none"
+                                            value="0" type="radio">
+                                        <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating" id="rating-1" value="1" type="radio">
+                                        <label aria-label="2 stars" class="rating__label" for="rating-2"><i
+                                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating" id="rating-2" value="2" type="radio">
+                                        <label aria-label="3 stars" class="rating__label" for="rating-3"><i
+                                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating" id="rating-3" value="3" type="radio"
+                                            checked>
+                                        <label aria-label="4 stars" class="rating__label" for="rating-4"><i
+                                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating" id="rating-4" value="4" type="radio">
+                                        <label aria-label="5 stars" class="rating__label" for="rating-5"><i
+                                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating" id="rating-5" value="5" type="radio">
+                                    </div>
+                                </div>
+                                <div class="ProDetails_2">
+                                    <label>2,158.00</label>
+                                    <span>3,500.00</span>
+                                </div>
+                                <div class="ProDetails_3">
+                                    <span>
+                                        <a href=""><img src="Images/like.svg" /></a>
+                                        <a href=""><img src="Images/vision.svg" /></a>
+                                    </span>
+                                    <button type="button">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ProductList">
+                            <div class="ProductImg">
+                                <img src="Images/Product_Img.png" />
+                                <span>45% Off</span>
+                            </div>
+                            <div class="ProductDetails">
+                                <div class="ProDetails_1">
+                                    <h6>3D Character Model</h6>
+                                    <div class="rating-group">
+                                        <input class="rating__input rating__input--none" name="rating" id="rating-none"
+                                            value="0" type="radio">
+                                        <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating" id="rating-1" value="1" type="radio">
+                                        <label aria-label="2 stars" class="rating__label" for="rating-2"><i
+                                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating" id="rating-2" value="2" type="radio">
+                                        <label aria-label="3 stars" class="rating__label" for="rating-3"><i
+                                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating" id="rating-3" value="3" type="radio"
+                                            checked>
+                                        <label aria-label="4 stars" class="rating__label" for="rating-4"><i
+                                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating" id="rating-4" value="4" type="radio">
+                                        <label aria-label="5 stars" class="rating__label" for="rating-5"><i
+                                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating" id="rating-5" value="5" type="radio">
+                                    </div>
+                                </div>
+                                <div class="ProDetails_2">
+                                    <label>2,158.00</label>
+                                    <span>3,500.00</span>
+                                </div>
+                                <div class="ProDetails_3">
+                                    <span>
+                                        <a href=""><img src="Images/like.svg" /></a>
+                                        <a href=""><img src="Images/vision.svg" /></a>
+                                    </span>
+                                    <button type="button">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ProductList">
+                            <div class="ProductImg">
+                                <img src="Images/Product_Img.png" />
+                                <span>45% Off</span>
+                            </div>
+                            <div class="ProductDetails">
+                                <div class="ProDetails_1">
+                                    <h6>3D Character Model</h6>
+                                    <div class="rating-group">
+                                        <input class="rating__input rating__input--none" name="rating" id="rating-none"
+                                            value="0" type="radio">
+                                        <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating" id="rating-1" value="1" type="radio">
+                                        <label aria-label="2 stars" class="rating__label" for="rating-2"><i
+                                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating" id="rating-2" value="2" type="radio">
+                                        <label aria-label="3 stars" class="rating__label" for="rating-3"><i
+                                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating" id="rating-3" value="3" type="radio"
+                                            checked>
+                                        <label aria-label="4 stars" class="rating__label" for="rating-4"><i
+                                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating" id="rating-4" value="4" type="radio">
+                                        <label aria-label="5 stars" class="rating__label" for="rating-5"><i
+                                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating" id="rating-5" value="5" type="radio">
+                                    </div>
+                                </div>
+                                <div class="ProDetails_2">
+                                    <label>2,158.00</label>
+                                    <span>3,500.00</span>
+                                </div>
+                                <div class="ProDetails_3">
+                                    <span>
+                                        <a href=""><img src="Images/like.svg" /></a>
+                                        <a href=""><img src="Images/vision.svg" /></a>
+                                    </span>
+                                    <button type="button">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ProductList">
+                            <div class="ProductImg">
+                                <img src="Images/Product_Img.png" />
+                                <span>45% Off</span>
+                            </div>
+                            <div class="ProductDetails">
+                                <div class="ProDetails_1">
+                                    <h6>3D Character Model</h6>
+                                    <div class="rating-group">
+                                        <input class="rating__input rating__input--none" name="rating" id="rating-none"
+                                            value="0" type="radio">
+                                        <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating" id="rating-1" value="1" type="radio">
+                                        <label aria-label="2 stars" class="rating__label" for="rating-2"><i
+                                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating" id="rating-2" value="2" type="radio">
+                                        <label aria-label="3 stars" class="rating__label" for="rating-3"><i
+                                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating" id="rating-3" value="3" type="radio"
+                                            checked>
+                                        <label aria-label="4 stars" class="rating__label" for="rating-4"><i
+                                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating" id="rating-4" value="4" type="radio">
+                                        <label aria-label="5 stars" class="rating__label" for="rating-5"><i
+                                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating" id="rating-5" value="5" type="radio">
+                                    </div>
+                                </div>
+                                <div class="ProDetails_2">
+                                    <label>2,158.00</label>
+                                    <span>3,500.00</span>
+                                </div>
+                                <div class="ProDetails_3">
+                                    <span>
+                                        <a href=""><img src="Images/like.svg" /></a>
+                                        <a href=""><img src="Images/vision.svg" /></a>
+                                    </span>
+                                    <button type="button">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="clear"></div>
+
+        <section class="BG_BuySell" id="Buy">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="Images/Buy.png" />
+                    </div>
+                    <div class="col-md-6 v-center">
+                        <div class="Buy_Sell">
+                            <h2>BUY & SELL</h2>
+                            <h6>3D MODELS ON THE GRAPHICS TROLLEY STORE</h6>
+                            <span>You can review every aspect of a model in 3D before you <br />
+                                commit to purchase.</span>
+                            <p>Lorem ipsum dolor sit amet, mea eu nonumy fierent, sed dolor noluisse an. Vix clita
+                                cotidieque et, mutat pertinacia eam ut. At dicat accusamus eam, ius unum persequeris ei.
+                                Sea ne nibh laudem persius, id dicta aeque dolor eos. Numquam albucius nec ea.</p>
+                            <button class="btn-main bg-btn3">KNOW MORE
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="clear"></div>
+
+        <section class="Join" id="Join" style="background-color: #fff; background-image: none;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 v-center">
+                        <div class="Buy_Sell">
+                            <h2>JOIN WITH US</h2>
+                            <h6>AND SHOWCASE YOUR WORK</h6>
+                            <span>Our vibrant community and best-in-class tools mean
+                                Graphics Trolley is quite simply the best place to share your 3D work.</span>
+                            <p>Lorem ipsum dolor sit amet, mea eu nonumy fierent, sed dolor noluisse an. Vix clita
+                                cotidieque et, mutat pertinacia eam ut. At dicat accusamus eam, ius unum persequeris ei.
+                                Sea ne nibh laudem persius, id dicta aeque dolor eos. Numquam albucius nec ea.</p>
+                            <button class="btn-main bg-btn3">KNOW MORE
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <img src="Images/Join.png" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="Footer_Row1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="FooterMenu">
+                            <h5>Store</h5>
+                            <ul>
+                                <li><a href="#">Buy 3D Models</a></li>
+                                <li><a href="#">Best Selling</a></li>
+                                <li><a href="#">Categories</a></li>
+                                <li><a href="#">Join With Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="FooterMenu">
+                            <h5>Quick Links</h5>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Help Desk</a></li>
+                                <li><a href="#">FAQ’s</a></li>
+                                <li><a href="#">Terms of Use</a></li>
+                                <li><a href="#">Security & Privacy Policy</a></li>
+                                <li><a href="#">Refund Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="FooterMenu">
+                            <h5>Recent Work</h5>
+                            <ul class="RecentWork">
+                                <li><a href="#"><img src="Images/Img_1.png" /></a></li>
+                                <li><a href="#"><img src="Images/Img_2.png" /></a></li>
+                                <li><a href="#"><img src="Images/Img_3.png" /></a></li>
+                            </ul>
+                            <ul class="RecentWork">
+                                <li><a href="#"><img src="Images/Img_4.png" /></a></li>
+                                <li><a href="#"><img src="Images/Img_5.png" /></a></li>
+                                <li><a href="#"><img src="Images/Img_6.png" /></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="FooterMenu">
+                            <h5>Follow Us</h5>
+                            <ul class="Contact">
+                                <li><a href="#">+91 9916553151</a></li>
+                                <li><a href="#">arockiadass85@gmail.com</a></li>
+                                <li><a href="#">79, Nyniappa Maistttry St, Park <br /> Town,Chennai, Tamil Nadu, <br />
+                                        INDIA - 600003</a></li>
+                            </ul>
+                        </div>
+                        <div class="FooterMenu" style="margin-top: 25px;">
+                            <h5>Contact Us</h5>
+                            <ul class="SocialMedia">
+                                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Footer_Row2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="#">&#169; 2021 Graphics Trolley. All Rights Reserved.</a>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <a href="#" class="cards"><img src="Images/Cards.png" /></a>
+                        <span>We Accept</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery.nivo.slider.js"></script> -->
+    <script type="text/javascript" src="js/jquery.superscrollorama.js"></script>
+    <script type="text/javascript" src="js/all.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+
+    <script>
+        $(document).on('ready', function () {
+            $(".multiple-items").slick({
+                dots: false,
+                arrows: true,
+                infinite: true,
+                centerMode: true,
+                slidesToShow: 6,
+                variableWidth: false,
+                slidesToScroll: 0,
+                // autoplay: true,
+                // autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+
+            $(".Product_Items").slick({
+                dots: false,
+                arrows: true,
+                infinite: true,
+                centerMode: true,
+                slidesToShow: 4,
+                variableWidth: false,
+                slidesToScroll: 0,
+                // autoplay: true,
+                // autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+
+            $(".Info_Items").slick({
+                dots: false,
+                arrows: true,
+                infinite: true,
+                centerMode: true,
+                slidesToShow: 3,
+                variableWidth: false,
+                slidesToScroll: 0,
+                // autoplay: true,
+                // autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
