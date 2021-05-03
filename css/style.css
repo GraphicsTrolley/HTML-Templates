@@ -176,7 +176,7 @@ body {
 }
 .SecondaryNavbar .Information {
   padding-left: 50px;
-  background-image: url(../Images/headphones.svg);
+  background-image: url(../images/headphones.svg);
   background-size: 45px;
   background-repeat: no-repeat;
 }
@@ -245,7 +245,7 @@ main {
   position: relative;
   display: table;
   width: 100%;
-  background-image: url(../Images/Banner.jpg);
+  background-image: url(../images/Banner.jpg);
   height: calc(100vh - 136px);
   background-size: cover;
 }
@@ -397,7 +397,7 @@ main {
   width: 100%;
   border-radius: 0 6px 6px 0;
   appearance: none;
-  background-image: url(../Images/ArrowDown.png);
+  background-image: url(../images/ArrowDown.png);
   background-repeat: no-repeat;
   background-position: right 10px center;
 }
@@ -495,7 +495,7 @@ main {
 }
 
 .BG_Info {
-  background-image: url(../Images/Info_BG.png), url(../Images/Info_BG.png), linear-gradient(to bottom, #c7ecff, #f9efff);
+  background-image: url(../images/Info_BG.png), url(../images/Info_BG.png), linear-gradient(to bottom, #c7ecff, #f9efff);
   height: 450px;
   background-repeat: no-repeat;
   background-position: left, right;
@@ -906,7 +906,7 @@ main {
 .Product_Items .slick-slide .ProductDetails .ProDetails_2 label::after {
   content: "";
   position: absolute;
-  background-image: url(../Images/rupee.svg);
+  background-image: url(../images/rupee.svg);
   background-repeat: no-repeat;
   background-size: 17px;
   top: 2px;
@@ -929,7 +929,7 @@ main {
 .Product_Items .slick-slide .ProductDetails .ProDetails_2 span::after {
   content: "";
   position: absolute;
-  background-image: url(../Images/rupee.svg);
+  background-image: url(../images/rupee.svg);
   background-repeat: no-repeat;
   background-size: 12px;
   top: 3px;
@@ -1114,7 +1114,7 @@ main {
 .Footer_Row1 .FooterMenu .Contact li:first-child a:before {
   content: "";
   position: absolute;
-  background-image: url(../Images/phone-call.svg);
+  background-image: url(../images/phone-call.svg);
   background-repeat: no-repeat;
   background-size: 15px;
   width: 15px;
@@ -1125,7 +1125,7 @@ main {
 .Footer_Row1 .FooterMenu .Contact li:nth-child(2) a:before {
   content: "";
   position: absolute;
-  background-image: url(../Images/email.svg);
+  background-image: url(../images/email.svg);
   background-repeat: no-repeat;
   background-size: 15px;
   width: 15px;
@@ -1136,7 +1136,7 @@ main {
 .Footer_Row1 .FooterMenu .Contact li:nth-child(3) a:before {
   content: "";
   position: absolute;
-  background-image: url(../Images/pin.svg);
+  background-image: url(../images/pin.svg);
   background-repeat: no-repeat;
   background-size: 15px;
   width: 15px;
@@ -1745,7 +1745,7 @@ main {
 .Product_Items_Main .ProductDetails .ProDetails_2 label::after {
   content: "";
   position: absolute;
-  background-image: url(../Images/rupee.svg);
+  background-image: url(../images/rupee.svg);
   background-repeat: no-repeat;
   background-size: 17px;
   top: 2px;
@@ -1768,7 +1768,7 @@ main {
 .Product_Items_Main .ProductDetails .ProDetails_2 span::after {
   content: "";
   position: absolute;
-  background-image: url(../Images/rupee.svg);
+  background-image: url(../images/rupee.svg);
   background-repeat: no-repeat;
   background-size: 12px;
   top: 3px;
