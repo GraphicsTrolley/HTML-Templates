@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Graphic Trolley</title>
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/nivo-slider.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script type="text/javascript" src="js/greensock/TweenMax.min.js"></script>
+
+</head>
+
+<body>
+
+    <header class="MainHeader">
+        <nav class="navbar navbar-expand-lg TopBar fixed-top navWrapper">
+            <a class="navbar-brand" href="javascript:void(0)"><span>20% Discount</span> on Selected Items</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Topnavbar"
+                aria-controls="Topnavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="Topnavbar">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Account.html"><i><img src="images/User.svg"></i>Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)"><i><img src="images/Wishlist.svg"></i>Wishlist</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)"><i><img src="images/Cart.svg"></i>Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg SecondaryNavbar fixed-top navWrapper">
+            <a class="navbar-brand" href="Index.html"><img src="images/GT_WebPage.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto Menu">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="javascript:void(0)">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">About us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            3D Models
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="javascript:void(0)">Action</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Contact us</a>
+                    </li>
+                </ul>
+                <div class="Information">
+                    <div class="Info">
+                        <a class="nav-link" href="javascript:void(0)">Call us now <span>: (+91 95952225121)</span></a>
+                    </div>
+                    <div class="Info">
+                        <a class="nav-link" href="javascript:void(0)">Email <span>: arockiadass85@gmail.com</span></a>
+                    </div>
+                </div>
+                <div class="ScrollCart">
+                    <a href="javascript:void(0)">
+                        <img src="images/shopping-cart.svg" />
+                        <span>0</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="BreadCrumb">
+                    <div class="container">
+                        <div class="row">
+                            <h6>3D Models | Animals | <span class="Currentpage"> Cute Kitten V2 STL 3D print model</span></h6>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section style="padding:30px 0 80px" class="ProductResult">
+            <div class="container">
+                <div class="row">
+                    <div class="ProductDescLeft">
+                        <div class="container">
+                            <div class="row">
+                                <div class="product-images demo-gallery">
+                                    <div class="main-img-slider">
+                                        <a data-fancybox="gallery" href=""><img src="images/ProductMain.jpg"
+                                                class="img-fluid"></a>
+                                        <a data-fancybox="gallery" href=""><img src="images/ProductMain_2.jpg"
+                                                class="img-fluid"></a>
+                                        <a data-fancybox="gallery" href=""><img src="images/ProductMain_3.jpg"
+                                                class="img-fluid"></a>
+                                        <a data-fancybox="gallery" href=""><img src="images/ProductMain_4.jpg"
+                                                class="img-fluid"></a>
+                                        <a data-fancybox="gallery" href=""><img src="images/ProductMain_5.jpg"
+                                                class="img-fluid"></a>
+                                        <a data-fancybox="gallery" href=""><img src="images/ProductMain_3.jpg"
+                                                class="img-fluid"></a>
+                                        <a data-fancybox="gallery" href=""><img src="images/ProductMain_4.jpg"
+                                                class="img-fluid"></a>
+                                    </div>
+                                    <ul class="thumb-nav">
+                                        <li><img src="images/ProductMain.jpg"></li>
+                                        <li><img src="images/ProductMain_2.jpg"></li>
+                                        <li><img src="images/ProductMain_3.jpg"></li>
+                                        <li><img src="images/ProductMain_4.jpg"></li>
+                                        <li><img src="images/ProductMain_5.jpg"></li>
+                                        <li><img src="images/ProductMain_2.jpg"></li>
+                                        <li><img src="images/ProductMain_4.jpg"></li>
+                                    </ul>
+                                </div>
+                                <div class="product-stats-info">
+                                    <div class="stats-info__buttons">
+                                        <button type="button" class="btn btn-outline-default">
+                                            <img src="images/ProDes_Plus.svg" />
+                                            Add to wish list</button>
+                                        <button type="button" class="btn btn-outline-default">
+                                            <img src="images/ProDes_Remove.svg" />
+                                            Remove from wish list</button>
+                                    </div>
+                                    <div class="stats-info__views-buttons">
+                                        <div data-tooltip="Views" class="btn btn-outline-default">
+                                            <img src="images/ProDes_View.svg" />
+                                            <span>2.52k</span>
+                                        </div>
+                                    </div>
+                                    <div class="stats-info__like-buttons">
+                                        <div data-tooltip="Likes" class="btn btn-outline-default">
+                                            <img src="images/ProDes_Wishlist.svg" />
+                                            <span>2.52k</span>
+                                        </div>
+                                    </div>
+                                    <div class="stats-info__share-buttons">
+                                        <div data-tooltip="Share" class="btn btn-outline-default">
+                                            <img src="images/ProDes_Share.svg" />
+                                        </div>
+                                    </div>
+                                    <div class="stats-info__report-buttons">
+                                        <div data-tooltip="Report" class="btn btn-outline-default">
+                                            <img src="images/ProDes_More.svg" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="CommonTab">
+                                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill"
+                                                href="#pills-home" role="tab" aria-controls="pills-home"
+                                                aria-selected="true">Description</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill"
+                                                href="#pills-profile" role="tab" aria-controls="pills-profile"
+                                                aria-selected="false">Comments <span>(527)</span></a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill"
+                                                href="#pills-contact" role="tab" aria-controls="pills-contact"
+                                                aria-selected="false">Reviews <span>(1)</span></a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                            aria-labelledby="pills-home-tab">
+                                            <div class="ProductDescContent pb-0">
+                                                <p>High Detailed Photorealistic Black Panther, completely UVmapped and
+                                                    smoothable, made with 3Ds Max 2014 + Hairfarm+MOrphing The scene is
+                                                    just a walking animation.
+                                                <p>Please Use the Layers.</p>
+                                                <p>The scene is set by default to one light and GI with VRay everything
+                                                    together. Warning: Scene is created in 3dsmax 2014, Vray 2.4 +
+                                                    Hairfarm2</p>
+                                                <p>Rigging and sample animation walk is designed to help CAT. Head
+                                                    Diffuse texture: 3072x3072 Head Specular texture: 3072x3072 Head
+                                                    Bump texture: 3072x3072 Body Diffuse texture: 2048x2048 Eye color
+                                                    Diffuse: 400x400 Morph target: open mouth closed eyes attack</p>
+                                            </div>
+                                            <div class="RelatedProduct">
+                                                <a href="">Panther</a>
+                                                <a href="">Panther</a>
+                                                <a href="">Panther</a>
+                                                <a href="">Panther</a>
+                                                <a href="">Panther</a>
+                                                <a href="">Panther</a>
+                                                <a href="">Panther</a>
+                                                <a href="">Panther</a>
+                                                <a href="">Panther</a>
+                                                <a href="">Panther</a>
+                                                <a href="">Panther</a>
+                                                <a href="">Panther</a>
+                                                <a href="">Panther</a>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                            aria-labelledby="pills-profile-tab">...</div>
+                                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                            aria-labelledby="pills-contact-tab">...</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ProductDescRight">
+                        <h5>Cute Kitten V2 STL 3D print model</h5>
+                        <div class="Product__Pricing mb-3">
+                            <span class="ProdDescPrice">$6.30</span>
+                            <span class="ProdDescDiscount">
+                                <label>$9.00</label>
+                                <p>You Save:$2.70 (30%)</p>
+                            </span>
+                        </div>
+                        <div class="Product__License mb-3">
+                            <span class="License">Editorial License<i><img
+                                        src="images/ProDes_Information.svg" /></i></span>
+                            <a href="#" class="OfferPriceBtn"><i><img src="images/ProDes_Hand-shake.svg" /></i>Offer
+                                Price</a>
+                        </div>
+                        <div class="Product__BuyBtn mb-3">
+                            <button type="button"><img src="images/ProDes-Cart.svg"/><span>Add To Cart</span></button>
+                        </div>
+                        <div class="short-product-details mb-3">
+                            <div class="product-author">
+                                <div class="author-avatar">
+                                    <a href="#">
+                                        <span></span>
+                                    </a>
+                                </div>
+                                <div class="author-info">
+                                    <a href="#" title="squir" itemprop="creator" class="js-author-link">
+                                        <div class="username">Adamec</div>
+                                    </a>
+                                    <a href="#" title="squir" itemprop="creator" class="js-author-link">
+                                        <div class="author-rating">
+                                            <span class="radio__label">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (22 reviews)
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="support">
+                                    <button type="button"><i><img src="images/ProDes-Mes.svg"/></i></button>
+                                </div>
+                            </div>
+                            <div class="product-author-response">
+                                <div class="author-response">
+                                    <label>Response</label>
+                                    <span>82% in 2.5h</span>
+                                </div>
+                            </div>
+                            <div class="product-skills">
+                                <div class="label">3D Modeling</div>
+                                <div class="label">Low-poly Modeling</div>
+                                <div class="label">Lighting</div>
+                                <div class="label">Rendering</div>
+                                <div class="label">Rigging</div>
+                            </div>
+                            <div class="product-hire-me">
+                                <button type="button">Hire me</button>
+                            </div>
+                        </div>
+                        <div class="short-modal-format mb-3">
+                            <div class="product-format-title">3D Model Formats</div>
+                            <div class="product-format-native">
+                                <h6>Native</h6>
+                                <ul>
+                                    <li>
+                                        <div class="format">Autodesk 3ds Max 2014 <span>(.max)</span></div>
+                                        <div class="size">42.9 MB</div>
+                                    </li>
+                                    <li>
+                                        <div class="format">Version: 2014</div>                                        
+                                    </li>
+                                    <li>
+                                        <div class="format">Renderer: V-Ray 2.4</div>                                        
+                                    </li>
+                                </ul>                                    
+                            </div>   
+                            <div class="product-format-exchange">
+                                <h6>Exchange</h6>
+                                <ul>
+                                    <li>
+                                        <div class="format">OBJ <span>(.obj, .mtl)</span></div>
+                                        <div class="size">22.7 MB</div>
+                                    </li>
+                                    <li>
+                                        <div class="format">Autodesk FBX <span>(.fbx)</span></div>
+                                        <div class="size">6.32 MB</div>
+                                    </li>
+                                    <li>
+                                        <div class="format">3D Studio <span>(.3ds)</span><a class="HelpDesk" data-tooltip="Contact for Availability" href="#">Contact</a></div>
+                                        <div class="size">-</div>
+                                    </li>
+                                    <li>
+                                        <div class="format">Stereolithography <span>(.stl)</span><a class="HelpDesk" data-tooltip="Contact for Availability" href="#">Contact</a></div>
+                                        <div class="size">-</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="Product-Action-Button">
+                                <button type="button">Request Format Conversion</button>
+                            </div>
+                        </div>
+                        <div class="short-modal-details mb-3">
+                            <div class="product-modal-title">3D Model Details</div>
+                            <div class="product-modal-details">                                
+                                <ul>
+                                    <li>
+                                        <div class="label">Publish date</div>
+                                        <div class="value">2014-11-20</div>
+                                    </li>
+                                    <li>
+                                        <div class="label">Model ID</div>
+                                        <div class="value">#90399</div>
+                                    </li>
+                                    <li>
+                                        <div class="label">Animated</div>
+                                        <div class="value"><a href="" data-tooltip="Approved by Graphic Trolley">approved</a><img src="images/ProDes-check.svg"/></div>
+                                    </li>
+                                    <li>
+                                        <div class="label">Rigged</div>
+                                        <div class="value"><a href="" data-tooltip="Approved by Graphic Trolley">approved</a><img src="images/ProDes-check.svg"/></div>
+                                    </li>
+                                    <li>
+                                        <div class="label">VR / AR / Low-poly</div>
+                                        <div class="value"><img src="images/ProDes-Cancel.svg"/></div>
+                                    </li>
+                                    <li>
+                                        <div class="label">PBR</div>
+                                        <div class="value"><img src="images/ProDes-Cancel.svg"/></div>
+                                    </li>
+                                    <li>
+                                        <div class="label">Geometry</div>
+                                        <div class="value">Subdivision ready</div>
+                                    </li>
+                                    <li>
+                                        <div class="label">Polygons</div>
+                                        <div class="value">12,700</div>
+                                    </li>
+                                    <li>
+                                        <div class="label">Vertices</div>
+                                        <div class="value">12,700</div>
+                                    </li>
+                                    <li>
+                                        <div class="label">Textures</div>
+                                        <div class="value"><img src="images/ProDes-check.svg"/></div>
+                                    </li>
+                                    <li>
+                                        <div class="label">Materials</div>
+                                        <div class="value"><img src="images/ProDes-check.svg"/></div>
+                                    </li>
+                                    <li>
+                                        <div class="label">UV Mapping</div>
+                                        <div class="value"><img src="images/ProDes-check.svg"/></div>
+                                    </li>
+                                    <li>
+                                        <div class="label">Unwrapped UVs</div>
+                                        <div class="value">Non-overlapping</div>
+                                    </li>
+                                    <li>
+                                        <div class="label">Plugins used</div>
+                                        <div class="value"><img src="images/ProDes-check.svg"/></div>
+                                    </li>
+                                </ul>                                    
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="clear"></div>
+    </main>
+
+    <footer>
+        <div class="Footer_Row1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="FooterMenu">
+                            <h5>Store</h5>
+                            <ul>
+                                <li><a href="#">Buy 3D Models</a></li>
+                                <li><a href="#">Best Selling</a></li>
+                                <li><a href="#">Categories</a></li>
+                                <li><a href="#">Join With Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="FooterMenu">
+                            <h5>Quick Links</h5>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Help Desk</a></li>
+                                <li><a href="#">FAQ’s</a></li>
+                                <li><a href="#">Terms of Use</a></li>
+                                <li><a href="#">Security & Privacy Policy</a></li>
+                                <li><a href="#">Refund Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="FooterMenu">
+                            <h5>Recent Work</h5>
+                            <ul class="RecentWork">
+                                <li><a href="#"><img src="images/Img_1.png" /></a></li>
+                                <li><a href="#"><img src="images/Img_2.png" /></a></li>
+                                <li><a href="#"><img src="images/Img_3.png" /></a></li>
+                            </ul>
+                            <ul class="RecentWork">
+                                <li><a href="#"><img src="images/Img_4.png" /></a></li>
+                                <li><a href="#"><img src="images/Img_5.png" /></a></li>
+                                <li><a href="#"><img src="images/Img_6.png" /></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="FooterMenu">
+                            <h5>Follow Us</h5>
+                            <ul class="Contact">
+                                <li><a href="#">+91 9916553151</a></li>
+                                <li><a href="#">arockiadass85@gmail.com</a></li>
+                                <li><a href="#">79, Nyniappa Maistttry St, Park <br /> Town,Chennai, Tamil Nadu, <br />
+                                        INDIA - 600003</a></li>
+                            </ul>
+                        </div>
+                        <div class="FooterMenu" style="margin-top: 25px;">
+                            <h5>Contact Us</h5>
+                            <ul class="SocialMedia">
+                                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Footer_Row2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="#">&#169; 2021 Graphics Trolley. All Rights Reserved.</a>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <a href="#" class="cards"><img src="images/Cards.png" /></a>
+                        <span>We Accept</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery.nivo.slider.js"></script> -->
+    <script type="text/javascript" src="js/jquery.superscrollorama.js"></script>
+    <script type="text/javascript" src="js/all.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>

@@ -10,6 +10,10 @@
     float: left; width: 100%;
 }
 
-@mixin ClearFlex {
+@mixin ClearFlex_Row {
     display:flex; flex-direction: row;
+}
+
+@mixin ClearFlex_Column {
+    display:flex; flex-direction: column;
 }

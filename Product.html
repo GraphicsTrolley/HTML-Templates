@@ -25,7 +25,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <script type="text/javascript" src="js/greensock/TweenMax.min.js"></script>
-    
+
 </head>
 
 <body>
@@ -114,8 +114,8 @@
                         <div class="nivo-caption" style="display: block;">
                             <h5>3D Characters</h5>
                             <ul class="breadcrumb">
-                                <li><a href="#">Home /</a></li>
-                                <li><a href="#">3D Models /</a></li>
+                                <li><a href="#">Home |</a></li>
+                                <li><a href="#">3D Models |</a></li>
                                 <li><a href="#">Characters</a></li>
                             </ul>
                         </div>
@@ -226,7 +226,7 @@
                                         <input type="text" id="amount" />
                                         <a href="#">FILTER</a>
                                     </div>
-                                </div>                                                                
+                                </div>
                             </div>
                         </div>
                         <div class="ProductFilter">
@@ -369,238 +369,494 @@
                         </div>
                     </div>
                     <div class="RightProductList">
+                        <div class="Product_Sorting">
+                            <button class="filter_toggle" aria-expanded="false"> <i
+                                    class="freshio-icon-filter"></i><span>Filter</span></button>
+                            <button class="filter_toggle_dropdown" aria-expanded="false"> <i
+                                    class="freshio-icon-filter"></i><span>Filter</span></button>
+                            <p class="Product_Result_Count"> Showing 1–16 of 40 results</p>
+                            <div class="Productlist_toggle">
+                                <a href="javascript:void(0)" id="grid" class="active Grid View" title="Grid_View">
+                                    <img class="Normal" src="images/Grid_Normal.svg" />
+                                    <img class="Active" src="images/Grid_Hover_Active.svg" />
+                                </a>
+                                <a href="javascript:void(0)" id="list" class="List View" title="List_View">
+                                    <img class="Normal" src="images/List_Normal.svg" />
+                                    <img class="Active" src="images/List_Hover_Active.svg" />
+                                </a>
+                            </div>
+                            <form class="Product_Ordering" method="get">
+                                <select name="orderby" class="orderby">
+                                    <option value="menu_order" selected="selected">Default sorting</option>
+                                    <option value="popularity">Sort by popularity</option>
+                                    <option value="rating">Sort by average rating</option>
+                                    <option value="date">Sort by latest</option>
+                                    <option value="price">Sort by price: low to high</option>
+                                    <option value="price-desc">Sort by price: high to low</option>
+                                </select>
+                                <input type="hidden" name="paged" value="1">
+                                <input type="hidden" name="layout" value="grid">
+                            </form>
+                        </div>
                         <div class="Product_Items_Main">
-                            <div class="ProductList">
-                                <div class="ProductImg">
-                                    <img src="images/Product_Img.png" />
-                                    <span>45% Off</span>
-                                </div>
-                                <div class="ProductDetails">
-                                    <div class="ProDetails_1">
-                                        <h6>3D Character Model</h6>
-                                        <div class="rating-group">
-                                            <input class="rating__input rating__input--none" name="rating"
-                                                id="rating-none" value="0" type="radio">
-                                            <label aria-label="1 star" class="rating__label" for="rating-1"><i
-                                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                            <input class="rating__input" name="rating" id="rating-1" value="1"
-                                                type="radio">
-                                            <label aria-label="2 stars" class="rating__label" for="rating-2"><i
-                                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                            <input class="rating__input" name="rating" id="rating-2" value="2"
-                                                type="radio">
-                                            <label aria-label="3 stars" class="rating__label" for="rating-3"><i
-                                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                            <input class="rating__input" name="rating" id="rating-3" value="3"
-                                                type="radio" checked>
-                                            <label aria-label="4 stars" class="rating__label" for="rating-4"><i
-                                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                            <input class="rating__input" name="rating" id="rating-4" value="4"
-                                                type="radio">
-                                            <label aria-label="5 stars" class="rating__label" for="rating-5"><i
-                                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                            <input class="rating__input" name="rating" id="rating-5" value="5"
-                                                type="radio">
+                            <div class="Product_Col">
+                                <div class="ProductList">
+                                    <div class="ProductImg">
+                                        <img src="images/Product_Img.png" />
+                                        <span>45% Off</span>
+                                    </div>
+                                    <div class="ProductDetails">
+                                        <div class="ProDetails_1">
+                                            <h6>3D Character Model</h6>
+                                            <div class="rating-group">
+                                                <input class="rating__input rating__input--none" name="rating"
+                                                    id="rating-none" value="0" type="radio">
+                                                <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-1" value="1"
+                                                    type="radio">
+                                                <label aria-label="2 stars" class="rating__label" for="rating-2"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-2" value="2"
+                                                    type="radio">
+                                                <label aria-label="3 stars" class="rating__label" for="rating-3"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-3" value="3"
+                                                    type="radio" checked>
+                                                <label aria-label="4 stars" class="rating__label" for="rating-4"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-4" value="4"
+                                                    type="radio">
+                                                <label aria-label="5 stars" class="rating__label" for="rating-5"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-5" value="5"
+                                                    type="radio">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="ProDetails_2">
-                                        <label>2,158.00</label>
-                                        <span>3,500.00</span>
-                                    </div>
-                                    <div class="ProDetails_3">
-                                        <span>
-                                            <a href=""><img src="images/like.svg" /></a>
-                                            <a href=""><img src="images/vision.svg" /></a>
-                                        </span>
-                                        <button type="button">Add to Cart</button>
+                                        <div class="ProDetails_2">
+                                            <label>2,158.00</label>
+                                            <span>3,500.00</span>
+                                        </div>
+                                        <div class="ProDetails_3">
+                                            <span>
+                                                <a href="#" class="Star"><i><img src="images/Pro_Star.svg" /></i>
+                                                    619</a>
+                                                <a href="#" class="Star"><i><img src="images/Pro_Eye.svg" /></i> 42k (6
+                                                    Today)</a>
+                                                <a href="#" class="Star"><i><img src="images/Pro_Comment.svg" /></i>
+                                                    298</a>
+                                            </span>
+                                            <button type="button"><i><img src="images/Pro_Cart.svg" /></i></button>
+                                        </div>
+                                        <div class="Product_Card_Hover">
+                                            <a href="" class="WishList"><i><img src="images/Pro_Cart_Wishlist.svg" /></i></a>
+                                            <a href="" class="QuickView"><i><img src="images/Pro_Cart_View.svg" /></i> <span>Quick View</span></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="ProductList">
-                                <div class="ProductImg">
-                                    <img src="images/Product_Img.png" />
-                                    <span>45% Off</span>
-                                </div>
-                                <div class="ProductDetails">
-                                    <div class="ProDetails_1">
-                                        <h6>3D Character Model</h6>
-                                        <div class="rating-group">
-                                            <input class="rating__input rating__input--none" name="rating"
-                                                id="rating-none" value="0" type="radio">
-                                            <label aria-label="1 star" class="rating__label" for="rating-1"><i
-                                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                            <input class="rating__input" name="rating" id="rating-1" value="1"
-                                                type="radio">
-                                            <label aria-label="2 stars" class="rating__label" for="rating-2"><i
-                                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                            <input class="rating__input" name="rating" id="rating-2" value="2"
-                                                type="radio">
-                                            <label aria-label="3 stars" class="rating__label" for="rating-3"><i
-                                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                            <input class="rating__input" name="rating" id="rating-3" value="3"
-                                                type="radio" checked>
-                                            <label aria-label="4 stars" class="rating__label" for="rating-4"><i
-                                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                            <input class="rating__input" name="rating" id="rating-4" value="4"
-                                                type="radio">
-                                            <label aria-label="5 stars" class="rating__label" for="rating-5"><i
-                                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                            <input class="rating__input" name="rating" id="rating-5" value="5"
-                                                type="radio">
+                            <div class="Product_Col">
+                                <div class="ProductList">
+                                    <div class="ProductImg">
+                                        <img src="images/Product_Img.png" />
+                                        <span>45% Off</span>
+                                    </div>
+                                    <div class="ProductDetails">
+                                        <div class="ProDetails_1">
+                                            <h6>3D Character Model</h6>
+                                            <div class="rating-group">
+                                                <input class="rating__input rating__input--none" name="rating"
+                                                    id="rating-none" value="0" type="radio">
+                                                <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-1" value="1"
+                                                    type="radio">
+                                                <label aria-label="2 stars" class="rating__label" for="rating-2"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-2" value="2"
+                                                    type="radio">
+                                                <label aria-label="3 stars" class="rating__label" for="rating-3"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-3" value="3"
+                                                    type="radio" checked>
+                                                <label aria-label="4 stars" class="rating__label" for="rating-4"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-4" value="4"
+                                                    type="radio">
+                                                <label aria-label="5 stars" class="rating__label" for="rating-5"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-5" value="5"
+                                                    type="radio">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="ProDetails_2">
-                                        <label>2,158.00</label>
-                                        <span>3,500.00</span>
-                                    </div>
-                                    <div class="ProDetails_3">
-                                        <span>
-                                            <a href=""><img src="images/like.svg" /></a>
-                                            <a href=""><img src="images/vision.svg" /></a>
-                                        </span>
-                                        <button type="button">Add to Cart</button>
+                                        <div class="ProDetails_2">
+                                            <label>2,158.00</label>
+                                            <span>3,500.00</span>
+                                        </div>
+                                        <div class="ProDetails_3">
+                                            <span>
+                                                <a href="#" class="Star"><i><img src="images/Pro_Star.svg" /></i>
+                                                    619</a>
+                                                <a href="#" class="Star"><i><img src="images/Pro_Eye.svg" /></i> 42k (6
+                                                    Today)</a>
+                                                <a href="#" class="Star"><i><img src="images/Pro_Comment.svg" /></i>
+                                                    298</a>
+                                            </span>
+                                            <button type="button"><i><img src="images/Pro_Cart.svg" /></i></button>
+                                        </div>
+                                        <div class="Product_Card_Hover">
+                                            <a href="" class="WishList"><i><img src="images/Pro_Cart_Wishlist.svg" /></i></a>
+                                            <a href="" class="QuickView"><i><img src="images/Pro_Cart_View.svg" /></i> <span>Quick View</span></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="ProductList">
-                                <div class="ProductImg">
-                                    <img src="images/Product_Img.png" />
-                                    <span>45% Off</span>
-                                </div>
-                                <div class="ProductDetails">
-                                    <div class="ProDetails_1">
-                                        <h6>3D Character Model</h6>
-                                        <div class="rating-group">
-                                            <input class="rating__input rating__input--none" name="rating"
-                                                id="rating-none" value="0" type="radio">
-                                            <label aria-label="1 star" class="rating__label" for="rating-1"><i
-                                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                            <input class="rating__input" name="rating" id="rating-1" value="1"
-                                                type="radio">
-                                            <label aria-label="2 stars" class="rating__label" for="rating-2"><i
-                                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                            <input class="rating__input" name="rating" id="rating-2" value="2"
-                                                type="radio">
-                                            <label aria-label="3 stars" class="rating__label" for="rating-3"><i
-                                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                            <input class="rating__input" name="rating" id="rating-3" value="3"
-                                                type="radio" checked>
-                                            <label aria-label="4 stars" class="rating__label" for="rating-4"><i
-                                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                            <input class="rating__input" name="rating" id="rating-4" value="4"
-                                                type="radio">
-                                            <label aria-label="5 stars" class="rating__label" for="rating-5"><i
-                                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                            <input class="rating__input" name="rating" id="rating-5" value="5"
-                                                type="radio">
+                            <div class="Product_Col">
+                                <div class="ProductList">
+                                    <div class="ProductImg">
+                                        <img src="images/Product_Img.png" />
+                                        <span>45% Off</span>
+                                    </div>
+                                    <div class="ProductDetails">
+                                        <div class="ProDetails_1">
+                                            <h6>3D Character Model</h6>
+                                            <div class="rating-group">
+                                                <input class="rating__input rating__input--none" name="rating"
+                                                    id="rating-none" value="0" type="radio">
+                                                <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-1" value="1"
+                                                    type="radio">
+                                                <label aria-label="2 stars" class="rating__label" for="rating-2"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-2" value="2"
+                                                    type="radio">
+                                                <label aria-label="3 stars" class="rating__label" for="rating-3"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-3" value="3"
+                                                    type="radio" checked>
+                                                <label aria-label="4 stars" class="rating__label" for="rating-4"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-4" value="4"
+                                                    type="radio">
+                                                <label aria-label="5 stars" class="rating__label" for="rating-5"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-5" value="5"
+                                                    type="radio">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="ProDetails_2">
-                                        <label>2,158.00</label>
-                                        <span>3,500.00</span>
-                                    </div>
-                                    <div class="ProDetails_3">
-                                        <span>
-                                            <a href=""><img src="images/like.svg" /></a>
-                                            <a href=""><img src="images/vision.svg" /></a>
-                                        </span>
-                                        <button type="button">Add to Cart</button>
+                                        <div class="ProDetails_2">
+                                            <label>2,158.00</label>
+                                            <span>3,500.00</span>
+                                        </div>
+                                        <div class="ProDetails_3">
+                                            <span>
+                                                <a href="#" class="Star"><i><img src="images/Pro_Star.svg" /></i>
+                                                    619</a>
+                                                <a href="#" class="Star"><i><img src="images/Pro_Eye.svg" /></i> 42k (6
+                                                    Today)</a>
+                                                <a href="#" class="Star"><i><img src="images/Pro_Comment.svg" /></i>
+                                                    298</a>
+                                            </span>
+                                            <button type="button"><i><img src="images/Pro_Cart.svg" /></i></button>
+                                        </div>
+                                        <div class="Product_Card_Hover">
+                                            <a href="" class="WishList"><i><img src="images/Pro_Cart_Wishlist.svg" /></i></a>
+                                            <a href="" class="QuickView"><i><img src="images/Pro_Cart_View.svg" /></i> <span>Quick View</span></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="ProductList">
-                                <div class="ProductImg">
-                                    <img src="images/Product_Img.png" />
-                                    <span>45% Off</span>
-                                </div>
-                                <div class="ProductDetails">
-                                    <div class="ProDetails_1">
-                                        <h6>3D Character Model</h6>
-                                        <div class="rating-group">
-                                            <input class="rating__input rating__input--none" name="rating"
-                                                id="rating-none" value="0" type="radio">
-                                            <label aria-label="1 star" class="rating__label" for="rating-1"><i
-                                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                            <input class="rating__input" name="rating" id="rating-1" value="1"
-                                                type="radio">
-                                            <label aria-label="2 stars" class="rating__label" for="rating-2"><i
-                                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                            <input class="rating__input" name="rating" id="rating-2" value="2"
-                                                type="radio">
-                                            <label aria-label="3 stars" class="rating__label" for="rating-3"><i
-                                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                            <input class="rating__input" name="rating" id="rating-3" value="3"
-                                                type="radio" checked>
-                                            <label aria-label="4 stars" class="rating__label" for="rating-4"><i
-                                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                            <input class="rating__input" name="rating" id="rating-4" value="4"
-                                                type="radio">
-                                            <label aria-label="5 stars" class="rating__label" for="rating-5"><i
-                                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                            <input class="rating__input" name="rating" id="rating-5" value="5"
-                                                type="radio">
+                            <div class="Product_Col">
+                                <div class="ProductList">
+                                    <div class="ProductImg">
+                                        <img src="images/Product_Img.png" />
+                                        <span>45% Off</span>
+                                    </div>
+                                    <div class="ProductDetails">
+                                        <div class="ProDetails_1">
+                                            <h6>3D Character Model</h6>
+                                            <div class="rating-group">
+                                                <input class="rating__input rating__input--none" name="rating"
+                                                    id="rating-none" value="0" type="radio">
+                                                <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-1" value="1"
+                                                    type="radio">
+                                                <label aria-label="2 stars" class="rating__label" for="rating-2"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-2" value="2"
+                                                    type="radio">
+                                                <label aria-label="3 stars" class="rating__label" for="rating-3"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-3" value="3"
+                                                    type="radio" checked>
+                                                <label aria-label="4 stars" class="rating__label" for="rating-4"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-4" value="4"
+                                                    type="radio">
+                                                <label aria-label="5 stars" class="rating__label" for="rating-5"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-5" value="5"
+                                                    type="radio">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="ProDetails_2">
-                                        <label>2,158.00</label>
-                                        <span>3,500.00</span>
-                                    </div>
-                                    <div class="ProDetails_3">
-                                        <span>
-                                            <a href=""><img src="images/like.svg" /></a>
-                                            <a href=""><img src="images/vision.svg" /></a>
-                                        </span>
-                                        <button type="button">Add to Cart</button>
+                                        <div class="ProDetails_2">
+                                            <label>2,158.00</label>
+                                            <span>3,500.00</span>
+                                        </div>
+                                        <div class="ProDetails_3">
+                                            <span>
+                                                <a href="#" class="Star"><i><img src="images/Pro_Star.svg" /></i>
+                                                    619</a>
+                                                <a href="#" class="Star"><i><img src="images/Pro_Eye.svg" /></i> 42k (6
+                                                    Today)</a>
+                                                <a href="#" class="Star"><i><img src="images/Pro_Comment.svg" /></i>
+                                                    298</a>
+                                            </span>
+                                            <button type="button"><i><img src="images/Pro_Cart.svg" /></i></button>
+                                        </div>
+                                        <div class="Product_Card_Hover">
+                                            <a href="" class="WishList"><i><img src="images/Pro_Cart_Wishlist.svg" /></i></a>
+                                            <a href="" class="QuickView"><i><img src="images/Pro_Cart_View.svg" /></i> <span>Quick View</span></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="ProductList">
-                                <div class="ProductImg">
-                                    <img src="images/Product_Img.png" />
-                                    <span>45% Off</span>
-                                </div>
-                                <div class="ProductDetails">
-                                    <div class="ProDetails_1">
-                                        <h6>3D Character Model</h6>
-                                        <div class="rating-group">
-                                            <input class="rating__input rating__input--none" name="rating"
-                                                id="rating-none" value="0" type="radio">
-                                            <label aria-label="1 star" class="rating__label" for="rating-1"><i
-                                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                            <input class="rating__input" name="rating" id="rating-1" value="1"
-                                                type="radio">
-                                            <label aria-label="2 stars" class="rating__label" for="rating-2"><i
-                                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                            <input class="rating__input" name="rating" id="rating-2" value="2"
-                                                type="radio">
-                                            <label aria-label="3 stars" class="rating__label" for="rating-3"><i
-                                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                            <input class="rating__input" name="rating" id="rating-3" value="3"
-                                                type="radio" checked>
-                                            <label aria-label="4 stars" class="rating__label" for="rating-4"><i
-                                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                            <input class="rating__input" name="rating" id="rating-4" value="4"
-                                                type="radio">
-                                            <label aria-label="5 stars" class="rating__label" for="rating-5"><i
-                                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                            <input class="rating__input" name="rating" id="rating-5" value="5"
-                                                type="radio">
+                            <div class="Product_Col">
+                                <div class="ProductList">
+                                    <div class="ProductImg">
+                                        <img src="images/Product_Img.png" />
+                                        <span>45% Off</span>
+                                    </div>
+                                    <div class="ProductDetails">
+                                        <div class="ProDetails_1">
+                                            <h6>3D Character Model</h6>
+                                            <div class="rating-group">
+                                                <input class="rating__input rating__input--none" name="rating"
+                                                    id="rating-none" value="0" type="radio">
+                                                <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-1" value="1"
+                                                    type="radio">
+                                                <label aria-label="2 stars" class="rating__label" for="rating-2"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-2" value="2"
+                                                    type="radio">
+                                                <label aria-label="3 stars" class="rating__label" for="rating-3"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-3" value="3"
+                                                    type="radio" checked>
+                                                <label aria-label="4 stars" class="rating__label" for="rating-4"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-4" value="4"
+                                                    type="radio">
+                                                <label aria-label="5 stars" class="rating__label" for="rating-5"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-5" value="5"
+                                                    type="radio">
+                                            </div>
+                                        </div>
+                                        <div class="ProDetails_2">
+                                            <label>2,158.00</label>
+                                            <span>3,500.00</span>
+                                        </div>
+                                        <div class="ProDetails_3">
+                                            <span>
+                                                <a href="#" class="Star"><i><img src="images/Pro_Star.svg" /></i>
+                                                    619</a>
+                                                <a href="#" class="Star"><i><img src="images/Pro_Eye.svg" /></i> 42k (6
+                                                    Today)</a>
+                                                <a href="#" class="Star"><i><img src="images/Pro_Comment.svg" /></i>
+                                                    298</a>
+                                            </span>
+                                            <button type="button"><i><img src="images/Pro_Cart.svg" /></i></button>
+                                        </div>
+                                        <div class="Product_Card_Hover">
+                                            <a href="" class="WishList"><i><img src="images/Pro_Cart_Wishlist.svg" /></i></a>
+                                            <a href="" class="QuickView"><i><img src="images/Pro_Cart_View.svg" /></i> <span>Quick View</span></a>
                                         </div>
                                     </div>
-                                    <div class="ProDetails_2">
-                                        <label>2,158.00</label>
-                                        <span>3,500.00</span>
+                                </div>
+                            </div>
+                            <div class="Product_Col">
+                                <div class="ProductList">
+                                    <div class="ProductImg">
+                                        <img src="images/Product_Img.png" />
+                                        <span>45% Off</span>
                                     </div>
-                                    <div class="ProDetails_3">
-                                        <span>
-                                            <a href=""><img src="images/like.svg" /></a>
-                                            <a href=""><img src="images/vision.svg" /></a>
-                                        </span>
-                                        <button type="button">Add to Cart</button>
+                                    <div class="ProductDetails">
+                                        <div class="ProDetails_1">
+                                            <h6>3D Character Model</h6>
+                                            <div class="rating-group">
+                                                <input class="rating__input rating__input--none" name="rating"
+                                                    id="rating-none" value="0" type="radio">
+                                                <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-1" value="1"
+                                                    type="radio">
+                                                <label aria-label="2 stars" class="rating__label" for="rating-2"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-2" value="2"
+                                                    type="radio">
+                                                <label aria-label="3 stars" class="rating__label" for="rating-3"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-3" value="3"
+                                                    type="radio" checked>
+                                                <label aria-label="4 stars" class="rating__label" for="rating-4"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-4" value="4"
+                                                    type="radio">
+                                                <label aria-label="5 stars" class="rating__label" for="rating-5"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-5" value="5"
+                                                    type="radio">
+                                            </div>
+                                        </div>
+                                        <div class="ProDetails_2">
+                                            <label>2,158.00</label>
+                                            <span>3,500.00</span>
+                                        </div>
+                                        <div class="ProDetails_3">
+                                            <span>
+                                                <a href="#" class="Star"><i><img src="images/Pro_Star.svg" /></i>
+                                                    619</a>
+                                                <a href="#" class="Star"><i><img src="images/Pro_Eye.svg" /></i> 42k (6
+                                                    Today)</a>
+                                                <a href="#" class="Star"><i><img src="images/Pro_Comment.svg" /></i>
+                                                    298</a>
+                                            </span>
+                                            <button type="button"><i><img src="images/Pro_Cart.svg" /></i></button>
+                                        </div>
+                                        <div class="Product_Card_Hover">
+                                            <a href="" class="WishList"><i><img src="images/Pro_Cart_Wishlist.svg" /></i></a>
+                                            <a href="" class="QuickView"><i><img src="images/Pro_Cart_View.svg" /></i> <span>Quick View</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Product_Col">
+                                <div class="ProductList">
+                                    <div class="ProductImg">
+                                        <img src="images/Product_Img.png" />
+                                        <span>45% Off</span>
+                                    </div>
+                                    <div class="ProductDetails">
+                                        <div class="ProDetails_1">
+                                            <h6>3D Character Model</h6>
+                                            <div class="rating-group">
+                                                <input class="rating__input rating__input--none" name="rating"
+                                                    id="rating-none" value="0" type="radio">
+                                                <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-1" value="1"
+                                                    type="radio">
+                                                <label aria-label="2 stars" class="rating__label" for="rating-2"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-2" value="2"
+                                                    type="radio">
+                                                <label aria-label="3 stars" class="rating__label" for="rating-3"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-3" value="3"
+                                                    type="radio" checked>
+                                                <label aria-label="4 stars" class="rating__label" for="rating-4"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-4" value="4"
+                                                    type="radio">
+                                                <label aria-label="5 stars" class="rating__label" for="rating-5"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-5" value="5"
+                                                    type="radio">
+                                            </div>
+                                        </div>
+                                        <div class="ProDetails_2">
+                                            <label>2,158.00</label>
+                                            <span>3,500.00</span>
+                                        </div>
+                                        <div class="ProDetails_3">
+                                            <span>
+                                                <a href="#" class="Star"><i><img src="images/Pro_Star.svg" /></i>
+                                                    619</a>
+                                                <a href="#" class="Star"><i><img src="images/Pro_Eye.svg" /></i> 42k (6
+                                                    Today)</a>
+                                                <a href="#" class="Star"><i><img src="images/Pro_Comment.svg" /></i>
+                                                    298</a>
+                                            </span>
+                                            <button type="button"><i><img src="images/Pro_Cart.svg" /></i></button>
+                                        </div>
+                                        <div class="Product_Card_Hover">
+                                            <a href="" class="WishList"><i><img src="images/Pro_Cart_Wishlist.svg" /></i></a>
+                                            <a href="" class="QuickView"><i><img src="images/Pro_Cart_View.svg" /></i> <span>Quick View</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Product_Col">
+                                <div class="ProductList">
+                                    <div class="ProductImg">
+                                        <img src="images/Product_Img.png" />
+                                        <span>45% Off</span>
+                                    </div>
+                                    <div class="ProductDetails">
+                                        <div class="ProDetails_1">
+                                            <h6>3D Character Model</h6>
+                                            <div class="rating-group">
+                                                <input class="rating__input rating__input--none" name="rating"
+                                                    id="rating-none" value="0" type="radio">
+                                                <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-1" value="1"
+                                                    type="radio">
+                                                <label aria-label="2 stars" class="rating__label" for="rating-2"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-2" value="2"
+                                                    type="radio">
+                                                <label aria-label="3 stars" class="rating__label" for="rating-3"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-3" value="3"
+                                                    type="radio" checked>
+                                                <label aria-label="4 stars" class="rating__label" for="rating-4"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-4" value="4"
+                                                    type="radio">
+                                                <label aria-label="5 stars" class="rating__label" for="rating-5"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating" id="rating-5" value="5"
+                                                    type="radio">
+                                            </div>
+                                        </div>
+                                        <div class="ProDetails_2">
+                                            <label>2,158.00</label>
+                                            <span>3,500.00</span>
+                                        </div>
+                                        <div class="ProDetails_3">
+                                            <span>
+                                                <a href="#" class="Star"><i><img src="images/Pro_Star.svg" /></i>
+                                                    619</a>
+                                                <a href="#" class="Star"><i><img src="images/Pro_Eye.svg" /></i> 42k (6
+                                                    Today)</a>
+                                                <a href="#" class="Star"><i><img src="images/Pro_Comment.svg" /></i>
+                                                    298</a>
+                                            </span>
+                                            <button type="button"><i><img src="images/Pro_Cart.svg" /></i></button>
+                                        </div>
+                                        <div class="Product_Card_Hover">
+                                            <a href="" class="WishList"><i><img src="images/Pro_Cart_Wishlist.svg" /></i></a>
+                                            <a href="" class="QuickView"><i><img src="images/Pro_Cart_View.svg" /></i> <span>Quick View</span></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <nav class="Product_Pagination">
+                            <ul class="Page_Numbers">
+                                <li><a class="Previous" href=""><span>PREVIOUS</span></a></li>
+                                <li><a class="Page_Numbers Current" href="">1</a></li>
+                                <li><a class="Page_Numbers" href="">2</a></li>
+                                <li><a class="Page_Numbers" href="">3</a></li>
+                                <li><a class="Next" href=""><span>NEXT</span></a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -700,10 +956,6 @@
     <script type="text/javascript" src="js/all.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="js/slick.js"></script>
-
-    <script>
-
-    </script>
 
 </body>
 
