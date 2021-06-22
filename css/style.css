@@ -2522,5 +2522,91 @@ main {
   transform: translateY(50%) scaleX(1); }
 
 /* TOOLTIP */
+.ModalCommon .modal-content {
+  border-radius: 12px;
+  border: none;
+  background-image: url(../images/ModalBG.png);
+  background-size: cover; }
+  .ModalCommon .modal-content .modal-header {
+    padding: 9.5px 20px;
+    border-bottom: 1px solid #bdcfe2;
+    align-items: center; }
+    .ModalCommon .modal-content .modal-header h5 {
+      font-size: 18px;
+      color: #050748;
+      font-weight: 700;
+      font-family: "Quicksand", sans-serif; }
+    .ModalCommon .modal-content .modal-header .close {
+      width: 30px;
+      height: 30px;
+      background-color: #e6edf5;
+      border-radius: 50px;
+      padding: 0;
+      margin: 0;
+      opacity: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .ModalCommon .modal-content .modal-header .close:focus {
+        outline: none; }
+      .ModalCommon .modal-content .modal-header .close img {
+        width: 10px; }
+  .ModalCommon .modal-content .modal-body {
+    padding-bottom: 0;
+    padding: 20px; }
+    .ModalCommon .modal-content .modal-body p {
+      font-size: 15px;
+      color: #6a6a8e;
+      font-family: "Quicksand", sans-serif;
+      font-weight: 600; }
+    .ModalCommon .modal-content .modal-body .form-group__Price {
+      width: 50%; }
+    .ModalCommon .modal-content .modal-body label {
+      font-size: 15px;
+      color: #454545;
+      font-weight: 600;
+      font-family: "Quicksand", sans-serif; }
+    .ModalCommon .modal-content .modal-body .form-control {
+      border: 1px solid #d7d4e1;
+      height: 42px;
+      font-size: 15px;
+      color: #454545;
+      font-weight: 600;
+      font-family: "Quicksand", sans-serif; }
+    .ModalCommon .modal-content .modal-body .input-group .form-control {
+      border-left: none; }
+    .ModalCommon .modal-content .modal-body textarea.form-control {
+      height: 100px; }
+    .ModalCommon .modal-content .modal-body select.form-control option:first-child {
+      font-size: 14px;
+      font-weight: 500;
+      color: #b5b1b1;
+      font-family: "Quicksand", sans-serif; }
+    .ModalCommon .modal-content .modal-body .input-group-text {
+      background-color: #efecf8;
+      width: 40px;
+      align-items: center;
+      justify-content: center; }
+  .ModalCommon .modal-content .modal-footer {
+    border-top: none;
+    padding-top: 0;
+    padding: 20px; }
+    .ModalCommon .modal-content .modal-footer .btn {
+      background-color: transparent;
+      font-size: 15px;
+      font-weight: 600;
+      color: #303030;
+      padding: 6px 18px;
+      border: none;
+      font-family: "Quicksand", sans-serif;
+      outline: none; }
+      .ModalCommon .modal-content .modal-footer .btn:focus {
+        box-shadow: none; }
+    .ModalCommon .modal-content .modal-footer .btn-primary {
+      border: 1px solid #6dde7d;
+      background-color: #f5fff6; }
+    .ModalCommon .modal-content .modal-footer .btn-secondary {
+      border: 1px solid #fd8286;
+      background-color: #fff6f6; }
 
 /*# sourceMappingURL=style.css.map */
