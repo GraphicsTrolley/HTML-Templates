@@ -65,18 +65,47 @@
                     <li class="nav-item">
                         <a class="nav-link" href="javascript:void(0)">About us</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            3D Models
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="javascript:void(0)">Action</a>
-                            <a class="dropdown-item" href="javascript:void(0)">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
+
+                    <li class="nav-item dropdown mega-dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">3D Models</a>
+                        <div class="dropdown-menu mega-dropdown-menu">
+                            <ul class="dropdown-menu-flex">
+                                <li>
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-print"></i>3D Print Models</a></li>
+                                        <li><a href="#"><i class="fas fa-cubes"></i>Freelance 3D Projects</a></li>
+                                        <li><a href="#"><i class="fas fa-cube"></i>Free 3D Models</a></li>
+                                        <li><a href="#"><i class="fas fa-percent"></i>Discounts</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-plane"></i> Aircarft</a></li>
+                                        <li><a href="#"><i class="fas fa-cat"></i> Animals</a></li>
+                                        <li><a href="#"><i class="fas fa-hotel"></i> Architectural</a></li>
+                                        <li><a href="#"><i class="fas fa-house-damage"></i> Exterior</a></li>
+                                        <li><a href="#"><i class="fas fa-stopwatch"></i> Interior</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-car"></i> Car</a></li>
+                                        <li><a href="#"><i class="fas fa-female"></i> Character</a></li>
+                                        <li><a href="#"><i class="fas fa-couch"></i> Furniture</a></li>
+                                        <li><a href="#"><i class="fas fa-bath"></i> Household</a></li>
+                                        <li><a href="#"><i class="fas fa-industry"></i> Industrial</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-leaf"></i> Plant</a></li>
+                                        <li><a href="#"><i class="fas fa-bicycle"></i> Vehicle</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="javascript:void(0)">Explore</a>
                     </li>
@@ -100,6 +129,7 @@
                 </div>
             </div>
         </nav>
+
     </header>
 
     <main>
@@ -269,27 +299,27 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="js/all.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
 
     <script>
-        $(document).on('ready', function () {   
-                     
-            $.fn.jQuerySimpleCounter = function( options ) {
+        $(document).on('ready', function () {
+
+            $.fn.jQuerySimpleCounter = function (options) {
                 var settings = $.extend({
-                    start:  0,
-                    end:    100,
+                    start: 0,
+                    end: 100,
                     easing: 'swing',
                     duration: 400,
                     complete: ''
-                }, options );
+                }, options);
 
                 var thisElement = $(this);
 
-                $({count: settings.start}).animate({count: settings.end}, {
+                $({ count: settings.start }).animate({ count: settings.end }, {
                     duration: settings.duration,
                     easing: settings.easing,
-                    step: function() {
+                    step: function () {
                         var mathCount = Math.ceil(this.count);
                         thisElement.text(mathCount);
                     },
@@ -297,12 +327,29 @@
                 });
             };
 
-        $('#number1').jQuerySimpleCounter({end: 12000,duration: 3000});
-        $('#number2').jQuerySimpleCounter({end: 55,duration: 3000});
-        $('#number3').jQuerySimpleCounter({end: 359,duration: 2000});
-        $('#number4').jQuerySimpleCounter({end: 246,duration: 2500});
+            $('#number1').jQuerySimpleCounter({ end: 12000, duration: 3000 });
+            $('#number2').jQuerySimpleCounter({ end: 55, duration: 3000 });
+            $('#number3').jQuerySimpleCounter({ end: 359, duration: 2000 });
+            $('#number4').jQuerySimpleCounter({ end: 246, duration: 2500 });
 
         });
+
+
+        /* Latest compiled and minified JavaScript included as External Resource */
+        // $(document).ready(function () {
+        //     $(".dropdown").hover(
+        //         function () {
+        //             $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideDown("400");
+        //             $(this).toggleClass('open');
+        //         },
+        //         function () {
+        //             $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideUp("400");
+        //             $(this).toggleClass('open');
+        //         }
+        //     );
+        // });
+
+
     </script>
 </body>
 
