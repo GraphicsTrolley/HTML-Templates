@@ -288,7 +288,7 @@ to {bottom: 20px; opacity: 1}
     .slick-list{padding: 0 !important;} 
     .slick-prev, .slick-next {display: none !important;}
     .slick-slide{margin: 0 20px;
-        .ProductList{background-color: #f4fbff; border:1px solid #d3eefe; border-radius: 12px 12px 0 0;
+        .ProductList{background-color: #f4fbff; border:1px solid #d3eefe; border-radius: 12px 12px 0 0; display: inline-block; width: 100%;
             .ProductImg{ text-align: center; padding: 15px 0; position: relative;
                 img{ margin: auto;}
                 span{position: absolute; top: 10px; right: 10px; font-size: 12px; font-weight: 600; background-color: #70e4e8; color: #050748; padding: 4px 7px; border-radius: 4px; line-height: 16px;}
@@ -911,7 +911,7 @@ to {bottom: 20px; opacity: 1}
 
 
 .mega-dropdown {position: static !important;
-    .mega-dropdown-menu {padding:0; box-shadow: none; -webkit-box-shadow: none; right: 100px; left: auto; margin: 0 !important; top: 62px; border: none;
+    .mega-dropdown-menu {padding:0; box-shadow: none; -webkit-box-shadow: none; right: 100px; left: auto; margin: 0 !important; top: 55px; border: none;
         border-radius: 5px; box-shadow: 1px 3px 21px -8px rgba(0, 0, 0, 25%); -webkit-box-shadow: 1px 3px 21px -8px rgba(0, 0, 0, 25%); 
         .dropdown-menu-flex{display: flex; flex-direction: row; list-style: none; padding: 0;
             > li{ width: 210px; padding: 35px 0; position: relative;

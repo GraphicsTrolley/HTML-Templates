@@ -782,7 +782,9 @@ main {
     .Product_Items .slick-slide .ProductList {
       background-color: #f4fbff;
       border: 1px solid #d3eefe;
-      border-radius: 12px 12px 0 0; }
+      border-radius: 12px 12px 0 0;
+      display: inline-block;
+      width: 100%; }
       .Product_Items .slick-slide .ProductList .ProductImg {
         text-align: center;
         padding: 15px 0;
@@ -2648,7 +2650,7 @@ main {
     right: 100px;
     left: auto;
     margin: 0 !important;
-    top: 62px;
+    top: 55px;
     border: none;
     border-radius: 5px;
     box-shadow: 1px 3px 21px -8px rgba(0, 0, 0, 0.25);
