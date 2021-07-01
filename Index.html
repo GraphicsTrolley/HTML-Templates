@@ -30,28 +30,6 @@
 <body>
 
     <header class="MainHeader">
-        <nav class="navbar navbar-expand-lg TopBar fixed-top navWrapper">
-            <a class="navbar-brand" href="javascript:void(0)"><span>20% Discount</span> on Selected Items</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Topnavbar"
-                aria-controls="Topnavbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="Topnavbar">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="Account.html"><i><img src="images/User.svg"></i>Account</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)"><i><img src="images/Wishlist.svg"></i>Wishlist</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)"><i><img src="images/Cart.svg"></i>Cart</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
         <nav class="navbar navbar-expand-lg SecondaryNavbar fixed-top navWrapper">
             <a class="navbar-brand" href="Index.html"><img src="images/GT_WebPage.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -72,7 +50,7 @@
                         <div class="dropdown-menu mega-dropdown-menu">
                             <ul class="dropdown-menu-flex">
                                 <li>
-                                    <ul>                                        
+                                    <ul>
                                         <li><a href="#"><i class="fas fa-print"></i>3D Print Models</a></li>
                                         <li><a href="#"><i class="fas fa-cubes"></i>Freelance 3D Projects</a></li>
                                         <li><a href="#"><i class="fas fa-cube"></i>Free 3D Models</a></li>
@@ -80,25 +58,25 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <ul>                                        
+                                    <ul>
                                         <li><a href="#"><i class="fas fa-plane"></i> Aircarft</a></li>
                                         <li><a href="#"><i class="fas fa-cat"></i> Animals</a></li>
                                         <li><a href="#"><i class="fas fa-hotel"></i> Architectural</a></li>
-                                        <li><a href="#"><i class="fas fa-house-damage"></i> Exterior</a></li>                                    
+                                        <li><a href="#"><i class="fas fa-house-damage"></i> Exterior</a></li>
                                         <li><a href="#"><i class="fas fa-stopwatch"></i> Interior</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <ul>                                        
+                                    <ul>
                                         <li><a href="#"><i class="fas fa-car"></i> Car</a></li>
                                         <li><a href="#"><i class="fas fa-female"></i> Character</a></li>
                                         <li><a href="#"><i class="fas fa-couch"></i> Furniture</a></li>
-                                        <li><a href="#"><i class="fas fa-bath"></i> Household</a></li>                                    
+                                        <li><a href="#"><i class="fas fa-bath"></i> Household</a></li>
                                         <li><a href="#"><i class="fas fa-industry"></i> Industrial</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <ul>                                        
+                                    <ul>
                                         <li><a href="#"><i class="fas fa-leaf"></i> Plant</a></li>
                                         <li><a href="#"><i class="fas fa-bicycle"></i> Vehicle</a></li>
                                     </ul>
@@ -129,55 +107,111 @@
                 </div>
             </div>
         </nav>
+
+        <nav class="navbar navbar-expand-lg TopBar fixed-top navWrapper">
+            <a class="navbar-brand" href="javascript:void(0)"><span>20% Discount</span> on Selected Items</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Topnavbar"
+                aria-controls="Topnavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="Topnavbar">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Account.html"><i><img src="images/User.svg"></i>Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)"><i><img src="images/Wishlist.svg"></i>Wishlist</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)"><i><img src="images/Cart.svg"></i>Cart <span class="CartCount">2</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="images/ProfilePic.svg" />
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right Profile"
+                            aria-labelledby="navbarDropdownMenuLink">
+                            <div class="ProfileTitle">
+                                <i class="UserProfile">
+                                    <img src="images/ProfilePic.svg" />
+                                </i>
+                                <div class="Profile_Right">
+                                    <span class="Username">Nikesh Sam</span>
+                                    <span class="UserDesignation">Beginner</span>
+                                </div>
+                                <i class="UserLogout">
+                                    <img src="images/ProfileLogout.svg" />
+                                </i>
+                            </div>
+                            <hr>
+                            <ul class="List">
+                                <li><a href="#"><i class="fas fa-rocket"></i> Publishing</a></li>
+                                <li><a href="#"><i class="fas fa-cube"></i> My Models</a></li>
+                                <li><a href="#"><i class="fas fa-chart-line"></i> My Sales</a></li>
+                                <li><a href="#"><i class="fas fa-chart-bar"></i> Analytics</a></li>
+                                <li><a href="#"><i class="fas fa-dollar-sign"></i> Freelance 3D Projects</a></li>
+                                <hr>
+                                <li><a href="#"><i class="fas fa-history"></i> My Purchases</a></li>
+                                <li><a href="#"><i class="fas fa-heart"></i> 3D Model Wishlist</a></li>
+                                <li><a href="#"><i class="fas fa-user-friends"></i> Find Freelances</a></li>
+                                <hr>
+                                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
     </header>
 
     <main>
         <section>
             <div class="container-fluid" id="banner">
-                <div class="row">
-                    <div id="bannersection" class="slider-panel">
-                        <div class="bannercontent">
-
-                            <div class="slider-content">
-                                <div class="tg-container">
-                                    <div class="caption-title">
-                                        <h5>BUY OR SELL YOUR 3D MODELS</h5>
-                                        <p>Find everything from GRAPHICS TROLLEY assets to animated rigs & digital scans
-                                            for
-                                            <br />your 3D,
-                                            Virtual Reality and Augmented Reality projects.
-                                        </p>
-
-                                        <div class="SelectCategory">
-                                            <div class="Search">
-                                                <input class="form-control" type="text"
-                                                    placeholder="What are you looking for?" aria-label="Search">
-                                            </div>
-                                            <div class="CategoryAdd">
-                                                <select name="category" id="drpModelCategory">
-                                                    <option>Select Category</option>
-                                                </select>
+                <div class="container">
+                    <div class="row">
+                        <div id="bannersection" class="slider-panel">
+                            <div class="bannercontent">
+                                <div class="slider-content">
+                                    <div class="tg-container">
+                                        <div class="caption-title">
+                                            <h5>BUY OR SELL YOUR 3D MODELS</h5>
+                                            <p>Find everything from GRAPHICS TROLLEY assets to animated righs & digital
+                                                scans for your 3D, Virtual Reality and Augmented Reality projects.</p>
+                                            <div class="SelectCategory">
+                                                <div class="Search">
+                                                    <input class="form-control" type="text"
+                                                        placeholder="What are you looking for?" aria-label="Search">
+                                                </div>
+                                                <div class="CategoryAdd">
+                                                    <select name="category" id="drpModelCategory">
+                                                        <option>Select Category</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="UserModal"></div>
                                     </div>
                                 </div>
                             </div>
+                            <a href="JavaScript:Void(0);" class="animateArrow"><i class="fa fa-chevron-down"></i></a>
                         </div>
-                        <a href="JavaScript:Void(0);" class="animateArrow"><i class="fa fa-chevron-down"></i></a>
-                    </div>
 
-                    <!-- FOR OTHER PAGES -->
+                        <!-- FOR OTHER PAGES -->
 
-                    <div id="slider-panel-inner" class="fixed_margin slider-panel-inner">
-                        <div class="slider-wrapper theme-default">
-                            <div id="slider2" class="nivoSlider">
-                                <img src="img/bannerInner.jpg" title="#sli-cap-2" data-transition="fade"
-                                    class="img-responsive" />
+                        <div id="slider-panel-inner" class="fixed_margin slider-panel-inner">
+                            <div class="slider-wrapper theme-default">
+                                <div id="slider2" class="nivoSlider">
+                                    <img src="img/bannerInner.jpg" title="#sli-cap-2" data-transition="fade"
+                                        class="img-responsive" />
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+            </div>
+            <div class="container-fluid">
                 <div class="row">
                     <div class="multiple-items slider">
                         <div class="CustomSlide">

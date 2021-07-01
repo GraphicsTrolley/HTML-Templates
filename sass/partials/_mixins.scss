@@ -17,3 +17,7 @@
 @mixin ClearFlex_Column {
     display:flex; flex-direction: column;
 }
+
+@mixin ClearUlLi {
+    margin:0; padding:0;
+}
