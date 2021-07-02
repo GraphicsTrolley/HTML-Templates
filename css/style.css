@@ -184,6 +184,8 @@ body {
       padding: 0; }
       .TopBar .Profile .List li {
         list-style: none; }
+        .TopBar .Profile .List li:hover {
+          background-color: #f1f1f1; }
         .TopBar .Profile .List li a {
           font-size: 15px;
           font-family: "Quicksand", sans-serif;
@@ -203,7 +205,6 @@ body {
   .SecondaryNavbar .navbar-brand {
     padding: 0 0; }
   .SecondaryNavbar .Menu {
-    padding-right: 30px;
     align-items: center; }
     .SecondaryNavbar .Menu li.nav-item > a::before {
       content: '';
@@ -261,6 +262,33 @@ body {
         font-size: 14px;
         font-weight: 500;
         color: #5c5c5c; }
+  .SecondaryNavbar .GobalSearch {
+    width: 300px; }
+    .SecondaryNavbar .GobalSearch .input-group input {
+      border-radius: 50px 0 0 50px;
+      outline: none;
+      border-right: none !important;
+      border: none;
+      font-size: 14px;
+      font-weight: 500;
+      color: #252525;
+      height: 36px;
+      background-color: rgba(0, 88, 144, 0.15); }
+      .SecondaryNavbar .GobalSearch .input-group input:focus {
+        box-shadow: none; }
+    .SecondaryNavbar .GobalSearch .input-group .input-group-append {
+      margin-left: 0; }
+      .SecondaryNavbar .GobalSearch .input-group .input-group-append button {
+        border: none;
+        border-radius: 0 50px 50px 0;
+        border-left: none !important;
+        outline: none;
+        height: 36px;
+        background-color: rgba(0, 88, 144, 0.15); }
+        .SecondaryNavbar .GobalSearch .input-group .input-group-append button:focus {
+          box-shadow: none; }
+        .SecondaryNavbar .GobalSearch .input-group .input-group-append button svg {
+          color: #005890; }
   .SecondaryNavbar .ScrollCart {
     display: none; }
 
