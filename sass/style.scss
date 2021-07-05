@@ -359,9 +359,9 @@ to {bottom: 20px; opacity: 1}
     } 
 }
 
-.Footer_Row1{background: #01448e; padding: 90px 0 85px;
+.Footer_Row1{background: #3f36b9; background: linear-gradient(to right, #3f36b9 0, #20206b 100%); padding: 90px 0 85px;
     .FooterMenu{@include ClearFloat; position: relative;
-        h5{font-size: 20px; color: #9ee8ff; font-weight: 400; margin: 0; line-height: 20px; padding-bottom: 10px; position: relative; margin-bottom: 20px; text-transform: uppercase;
+        h5{font-size: 20px; color: #bfbfff; font-weight: 400; margin: 0; line-height: 20px; padding-bottom: 10px; position: relative; margin-bottom: 20px; text-transform: uppercase;
             &::after{content: ''; position: absolute; width: 35px; height: 2px; background-color: #ffbb2c; left: 0; bottom: 0;}
         }
         ul{margin: 0; padding: 0; list-style: none;

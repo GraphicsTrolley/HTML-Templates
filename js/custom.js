@@ -88,7 +88,7 @@ controller.addTween('#Join', TweenMax.from($('#Join .Buy_Sell'), 1.5, { delay: M
 
 /*JOIN*/
 
-/*FOOTER*/
+/*FOOTER*
 
 controller.addTween('.Footer_Row1', TweenMax.from($('.FooterMenu'), 1.5, { delay: Math.random() * .5, css: { bottom: -200, opacity: 0 }, ease: Back.easeOut }));
 $('.Footer_Row1 .FooterMenu li').each(function () {

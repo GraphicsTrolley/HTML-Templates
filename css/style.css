@@ -987,7 +987,8 @@ main {
       padding: 5px 0 30px; }
 
 .Footer_Row1 {
-  background: #01448e;
+  background: #3f36b9;
+  background: linear-gradient(to right, #3f36b9 0, #20206b 100%);
   padding: 90px 0 85px; }
   .Footer_Row1 .FooterMenu {
     float: left;
@@ -995,7 +996,7 @@ main {
     position: relative; }
     .Footer_Row1 .FooterMenu h5 {
       font-size: 20px;
-      color: #9ee8ff;
+      color: #bfbfff;
       font-weight: 400;
       margin: 0;
       line-height: 20px;
