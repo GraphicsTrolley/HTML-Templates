@@ -27,7 +27,97 @@
 
 <body>
 
+
     <header class="MainHeader">
+
+        <nav class="navbar navbar-expand-lg SecondaryNavbar fixed-top navWrapper">
+            <a class="navbar-brand" href="Index.html"><img src="images/GT_WebPage.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto Menu">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AboutUs.html">About us</a>
+                    </li>                    
+                    <li class="nav-item dropdown mega-dropdown">
+                        <a href="Product-Desc.html" class="dropdown-toggle">3D Models</a>
+                        <div class="dropdown-menu mega-dropdown-menu">
+                            <ul class="dropdown-menu-flex">
+                                <li>
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-print"></i>3D Print Models</a></li>
+                                        <li><a href="#"><i class="fas fa-cubes"></i>Freelance 3D Projects</a></li>
+                                        <li><a href="#"><i class="fas fa-cube"></i>Free 3D Models</a></li>
+                                        <li><a href="#"><i class="fas fa-percent"></i>Discounts</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-plane"></i> Aircarft</a></li>
+                                        <li><a href="#"><i class="fas fa-cat"></i> Animals</a></li>
+                                        <li><a href="#"><i class="fas fa-hotel"></i> Architectural</a></li>
+                                        <li><a href="#"><i class="fas fa-house-damage"></i> Exterior</a></li>
+                                        <li><a href="#"><i class="fas fa-stopwatch"></i> Interior</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-car"></i> Car</a></li>
+                                        <li><a href="#"><i class="fas fa-female"></i> Character</a></li>
+                                        <li><a href="#"><i class="fas fa-couch"></i> Furniture</a></li>
+                                        <li><a href="#"><i class="fas fa-bath"></i> Household</a></li>
+                                        <li><a href="#"><i class="fas fa-industry"></i> Industrial</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-leaf"></i> Plant</a></li>
+                                        <li><a href="#"><i class="fas fa-bicycle"></i> Vehicle</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact us</a>
+                    </li>
+                </ul>
+                <!-- <div class="Information">
+                    <div class="Info">
+                        <a class="nav-link" href="javascript:void(0)">Call us now <span>: (+91 95952225121)</span></a>
+                    </div>
+                    <div class="Info">
+                        <a class="nav-link" href="javascript:void(0)">Email <span>: arockiadass85@gmail.com</span></a>
+                    </div>
+                </div> -->
+                <div class="GobalSearch">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Search 1000 of 3D Models" id="example-search-input">
+                        <span class="input-group-append">
+                            <button class="btn ms-n5" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="ScrollCart">
+                    <a href="javascript:void(0)">
+                        <img src="images/shopping-cart.svg" />
+                        <span>0</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
         <nav class="navbar navbar-expand-lg TopBar fixed-top navWrapper">
             <a class="navbar-brand" href="javascript:void(0)"><span>20% Discount</span> on Selected Items</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Topnavbar"
@@ -44,89 +134,49 @@
                         <a class="nav-link" href="javascript:void(0)"><i><img src="images/Wishlist.svg"></i>Wishlist</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)"><i><img src="images/Cart.svg"></i>Cart</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <nav class="navbar navbar-expand-lg SecondaryNavbar fixed-top navWrapper">
-            <a class="navbar-brand" href="Index.html"><img src="images/GT_WebPage.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto Menu">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="javascript:void(0)">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="javascript:void(0)"><i><img src="images/Cart.svg"></i>Cart <span class="CartCount">2</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">About us</a>
+                        <a class="nav-link" href="Contact.html">Help</a>
                     </li>
-                    <li class="nav-item dropdown mega-dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">3D Models <span class="caret"></span></a>
-                        <div class="dropdown-menu mega-dropdown-menu">
-                            <ul class="dropdown-menu-flex">
-                                <li>
-                                    <ul>                                        
-                                        <li><a href="#"><i class="fas fa-print"></i>3D Print Models</a></li>
-                                        <li><a href="#"><i class="fas fa-cubes"></i>Freelance 3D Projects</a></li>
-                                        <li><a href="#"><i class="fas fa-cube"></i>Free 3D Models</a></li>
-                                        <li><a href="#"><i class="fas fa-percent"></i>Discounts</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul>                                        
-                                        <li><a href="#"><i class="fas fa-plane"></i> Aircarft</a></li>
-                                        <li><a href="#"><i class="fas fa-cat"></i> Animals</a></li>
-                                        <li><a href="#"><i class="fas fa-hotel"></i> Architectural</a></li>
-                                        <li><a href="#"><i class="fas fa-house-damage"></i> Exterior</a></li>                                    
-                                        <li><a href="#"><i class="fas fa-stopwatch"></i> Interior</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul>                                        
-                                        <li><a href="#"><i class="fas fa-car"></i> Car</a></li>
-                                        <li><a href="#"><i class="fas fa-female"></i> Character</a></li>
-                                        <li><a href="#"><i class="fas fa-couch"></i> Furniture</a></li>
-                                        <li><a href="#"><i class="fas fa-bath"></i> Household</a></li>                                    
-                                        <li><a href="#"><i class="fas fa-industry"></i> Industrial</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul>                                        
-                                        <li><a href="#"><i class="fas fa-leaf"></i> Plant</a></li>
-                                        <li><a href="#"><i class="fas fa-bicycle"></i> Vehicle</a></li>
-                                    </ul>
-                                </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="images/ProfilePic.svg" />
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right Profile"
+                            aria-labelledby="navbarDropdownMenuLink">
+                            <div class="ProfileTitle">
+                                <i class="UserProfile">
+                                    <img src="images/ProfilePic.svg" />
+                                </i>
+                                <div class="Profile_Right">
+                                    <span class="Username">Nikesh Sam</span>
+                                    <span class="UserDesignation">Beginner</span>
+                                </div>
+                                <i class="UserLogout">
+                                    <img src="images/ProfileLogout.svg" />
+                                </i>
+                            </div>
+                            <hr>
+                            <ul class="List">
+                                <li><a href="#"><i class="fas fa-rocket"></i> Publishing</a></li>
+                                <li><a href="#"><i class="fas fa-cube"></i> My Models</a></li>
+                                <li><a href="#"><i class="fas fa-chart-line"></i> My Sales</a></li>
+                                <li><a href="#"><i class="fas fa-chart-bar"></i> Analytics</a></li>
+                                <li><a href="#"><i class="fas fa-dollar-sign"></i> Freelance 3D Projects</a></li>
+                                <hr>
+                                <li><a href="#"><i class="fas fa-history"></i> My Purchases</a></li>
+                                <li><a href="#"><i class="fas fa-heart"></i> 3D Model Wishlist</a></li>
+                                <li><a href="#"><i class="fas fa-user-friends"></i> Find Freelances</a></li>
+                                <hr>
+                                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Explore</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Contact us</a>
-                    </li>
                 </ul>
-                <div class="Information">
-                    <div class="Info">
-                        <a class="nav-link" href="javascript:void(0)">Call us now <span>: (+91 95952225121)</span></a>
-                    </div>
-                    <div class="Info">
-                        <a class="nav-link" href="javascript:void(0)">Email <span>: arockiadass85@gmail.com</span></a>
-                    </div>
-                </div>
-                <div class="ScrollCart">
-                    <a href="javascript:void(0)">
-                        <img src="images/shopping-cart.svg" />
-                        <span>0</span>
-                    </a>
-                </div>
             </div>
         </nav>
+
     </header>
 
     <main>

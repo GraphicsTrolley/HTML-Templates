@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Graphic Trolley</title>
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/nivo-slider.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script type="text/javascript" src="js/greensock/TweenMax.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <header class="MainHeader">
+
+        <nav class="navbar navbar-expand-lg SecondaryNavbar fixed-top navWrapper">
+            <a class="navbar-brand" href="Index.html"><img src="images/GT_WebPage.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto Menu">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AboutUs.html">About us</a>
+                    </li>                    
+                    <li class="nav-item dropdown mega-dropdown">
+                        <a href="Product-Desc.html" class="dropdown-toggle">3D Models</a>
+                        <div class="dropdown-menu mega-dropdown-menu">
+                            <ul class="dropdown-menu-flex">
+                                <li>
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-print"></i>3D Print Models</a></li>
+                                        <li><a href="#"><i class="fas fa-cubes"></i>Freelance 3D Projects</a></li>
+                                        <li><a href="#"><i class="fas fa-cube"></i>Free 3D Models</a></li>
+                                        <li><a href="#"><i class="fas fa-percent"></i>Discounts</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-plane"></i> Aircarft</a></li>
+                                        <li><a href="#"><i class="fas fa-cat"></i> Animals</a></li>
+                                        <li><a href="#"><i class="fas fa-hotel"></i> Architectural</a></li>
+                                        <li><a href="#"><i class="fas fa-house-damage"></i> Exterior</a></li>
+                                        <li><a href="#"><i class="fas fa-stopwatch"></i> Interior</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-car"></i> Car</a></li>
+                                        <li><a href="#"><i class="fas fa-female"></i> Character</a></li>
+                                        <li><a href="#"><i class="fas fa-couch"></i> Furniture</a></li>
+                                        <li><a href="#"><i class="fas fa-bath"></i> Household</a></li>
+                                        <li><a href="#"><i class="fas fa-industry"></i> Industrial</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-leaf"></i> Plant</a></li>
+                                        <li><a href="#"><i class="fas fa-bicycle"></i> Vehicle</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact us</a>
+                    </li>
+                </ul>
+                <!-- <div class="Information">
+                    <div class="Info">
+                        <a class="nav-link" href="javascript:void(0)">Call us now <span>: (+91 95952225121)</span></a>
+                    </div>
+                    <div class="Info">
+                        <a class="nav-link" href="javascript:void(0)">Email <span>: arockiadass85@gmail.com</span></a>
+                    </div>
+                </div> -->
+                <div class="GobalSearch">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Search 1000 of 3D Models" id="example-search-input">
+                        <span class="input-group-append">
+                            <button class="btn ms-n5" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="ScrollCart">
+                    <a href="javascript:void(0)">
+                        <img src="images/shopping-cart.svg" />
+                        <span>0</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg TopBar fixed-top navWrapper">
+            <a class="navbar-brand" href="javascript:void(0)"><span>20% Discount</span> on Selected Items</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Topnavbar"
+                aria-controls="Topnavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="Topnavbar">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Account.html"><i><img src="images/User.svg"></i>Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)"><i><img src="images/Wishlist.svg"></i>Wishlist</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)"><i><img src="images/Cart.svg"></i>Cart <span class="CartCount">2</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Help</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="images/ProfilePic.svg" />
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right Profile"
+                            aria-labelledby="navbarDropdownMenuLink">
+                            <div class="ProfileTitle">
+                                <i class="UserProfile">
+                                    <img src="images/ProfilePic.svg" />
+                                </i>
+                                <div class="Profile_Right">
+                                    <span class="Username">Nikesh Sam</span>
+                                    <span class="UserDesignation">Beginner</span>
+                                </div>
+                                <i class="UserLogout">
+                                    <img src="images/ProfileLogout.svg" />
+                                </i>
+                            </div>
+                            <hr>
+                            <ul class="List">
+                                <li><a href="#"><i class="fas fa-rocket"></i> Publishing</a></li>
+                                <li><a href="#"><i class="fas fa-cube"></i> My Models</a></li>
+                                <li><a href="#"><i class="fas fa-chart-line"></i> My Sales</a></li>
+                                <li><a href="#"><i class="fas fa-chart-bar"></i> Analytics</a></li>
+                                <li><a href="#"><i class="fas fa-dollar-sign"></i> Freelance 3D Projects</a></li>
+                                <hr>
+                                <li><a href="#"><i class="fas fa-history"></i> My Purchases</a></li>
+                                <li><a href="#"><i class="fas fa-heart"></i> 3D Model Wishlist</a></li>
+                                <li><a href="#"><i class="fas fa-user-friends"></i> Find Freelances</a></li>
+                                <hr>
+                                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <section style="padding:30px 0 80px" class="Product_Cart_Payment">
+            <div class="container">
+                <div class="row">
+                    <div class="CartTab">
+                        <ul class="nav nav-pills mb-4" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                    role="tab" aria-controls="pills-home"
+                                    aria-selected="true">1.Cart<span>(3)</span></a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                                    role="tab" aria-controls="pills-profile" aria-selected="false">2.Payment</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade " id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+                                <div class="Product_Cart__Left">
+                                    <div class="share_cart_row mb-2">
+                                        <a href="#">Continue Shopping</a>
+                                    </div>
+                                    <div class="GT_cards_list__container">
+                                        <article class="GT__card">
+                                            <div class="GT_item__card">
+                                                <a class="GT_item_card__preview" target="_blank" href="">
+                                                    <img src="images/ProCart_Img.png" />
+                                                </a>
+
+                                                <div class="GT_item_card__info">
+                                                    <div class="GT_item_card__info_block">
+                                                        <a href="" class="GT_item_card__title GT_link">Airbus A350 900
+                                                            with interior</a>
+                                                        <div class="GT_text_tiny">#234663 - 3D model</div>
+                                                    </div>
+                                                    <div class="GT_item_card__info_block">
+                                                        <span class="GT_item_card__info_price">$239.00</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="GT_item_card__actions">
+                                                    <div class="GT_item_card__actions_remove"
+                                                        data-tooltip="Remove from cart">
+                                                        <a href="javascript:void(0)"><i><img
+                                                                    src="images/ProCart_Remove.svg" /></i></a>
+                                                    </div>
+                                                    <div class="GT_item_card__actions_wishlist"
+                                                        data-tooltip="Save for later">
+                                                        <a href="javascript:void(0)"><i><img
+                                                                    src="images/ProCart_Wishlist.svg" /></i></a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </article>
+                                        <article class="GT__card">
+                                            <div class="GT_item__card">
+                                                <a class="GT_item_card__preview" target="_blank" href="">
+                                                    <img src="images/ProCart_Img.png" />
+                                                </a>
+
+                                                <div class="GT_item_card__info">
+                                                    <div class="GT_item_card__info_block">
+                                                        <a href="" class="GT_item_card__title GT_link">Cat Black Fur
+                                                            Shorthair XGen Core</a>
+                                                        <div class="GT_text_tiny">#3127960 - 3D model</div>
+                                                    </div>
+                                                    <div class="GT_item_card__info_block">
+                                                        <span class="GT_item_card__info_price">$399.00</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="GT_item_card__actions">
+                                                    <div class="GT_item_card__actions_remove"
+                                                        data-tooltip="Remove from cart">
+                                                        <a href="javascript:void(0)"><i><img
+                                                                    src="images/ProCart_Remove.svg" /></i></a>
+                                                    </div>
+                                                    <div class="GT_item_card__actions_wishlist"
+                                                        data-tooltip="Save for later">
+                                                        <a href="javascript:void(0)"><i><img
+                                                                    src="images/ProCart_Wishlist.svg" /></i></a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </article>
+                                        <article class="GT__card">
+                                            <div class="GT_item__card">
+                                                <a class="GT_item_card__preview" target="_blank" href="">
+                                                    <img src="images/ProCart_Img.png" />
+                                                </a>
+
+                                                <div class="GT_item_card__info">
+                                                    <div class="GT_item_card__info_block">
+                                                        <a href="" class="GT_item_card__title GT_link">Vickers Medium Mk
+                                                            II</a>
+                                                        <div class="GT_text_tiny">#3135414 - 3D model</div>
+                                                    </div>
+                                                    <div class="GT_item_card__info_block">
+                                                        <span class="GT_item_card__info_price">$99.00</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="GT_item_card__actions">
+                                                    <div class="GT_item_card__actions_remove"
+                                                        data-tooltip="Remove from cart">
+                                                        <a href="javascript:void(0)"><i><img
+                                                                    src="images/ProCart_Remove.svg" /></i></a>
+                                                    </div>
+                                                    <div class="GT_item_card__actions_wishlist"
+                                                        data-tooltip="Save for later">
+                                                        <a href="javascript:void(0)"><i><img
+                                                                    src="images/ProCart_Wishlist.svg" /></i></a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="Product_Cart__Right">
+                                    <div class="GT__card">
+                                        <div class="GT_card__header">
+                                            <h6>Order Summary</h6>
+                                        </div>
+                                        <div class="GT_card__content">
+                                            <div class="GT_payment_summary__item is_highlighted">
+                                                <div class="GT_summary_item__title">Subtotal:</div>
+                                                <div class="GT_summary_item__value">$757.00</div>
+                                            </div>
+                                            <div class="GT_payment_summary__item">
+                                                <div class="GT_summary_item__title">Loyalty Credits Discount:</div>
+                                                <div class="GT_summary_item__value">-$20.00</div>
+                                            </div>
+                                            <div class="GT_payment_summary__item">
+                                                <div class="GT_summary_item__title">Value Added Tax</div>
+                                                <div class="GT_summary_item__value">+$132.66</div>
+                                            </div>
+                                            <div class="GT_payment_summary__item is_separated is_highlighted mb-0">
+                                                <div class="GT_summary_item__title">Final Price:</div>
+                                                <div class="GT_summary_item__value">$869.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="GT_payment__to_checkout mt-3">
+                                        <a class="GT_button" href="javascript:;"><span>Continue to Checkout</span></a>
+                                    </div>
+                                    <div class="GT_alert">
+                                        <div class="GT_alert__icon">
+                                            <img src="images/ProCart_Info.svg" />
+                                        </div>
+                                        <div class="GT_text__tiny">Please note! 3D models are digital files. We do not
+                                            ship or sell physical items</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show active" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <div class="Product_Payment__Left">
+                                    <div class="GT_cards_list__container">
+                                        <article>
+                                            <div class="GT__card">
+                                                <div class="GT_card__header">
+                                                    <h6>Order Summary</h6>
+                                                </div>
+                                                <div class="GT_card__content">
+                                                    <div class="GT_payment_summary__item is_highlighted">
+                                                        <div class="GT_summary_item__title">Subtotal:</div>
+                                                        <div class="GT_summary_item__value">$757.00</div>
+                                                    </div>
+                                                    <div class="GT_payment_summary__item">
+                                                        <div class="GT_summary_item__title">Loyalty Credits Discount:
+                                                        </div>
+                                                        <div class="GT_summary_item__value">-$20.00</div>
+                                                    </div>
+                                                    <div class="GT_payment_summary__item">
+                                                        <div class="GT_summary_item__title">Value Added Tax</div>
+                                                        <div class="GT_summary_item__value">+$132.66</div>
+                                                    </div>
+                                                    <div
+                                                        class="GT_payment_summary__item is_separated is_highlighted mb-0">
+                                                        <div class="GT_summary_item__title">Final Price:</div>
+                                                        <div class="GT_summary_item__value">$869.00</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <div class="GT__card">
+                                                <div class="GT__collapsible_card__trigger">
+                                                    <div class="GT_card__header">
+                                                        <input type="checkbox" id="Purchase" />
+                                                        <h6>Purchase as a company</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="GT__collapsible_card__content" id="PurchaseUpdate"
+                                                    style="display:none;">
+                                                    <form>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="Company Name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="Company Code">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="VAT Number">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <select class="form-control"
+                                                                        placeholder="VAT Number"
+                                                                        id="exampleFormControlSelect1">
+                                                                        <option>1</option>
+                                                                        <option>2</option>
+                                                                        <option>3</option>
+                                                                        <option>4</option>
+                                                                        <option>5</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="Zip Code">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="City">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <div class="form-group">
+                                                                    <textarea class="form-control"
+                                                                        id="exampleFormControlTextarea1"
+                                                                        placeholder="Street address"
+                                                                        rows="3"></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <button type="button" class="GT_button">Apply</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <div class="GT__card">
+                                                <div class="GT__collapsible_card__trigger">
+                                                    <div class="GT_card__header">
+                                                        <input type="checkbox" id="Discount" />
+                                                        <h6>Discount Code</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="GT__collapsible_card__content" id="DiscountUpdate"
+                                                    style="display:none;">
+                                                    <form>
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="form-group">
+                                                                    <textarea class="form-control"
+                                                                        id="exampleFormControlTextarea1"
+                                                                        placeholder="Street address"
+                                                                        rows="3"></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <button type="button" class="GT_button">Apply</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="Product_Payment__Right">
+                                    <div class="GT__Payment_Tab">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#CC"
+                                                    role="tab" aria-controls="home" aria-selected="true">
+                                                    <i><img src="images/Payment_Credit_Card.svg" /></i>
+                                                    <span>Credit Card</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#PP"
+                                                    role="tab" aria-controls="profile" aria-selected="false">
+                                                    <i><img src="images/Payment_Paypal.svg" /></i>
+                                                    <span>Pay Pal</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#PC"
+                                                    role="tab" aria-controls="contact" aria-selected="false">
+                                                    <i><img src="images/Payment_Pay_Cash.svg" /></i>
+                                                    <span>Pay Cash</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#UPI"
+                                                    role="tab" aria-controls="contact" aria-selected="false">
+                                                    <i><img src="images/Payment_UPI.svg" /></i>
+                                                    <span>UPI</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade show active" id="CC" role="tabpanel"
+                                                aria-labelledby="home-tab">
+                                                <div class="GT__card">
+                                                    <div class="GT_payment__holder">
+                                                        <form>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label for="formGroupExampleInput">Card Number:</label>
+                                                                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="1111 2222 3333 4444">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label for="formGroupExampleInput2">Expriy Date:</label>
+                                                                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="MM/YY">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label for="formGroupExampleInput2">CVC / CVV:</label>
+                                                                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="1234">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="PP" role="tabpanel"
+                                                aria-labelledby="profile-tab">
+                                                <div class="GT__card">
+                                                    <div class="GT_payment__holder">
+                                                        <form>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label for="formGroupExampleInput">Card Number:</label>
+                                                                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="1111 2222 3333 4444">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label for="formGroupExampleInput2">Expriy Date:</label>
+                                                                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="MM/YY">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label for="formGroupExampleInput2">CVC / CVV:</label>
+                                                                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="1234">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="PC" role="tabpanel"
+                                                aria-labelledby="contact-tab">
+                                                <div class="GT__card">
+                                                    <div class="GT_payment__holder">
+                                                        <form>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label for="formGroupExampleInput">Card Number:</label>
+                                                                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="1111 2222 3333 4444">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label for="formGroupExampleInput2">Expriy Date:</label>
+                                                                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="MM/YY">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label for="formGroupExampleInput2">CVC / CVV:</label>
+                                                                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="1234">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="UPI" role="tabpanel"
+                                                aria-labelledby="contact-tab">
+                                                <div class="GT__card">
+                                                    <div class="GT_payment__holder">
+                                                        <form>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label for="formGroupExampleInput">Card Number:</label>
+                                                                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="1111 2222 3333 4444">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label for="formGroupExampleInput2">Expriy Date:</label>
+                                                                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="MM/YY">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label for="formGroupExampleInput2">CVC / CVV:</label>
+                                                                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="1234">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="GT_payment__to_checkout">
+                                        <a class="GT_button" href="javascript:;"><span>Continue to Checkout</span></a>
+                                    </div>
+                                    <div class="GT_alert">
+                                        <div class="GT_alert__icon">
+                                            <img src="images/ProCart_Info.svg" />
+                                        </div>
+                                        <div class="GT_text__tiny">Please note! 3D models are digital files. We do not
+                                            ship or sell physical items</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="clear"></div>
+    </main>
+
+    <footer>
+        <div class="Footer_Row1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="FooterMenu">
+                            <h5>Store</h5>
+                            <ul>
+                                <li><a href="#">Buy 3D Models</a></li>
+                                <li><a href="#">Best Selling</a></li>
+                                <li><a href="#">Categories</a></li>
+                                <li><a href="#">Join With Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="FooterMenu">
+                            <h5>Quick Links</h5>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Help Desk</a></li>
+                                <li><a href="#">FAQ’s</a></li>
+                                <li><a href="#">Terms of Use</a></li>
+                                <li><a href="#">Security & Privacy Policy</a></li>
+                                <li><a href="#">Refund Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="FooterMenu">
+                            <h5>Recent Work</h5>
+                            <ul class="RecentWork">
+                                <li><a href="#"><img src="images/Img_1.png" /></a></li>
+                                <li><a href="#"><img src="images/Img_2.png" /></a></li>
+                                <li><a href="#"><img src="images/Img_3.png" /></a></li>
+                            </ul>
+                            <ul class="RecentWork">
+                                <li><a href="#"><img src="images/Img_4.png" /></a></li>
+                                <li><a href="#"><img src="images/Img_5.png" /></a></li>
+                                <li><a href="#"><img src="images/Img_6.png" /></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="FooterMenu">
+                            <h5>Contact Us</h5>
+                            <ul class="Contact">
+                                <li><a href="#">+91 9916553151</a></li>
+                                <li><a href="#">arockiadass85@gmail.com</a></li>
+                                <li><a href="#">79, Nyniappa Maistttry St, Park <br /> Town,Chennai, Tamil Nadu, <br />
+                                        INDIA - 600003</a></li>
+                            </ul>
+                        </div>
+                        <div class="FooterMenu" style="margin-top: 25px;">
+                            <h5>Follow Us</h5>
+                            <ul class="SocialMedia">
+                                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Footer_Row2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="#">&#169; 2021 Graphics Trolley. All Rights Reserved.</a>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <a href="#" class="cards"><img src="images/Cards.png" /></a>
+                        <span>We Accept</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery.nivo.slider.js"></script> -->
+    <script type="text/javascript" src="js/jquery.superscrollorama.js"></script>
+    <script type="text/javascript" src="js/all.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#Purchase').change(function () {
+                if (this.checked)
+                    $('#PurchaseUpdate').fadeIn('fast');
+                else
+                    $('#PurchaseUpdate').fadeOut('fast');
+
+            });
+            $('#Discount').change(function () {
+                if (this.checked)
+                    $('#DiscountUpdate').fadeIn('fast');
+                else
+                    $('#DiscountUpdate').fadeOut('fast');
+
+            });
+        });
+    </script>
+
+</body>
+
+</html>

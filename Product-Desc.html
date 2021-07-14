@@ -29,8 +29,96 @@
 </head>
 
 <body>
-
     <header class="MainHeader">
+
+        <nav class="navbar navbar-expand-lg SecondaryNavbar fixed-top navWrapper">
+            <a class="navbar-brand" href="Index.html"><img src="images/GT_WebPage.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto Menu">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AboutUs.html">About us</a>
+                    </li>                    
+                    <li class="nav-item dropdown mega-dropdown">
+                        <a href="Product-Desc.html" class="dropdown-toggle">3D Models</a>
+                        <div class="dropdown-menu mega-dropdown-menu">
+                            <ul class="dropdown-menu-flex">
+                                <li>
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-print"></i>3D Print Models</a></li>
+                                        <li><a href="#"><i class="fas fa-cubes"></i>Freelance 3D Projects</a></li>
+                                        <li><a href="#"><i class="fas fa-cube"></i>Free 3D Models</a></li>
+                                        <li><a href="#"><i class="fas fa-percent"></i>Discounts</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-plane"></i> Aircarft</a></li>
+                                        <li><a href="#"><i class="fas fa-cat"></i> Animals</a></li>
+                                        <li><a href="#"><i class="fas fa-hotel"></i> Architectural</a></li>
+                                        <li><a href="#"><i class="fas fa-house-damage"></i> Exterior</a></li>
+                                        <li><a href="#"><i class="fas fa-stopwatch"></i> Interior</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-car"></i> Car</a></li>
+                                        <li><a href="#"><i class="fas fa-female"></i> Character</a></li>
+                                        <li><a href="#"><i class="fas fa-couch"></i> Furniture</a></li>
+                                        <li><a href="#"><i class="fas fa-bath"></i> Household</a></li>
+                                        <li><a href="#"><i class="fas fa-industry"></i> Industrial</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-leaf"></i> Plant</a></li>
+                                        <li><a href="#"><i class="fas fa-bicycle"></i> Vehicle</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact us</a>
+                    </li>
+                </ul>
+                <!-- <div class="Information">
+                    <div class="Info">
+                        <a class="nav-link" href="javascript:void(0)">Call us now <span>: (+91 95952225121)</span></a>
+                    </div>
+                    <div class="Info">
+                        <a class="nav-link" href="javascript:void(0)">Email <span>: arockiadass85@gmail.com</span></a>
+                    </div>
+                </div> -->
+                <div class="GobalSearch">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Search 1000 of 3D Models" id="example-search-input">
+                        <span class="input-group-append">
+                            <button class="btn ms-n5" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="ScrollCart">
+                    <a href="javascript:void(0)">
+                        <img src="images/shopping-cart.svg" />
+                        <span>0</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
         <nav class="navbar navbar-expand-lg TopBar fixed-top navWrapper">
             <a class="navbar-brand" href="javascript:void(0)"><span>20% Discount</span> on Selected Items</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Topnavbar"
@@ -47,89 +135,49 @@
                         <a class="nav-link" href="javascript:void(0)"><i><img src="images/Wishlist.svg"></i>Wishlist</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)"><i><img src="images/Cart.svg"></i>Cart</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <nav class="navbar navbar-expand-lg SecondaryNavbar fixed-top navWrapper">
-            <a class="navbar-brand" href="Index.html"><img src="images/GT_WebPage.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto Menu">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="javascript:void(0)">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="javascript:void(0)"><i><img src="images/Cart.svg"></i>Cart <span class="CartCount">2</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">About us</a>
+                        <a class="nav-link" href="Contact.html">Help</a>
                     </li>
-                    <li class="nav-item dropdown mega-dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">3D Models <span class="caret"></span></a>
-                        <div class="dropdown-menu mega-dropdown-menu">
-                            <ul class="dropdown-menu-flex">
-                                <li>
-                                    <ul>                                        
-                                        <li><a href="#"><i class="fas fa-print"></i>3D Print Models</a></li>
-                                        <li><a href="#"><i class="fas fa-cubes"></i>Freelance 3D Projects</a></li>
-                                        <li><a href="#"><i class="fas fa-cube"></i>Free 3D Models</a></li>
-                                        <li><a href="#"><i class="fas fa-percent"></i>Discounts</a></li>    
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul>                                        
-                                        <li><a href="#"><i class="fas fa-plane"></i> Aircarft</a></li>
-                                        <li><a href="#"><i class="fas fa-cat"></i> Animals</a></li>
-                                        <li><a href="#"><i class="fas fa-hotel"></i> Architectural</a></li>
-                                        <li><a href="#"><i class="fas fa-house-damage"></i> Exterior</a></li>                                    
-                                        <li><a href="#"><i class="fas fa-stopwatch"></i> Interior</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul>                                        
-                                        <li><a href="#"><i class="fas fa-car"></i> Car</a></li>
-                                        <li><a href="#"><i class="fas fa-female"></i> Character</a></li>
-                                        <li><a href="#"><i class="fas fa-couch"></i> Furniture</a></li>
-                                        <li><a href="#"><i class="fas fa-bath"></i> Household</a></li>                                    
-                                        <li><a href="#"><i class="fas fa-industry"></i> Industrial</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul>                                        
-                                        <li><a href="#"><i class="fas fa-leaf"></i> Plant</a></li>
-                                        <li><a href="#"><i class="fas fa-bicycle"></i> Vehicle</a></li>
-                                    </ul>
-                                </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="images/ProfilePic.svg" />
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right Profile"
+                            aria-labelledby="navbarDropdownMenuLink">
+                            <div class="ProfileTitle">
+                                <i class="UserProfile">
+                                    <img src="images/ProfilePic.svg" />
+                                </i>
+                                <div class="Profile_Right">
+                                    <span class="Username">Nikesh Sam</span>
+                                    <span class="UserDesignation">Beginner</span>
+                                </div>
+                                <i class="UserLogout">
+                                    <img src="images/ProfileLogout.svg" />
+                                </i>
+                            </div>
+                            <hr>
+                            <ul class="List">
+                                <li><a href="#"><i class="fas fa-rocket"></i> Publishing</a></li>
+                                <li><a href="#"><i class="fas fa-cube"></i> My Models</a></li>
+                                <li><a href="#"><i class="fas fa-chart-line"></i> My Sales</a></li>
+                                <li><a href="#"><i class="fas fa-chart-bar"></i> Analytics</a></li>
+                                <li><a href="#"><i class="fas fa-dollar-sign"></i> Freelance 3D Projects</a></li>
+                                <hr>
+                                <li><a href="#"><i class="fas fa-history"></i> My Purchases</a></li>
+                                <li><a href="#"><i class="fas fa-heart"></i> 3D Model Wishlist</a></li>
+                                <li><a href="#"><i class="fas fa-user-friends"></i> Find Freelances</a></li>
+                                <hr>
+                                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Explore</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Contact us</a>
-                    </li>
                 </ul>
-                <div class="Information">
-                    <div class="Info">
-                        <a class="nav-link" href="javascript:void(0)">Call us now <span>: (+91 95952225121)</span></a>
-                    </div>
-                    <div class="Info">
-                        <a class="nav-link" href="javascript:void(0)">Email <span>: arockiadass85@gmail.com</span></a>
-                    </div>
-                </div>
-                <div class="ScrollCart">
-                    <a href="javascript:void(0)">
-                        <img src="images/shopping-cart.svg" />
-                        <span>0</span>
-                    </a>
-                </div>
             </div>
         </nav>
+
     </header>
 
     <main>
@@ -149,125 +197,121 @@
             <div class="container">
                 <div class="row">
                     <div class="ProductDescLeft">
-                        <div class="container">
-                            <div class="row">
-                                <div class="product-images demo-gallery">
-                                    <div class="main-img-slider">
-                                        <a data-fancybox="gallery" href=""><img src="images/ProductMain.jpg"
-                                                class="img-fluid"></a>
-                                        <a data-fancybox="gallery" href=""><img src="images/ProductMain_2.jpg"
-                                                class="img-fluid"></a>
-                                        <a data-fancybox="gallery" href=""><img src="images/ProductMain_3.jpg"
-                                                class="img-fluid"></a>
-                                        <a data-fancybox="gallery" href=""><img src="images/ProductMain_4.jpg"
-                                                class="img-fluid"></a>
-                                        <a data-fancybox="gallery" href=""><img src="images/ProductMain_5.jpg"
-                                                class="img-fluid"></a>
-                                        <a data-fancybox="gallery" href=""><img src="images/ProductMain_3.jpg"
-                                                class="img-fluid"></a>
-                                        <a data-fancybox="gallery" href=""><img src="images/ProductMain_4.jpg"
-                                                class="img-fluid"></a>
-                                    </div>
-                                    <ul class="thumb-nav">
-                                        <li><img src="images/ProductMain.jpg"></li>
-                                        <li><img src="images/ProductMain_2.jpg"></li>
-                                        <li><img src="images/ProductMain_3.jpg"></li>
-                                        <li><img src="images/ProductMain_4.jpg"></li>
-                                        <li><img src="images/ProductMain_5.jpg"></li>
-                                        <li><img src="images/ProductMain_2.jpg"></li>
-                                        <li><img src="images/ProductMain_4.jpg"></li>
-                                    </ul>
-                                </div>
-                                <div class="product-stats-info">
-                                    <div class="stats-info__buttons">
-                                        <button type="button" class="btn btn-outline-default">
-                                            <img src="images/ProDes_Plus.svg" />
-                                            Add to wish list</button>
-                                        <button type="button" class="btn btn-outline-default">
-                                            <img src="images/ProDes_Remove.svg" />
-                                            Remove from wish list</button>
-                                    </div>
-                                    <div class="stats-info__views-buttons">
-                                        <div data-tooltip="Views" class="btn btn-outline-default">
-                                            <img src="images/ProDes_View.svg" />
-                                            <span>2.52k</span>
-                                        </div>
-                                    </div>
-                                    <div class="stats-info__like-buttons">
-                                        <div data-tooltip="Likes" class="btn btn-outline-default">
-                                            <img src="images/ProDes_Wishlist.svg" />
-                                            <span>2.52k</span>
-                                        </div>
-                                    </div>
-                                    <div class="stats-info__share-buttons">
-                                        <div data-tooltip="Share" class="btn btn-outline-default">
-                                            <img src="images/ProDes_Share.svg" />
-                                        </div>
-                                    </div>
-                                    <div class="stats-info__report-buttons">
-                                        <div data-tooltip="Report" class="btn btn-outline-default">
-                                            <img src="images/ProDes_More.svg" />
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <div class="CommonTab">
-                                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                                        <li class="nav-item" role="presentation">
-                                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill"
-                                                href="#pills-home" role="tab" aria-controls="pills-home"
-                                                aria-selected="true">Description</a>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill"
-                                                href="#pills-profile" role="tab" aria-controls="pills-profile"
-                                                aria-selected="false">Comments <span>(527)</span></a>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill"
-                                                href="#pills-contact" role="tab" aria-controls="pills-contact"
-                                                aria-selected="false">Reviews <span>(1)</span></a>
-                                        </li>
-                                    </ul>
-                                    <div class="tab-content" id="pills-tabContent">
-                                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                                            aria-labelledby="pills-home-tab">
-                                            <div class="ProductDescContent pb-0">
-                                                <p>High Detailed Photorealistic Black Panther, completely UVmapped and
-                                                    smoothable, made with 3Ds Max 2014 + Hairfarm+MOrphing The scene is
-                                                    just a walking animation.
-                                                <p>Please Use the Layers.</p>
-                                                <p>The scene is set by default to one light and GI with VRay everything
-                                                    together. Warning: Scene is created in 3dsmax 2014, Vray 2.4 +
-                                                    Hairfarm2</p>
-                                                <p>Rigging and sample animation walk is designed to help CAT. Head
-                                                    Diffuse texture: 3072x3072 Head Specular texture: 3072x3072 Head
-                                                    Bump texture: 3072x3072 Body Diffuse texture: 2048x2048 Eye color
-                                                    Diffuse: 400x400 Morph target: open mouth closed eyes attack</p>
-                                            </div>
-                                            <div class="RelatedProduct">
-                                                <a href="">Panther</a>
-                                                <a href="">Panther</a>
-                                                <a href="">Panther</a>
-                                                <a href="">Panther</a>
-                                                <a href="">Panther</a>
-                                                <a href="">Panther</a>
-                                                <a href="">Panther</a>
-                                                <a href="">Panther</a>
-                                                <a href="">Panther</a>
-                                                <a href="">Panther</a>
-                                                <a href="">Panther</a>
-                                                <a href="">Panther</a>
-                                                <a href="">Panther</a>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                                            aria-labelledby="pills-profile-tab">...</div>
-                                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                                            aria-labelledby="pills-contact-tab">...</div>
+                        <div class="product-images demo-gallery">
+                            <div class="main-img-slider">
+                                <a data-fancybox="gallery" href=""><img src="images/ProductMain.jpg"
+                                        class="img-fluid"></a>
+                                <a data-fancybox="gallery" href=""><img src="images/ProductMain_2.jpg"
+                                        class="img-fluid"></a>
+                                <a data-fancybox="gallery" href=""><img src="images/ProductMain_3.jpg"
+                                        class="img-fluid"></a>
+                                <a data-fancybox="gallery" href=""><img src="images/ProductMain_4.jpg"
+                                        class="img-fluid"></a>
+                                <a data-fancybox="gallery" href=""><img src="images/ProductMain_5.jpg"
+                                        class="img-fluid"></a>
+                                <a data-fancybox="gallery" href=""><img src="images/ProductMain_3.jpg"
+                                        class="img-fluid"></a>
+                                <a data-fancybox="gallery" href=""><img src="images/ProductMain_4.jpg"
+                                        class="img-fluid"></a>
+                            </div>
+                            <ul class="thumb-nav">
+                                <li><img src="images/ProductMain.jpg"></li>
+                                <li><img src="images/ProductMain_2.jpg"></li>
+                                <li><img src="images/ProductMain_3.jpg"></li>
+                                <li><img src="images/ProductMain_4.jpg"></li>
+                                <li><img src="images/ProductMain_5.jpg"></li>
+                                <li><img src="images/ProductMain_2.jpg"></li>
+                                <li><img src="images/ProductMain_4.jpg"></li>
+                            </ul>
+                        </div>
+
+                        <div class="product-stats-info">
+                            <div class="stats-info__buttons">
+                                <button type="button" class="btn btn-outline-default">
+                                    <img src="images/ProDes_Plus.svg" />
+                                    Add to wish list</button>
+                                <button type="button" class="btn btn-outline-default">
+                                    <img src="images/ProDes_Remove.svg" />
+                                    Remove from wish list</button>
+                            </div>
+                            <div class="stats-info__views-buttons">
+                                <div data-tooltip="Views" class="btn btn-outline-default">
+                                    <img src="images/ProDes_View.svg" />
+                                    <span>2.52k</span>
+                                </div>
+                            </div>
+                            <div class="stats-info__like-buttons">
+                                <div data-tooltip="Likes" class="btn btn-outline-default">
+                                    <img src="images/ProDes_Wishlist.svg" />
+                                    <span>2.52k</span>
+                                </div>
+                            </div>
+                            <div class="stats-info__share-buttons">
+                                <div data-tooltip="Share" class="btn btn-outline-default">
+                                    <img src="images/ProDes_Share.svg" />
+                                </div>
+                            </div>
+                            <div class="stats-info__report-buttons">
+                                <div data-tooltip="Report" class="btn btn-outline-default">
+                                    <img src="images/ProDes_More.svg" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="CommonTab">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                        role="tab" aria-controls="pills-home" aria-selected="true">Description</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                                        role="tab" aria-controls="pills-profile" aria-selected="false">Comments
+                                        <span>(527)</span></a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
+                                        role="tab" aria-controls="pills-contact" aria-selected="false">Reviews
+                                        <span>(1)</span></a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab">
+                                    <div class="ProductDescContent pb-0">
+                                        <p>High Detailed Photorealistic Black Panther, completely UVmapped and
+                                            smoothable, made with 3Ds Max 2014 + Hairfarm+MOrphing The scene is
+                                            just a walking animation.
+                                        <p>Please Use the Layers.</p>
+                                        <p>The scene is set by default to one light and GI with VRay everything
+                                            together. Warning: Scene is created in 3dsmax 2014, Vray 2.4 +
+                                            Hairfarm2</p>
+                                        <p>Rigging and sample animation walk is designed to help CAT. Head
+                                            Diffuse texture: 3072x3072 Head Specular texture: 3072x3072 Head
+                                            Bump texture: 3072x3072 Body Diffuse texture: 2048x2048 Eye color
+                                            Diffuse: 400x400 Morph target: open mouth closed eyes attack</p>
+                                    </div>
+                                    <div class="RelatedProduct">
+                                        <a href="">Panther</a>
+                                        <a href="">Panther</a>
+                                        <a href="">Panther</a>
+                                        <a href="">Panther</a>
+                                        <a href="">Panther</a>
+                                        <a href="">Panther</a>
+                                        <a href="">Panther</a>
+                                        <a href="">Panther</a>
+                                        <a href="">Panther</a>
+                                        <a href="">Panther</a>
+                                        <a href="">Panther</a>
+                                        <a href="">Panther</a>
+                                        <a href="">Panther</a>
                                     </div>
                                 </div>
-
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab">...</div>
+                                <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                    aria-labelledby="pills-contact-tab">...</div>
                             </div>
                         </div>
                     </div>
@@ -377,7 +421,8 @@
                                 </ul>
                             </div>
                             <div class="Product-Action-Button">
-                                <button data-toggle="modal" data-target="#Format" type="button">Request Format Conversion</button>
+                                <button data-toggle="modal" data-target="#Format" type="button">Request Format
+                                    Conversion</button>
                             </div>
                         </div>
                         <div class="short-modal-details mb-3">
@@ -615,8 +660,12 @@
                             src="images/PopupClose.svg" /></button>
                 </div>
                 <div class="modal-body">
-                    <p>CGTrader 3D design team is ready to help you by converting this model to your desired format. Please provide us information below so we can proceed with your request.</p>
-                    <p class="font-italic font-weight-normal" style="font-size: 14px;">Note: not all format conversions are possible and sometimes it is possible to use existing file formats in your selected software. Due to a high number of requests, please allow some time for our team to contact you.</p>
+                    <p>CGTrader 3D design team is ready to help you by converting this model to your desired format.
+                        Please provide us information below so we can proceed with your request.</p>
+                    <p class="font-italic font-weight-normal" style="font-size: 14px;">Note: not all format conversions
+                        are possible and sometimes it is possible to use existing file formats in your selected
+                        software. Due to a high number of requests, please allow some time for our team to contact you.
+                    </p>
                     <form class="">
                         <div class="form-group">
                             <label for="exampleFormControlSelect1">Software you want to use the model on:</label>
@@ -632,7 +681,7 @@
                         <div class="form-group">
                             <label for="exampleFormControlSelect1">Software release year:</label>
                             <select class="form-control" id="exampleFormControlSelect1">
-                                <option>Select release year</option>                                
+                                <option>Select release year</option>
                                 <option>2021</option>
                                 <option>2020</option>
                                 <option>2019</option>
@@ -658,7 +707,7 @@
                             <textarea placeholder="Type here" class="form-control" id="exampleFormControlTextarea1"
                                 rows="3"></textarea>
                         </div>
-                    </form>                    
+                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>

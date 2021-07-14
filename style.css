@@ -209,7 +209,7 @@ body {
     .SecondaryNavbar .Menu li.nav-item > a::before {
       content: '';
       position: absolute;
-      border-bottom: 3px solid #47c9d4;
+      border-bottom: 3px solid #ed1414;
       top: 0px;
       left: 50%;
       right: 50%;
@@ -230,7 +230,7 @@ body {
     .SecondaryNavbar .Menu li.nav-item.active::before {
       content: '';
       position: absolute;
-      border-bottom: 3px solid #47c9d4;
+      border-bottom: 3px solid #ed1414;
       top: 0px;
       left: 10px;
       right: 10px;
@@ -268,12 +268,12 @@ body {
       border-radius: 50px 0 0 50px;
       outline: none;
       border-right: none !important;
-      border: 1px solid #47c9d4;
+      border: 1px solid #19bcc9;
       font-size: 14px;
       font-weight: 500;
       color: #252525;
       height: 36px;
-      background-color: #e5fdff; }
+      background-color: #e1fcff; }
       .SecondaryNavbar .GobalSearch .input-group input:focus {
         box-shadow: none; }
     .SecondaryNavbar .GobalSearch .input-group .input-group-append {
@@ -281,15 +281,15 @@ body {
       .SecondaryNavbar .GobalSearch .input-group .input-group-append button {
         border: none;
         border-radius: 0 50px 50px 0;
-        border: 1px solid #47c9d4;
+        border: 1px solid #19bcc9;
         border-left: none !important;
         outline: none;
         height: 36px;
-        background-color: #e5fdff; }
+        background-color: #e1fcff; }
         .SecondaryNavbar .GobalSearch .input-group .input-group-append button:focus {
           box-shadow: none; }
         .SecondaryNavbar .GobalSearch .input-group .input-group-append button svg {
-          color: #47c9d4; }
+          color: #19bcc9; }
   .SecondaryNavbar .ScrollCart {
     display: none; }
 
@@ -2707,13 +2707,12 @@ main {
           display: none; }
         .mega-dropdown .mega-dropdown-menu .dropdown-menu-flex > li:first-child {
           width: 235px;
-          background-color: #19bcc9;
+          background-color: #7affdb;
           border-radius: 5px 0 0 5px; }
           .mega-dropdown .mega-dropdown-menu .dropdown-menu-flex > li:first-child ul li a {
-            color: #fff;
-            font-weight: 600; }
+            color: #000; }
             .mega-dropdown .mega-dropdown-menu .dropdown-menu-flex > li:first-child ul li a svg {
-              color: #04656d; }
+              color: #028e68; }
         .mega-dropdown .mega-dropdown-menu .dropdown-menu-flex > li ul {
           padding: 0;
           margin: 0; }
@@ -2723,8 +2722,6 @@ main {
               display: block;
               color: #222;
               padding: 3px 5px;
-              font-weight: 600;
-              font-family: "Quicksand", sans-serif;
               font-size: 14px;
               text-transform: capitalize;
               padding: 8px 15px !important;
@@ -2843,8 +2840,7 @@ main {
     font-family: "Quicksand", sans-serif;
     font-weight: 700;
     font-size: 15px;
-    letter-spacing: 0.2px;
-    padding-left: 0; }
+    letter-spacing: 0.2px; }
     .Product_Cart_Payment .CartTab .nav-pills li a span {
       color: #ea1e3a;
       padding-left: 5px; }
@@ -2855,13 +2851,6 @@ main {
   .Product_Cart_Payment .CartTab .tab-content .Product_Cart__Left {
     width: calc(100% - 440px);
     float: left; }
-    .Product_Cart_Payment .CartTab .tab-content .Product_Cart__Left .share_cart_row a {
-      font-size: 15px;
-      color: #4d4d4d;
-      font-weight: 600;
-      font-family: "Quicksand", sans-serif;
-      display: flex;
-      padding: 5px 0; }
     .Product_Cart_Payment .CartTab .tab-content .Product_Cart__Left .GT_cards_list__container .GT__card {
       position: relative;
       margin: 0;
@@ -2874,7 +2863,7 @@ main {
       border-radius: 4px;
       height: 110px;
       padding: 9px;
-      margin-bottom: 14px; }
+      margin-bottom: 15px; }
       .Product_Cart_Payment .CartTab .tab-content .Product_Cart__Left .GT_cards_list__container .GT__card .GT_item__card {
         display: flex;
         position: relative; }
@@ -2888,277 +2877,20 @@ main {
           display: flex;
           justify-content: space-between;
           width: 100%; }
-          .Product_Cart_Payment .CartTab .tab-content .Product_Cart__Left .GT_cards_list__container .GT__card .GT_item__card .GT_item_card__info .GT_item_card__info_block .GT_item_card__title {
-            color: #132340;
-            font-family: "Quicksand", sans-serif;
-            font-weight: 700;
-            font-size: 15px;
-            text-decoration: none;
-            margin-bottom: 5px;
-            display: flex; }
-          .Product_Cart_Payment .CartTab .tab-content .Product_Cart__Left .GT_cards_list__container .GT__card .GT_item__card .GT_item_card__info .GT_item_card__info_block .GT_text_tiny {
-            color: #a0a0a0;
-            font-size: 12px;
-            font-weight: 400; }
-          .Product_Cart_Payment .CartTab .tab-content .Product_Cart__Left .GT_cards_list__container .GT__card .GT_item__card .GT_item_card__info .GT_item_card__info_block .GT_item_card__info_price {
-            color: #19bcc9;
-            font-size: 16px;
-            font-family: "Quicksand", sans-serif;
-            font-weight: 600; }
         .Product_Cart_Payment .CartTab .tab-content .Product_Cart__Left .GT_cards_list__container .GT__card .GT_item__card .GT_item_card__actions {
           display: flex;
           flex-flow: column;
           align-items: center;
           justify-content: space-between;
           padding-left: 12px; }
-          .Product_Cart_Payment .CartTab .tab-content .Product_Cart__Left .GT_cards_list__container .GT__card .GT_item__card .GT_item_card__actions .GT_item_card__actions_remove {
-            font-family: "Quicksand", sans-serif; }
-            .Product_Cart_Payment .CartTab .tab-content .Product_Cart__Left .GT_cards_list__container .GT__card .GT_item__card .GT_item_card__actions .GT_item_card__actions_remove img {
-              width: 10px; }
-          .Product_Cart_Payment .CartTab .tab-content .Product_Cart__Left .GT_cards_list__container .GT__card .GT_item__card .GT_item_card__actions .GT_item_card__actions_wishlist {
-            font-family: "Quicksand", sans-serif; }
-            .Product_Cart_Payment .CartTab .tab-content .Product_Cart__Left .GT_cards_list__container .GT__card .GT_item__card .GT_item_card__actions .GT_item_card__actions_wishlist img {
-              width: 14px; }
+          .Product_Cart_Payment .CartTab .tab-content .Product_Cart__Left .GT_cards_list__container .GT__card .GT_item__card .GT_item_card__actions .GT_item_card__actions_remove img {
+            width: 12px; }
+          .Product_Cart_Payment .CartTab .tab-content .Product_Cart__Left .GT_cards_list__container .GT__card .GT_item__card .GT_item_card__actions .GT_item_card__actions_wishlist img {
+            width: 15px; }
   .Product_Cart_Payment .CartTab .tab-content .Product_Cart__Right {
-    width: 420px;
+    width: 440px;
     float: left;
-    margin-left: 20px; }
-    .Product_Cart_Payment .CartTab .tab-content .Product_Cart__Right .GT__card {
-      box-shadow: 0 2px 6px 0 rgba(1, 55, 92, 0.12);
-      border: 1px solid #8cdde3;
-      border-radius: 4px;
-      background-color: #fff;
-      transition-duration: 0.3s;
-      transition-property: box-shadow, border-color;
-      position: relative; }
-      .Product_Cart_Payment .CartTab .tab-content .Product_Cart__Right .GT__card .GT_card__header {
-        padding: 20px;
-        border-bottom: 1px solid #c7fbff; }
-        .Product_Cart_Payment .CartTab .tab-content .Product_Cart__Right .GT__card .GT_card__header h6 {
-          font-size: 15px;
-          font-weight: 700;
-          color: #005890;
-          font-family: "Quicksand", sans-serif;
-          line-height: 19px;
-          margin: 0; }
-      .Product_Cart_Payment .CartTab .tab-content .Product_Cart__Right .GT__card .GT_card__content {
-        padding: 16px 24px 24px; }
-        .Product_Cart_Payment .CartTab .tab-content .Product_Cart__Right .GT__card .GT_card__content .is_highlighted div {
-          font-weight: 700 !important;
-          color: #132340 !important; }
-        .Product_Cart_Payment .CartTab .tab-content .Product_Cart__Right .GT__card .GT_card__content .is_separated {
-          margin-top: 8px;
-          border-top: 1px solid #e6ebf5;
-          padding-top: 8px; }
-        .Product_Cart_Payment .CartTab .tab-content .Product_Cart__Right .GT__card .GT_card__content .GT_payment_summary__item {
-          display: flex;
-          flex-direction: row;
-          margin-bottom: 8px; }
-          .Product_Cart_Payment .CartTab .tab-content .Product_Cart__Right .GT__card .GT_card__content .GT_payment_summary__item .GT_summary_item__title {
-            font-size: 14.5px;
-            font-family: "Quicksand", sans-serif;
-            flex-grow: 1;
-            font-weight: 600;
-            color: #6c6c6c; }
-          .Product_Cart_Payment .CartTab .tab-content .Product_Cart__Right .GT__card .GT_card__content .GT_payment_summary__item .GT_summary_item__value {
-            font-size: 14.5px;
-            font-family: "Quicksand", sans-serif;
-            font-weight: 600;
-            color: #6c6c6c; }
-    .Product_Cart_Payment .CartTab .tab-content .Product_Cart__Right .GT_payment__to_checkout .GT_button {
-      background-color: #19bcc9;
-      padding: 10px;
-      font-family: "Quicksand", sans-serif;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      border-radius: 3px;
-      line-height: 26px;
-      font-size: 15px;
-      color: #fff;
-      font-weight: 600;
-      text-decoration: none; }
-    .Product_Cart_Payment .CartTab .tab-content .Product_Cart__Right .GT_alert {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      margin-top: 5px; }
-      .Product_Cart_Payment .CartTab .tab-content .Product_Cart__Right .GT_alert .GT_alert__icon img {
-        width: 14px; }
-      .Product_Cart_Payment .CartTab .tab-content .Product_Cart__Right .GT_alert .GT_text__tiny {
-        font-size: 11px;
-        font-weight: 600;
-        color: #636770;
-        font-family: "Quicksand", sans-serif; }
-  .Product_Cart_Payment .CartTab .tab-content .Product_Payment__Left {
-    width: calc(100% - 440px);
-    float: left; }
-    .Product_Cart_Payment .CartTab .tab-content .Product_Payment__Left .GT__card {
-      box-shadow: 0 2px 6px 0 rgba(1, 55, 92, 0.12);
-      border: 1px solid #8cdde3;
-      border-radius: 4px;
-      background-color: #fff;
-      transition-duration: 0.3s;
-      transition-property: box-shadow, border-color;
-      position: relative;
-      margin-bottom: 14px; }
-      .Product_Cart_Payment .CartTab .tab-content .Product_Payment__Left .GT__card .GT_card__header {
-        padding: 20px;
-        border-bottom: 1px solid #c7fbff;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        grid-gap: 10px; }
-        .Product_Cart_Payment .CartTab .tab-content .Product_Payment__Left .GT__card .GT_card__header h6 {
-          font-size: 15px;
-          font-weight: 700;
-          color: #005890;
-          font-family: "Quicksand", sans-serif;
-          line-height: 19px;
-          margin: 0; }
-      .Product_Cart_Payment .CartTab .tab-content .Product_Payment__Left .GT__card .GT_card__content {
-        padding: 16px 24px 24px; }
-        .Product_Cart_Payment .CartTab .tab-content .Product_Payment__Left .GT__card .GT_card__content .is_highlighted div {
-          font-weight: 700 !important;
-          color: #132340 !important; }
-        .Product_Cart_Payment .CartTab .tab-content .Product_Payment__Left .GT__card .GT_card__content .is_separated {
-          margin-top: 8px;
-          border-top: 1px solid #e6ebf5;
-          padding-top: 8px; }
-        .Product_Cart_Payment .CartTab .tab-content .Product_Payment__Left .GT__card .GT_card__content .GT_payment_summary__item {
-          display: flex;
-          flex-direction: row;
-          margin-bottom: 8px; }
-          .Product_Cart_Payment .CartTab .tab-content .Product_Payment__Left .GT__card .GT_card__content .GT_payment_summary__item .GT_summary_item__title {
-            font-size: 14.5px;
-            font-family: "Quicksand", sans-serif;
-            flex-grow: 1;
-            font-weight: 600;
-            color: #6c6c6c; }
-          .Product_Cart_Payment .CartTab .tab-content .Product_Payment__Left .GT__card .GT_card__content .GT_payment_summary__item .GT_summary_item__value {
-            font-size: 14.5px;
-            font-family: "Quicksand", sans-serif;
-            font-weight: 600;
-            color: #6c6c6c; }
-      .Product_Cart_Payment .CartTab .tab-content .Product_Payment__Left .GT__card .GT__collapsible_card__content form {
-        padding: 18px; }
-        .Product_Cart_Payment .CartTab .tab-content .Product_Payment__Left .GT__card .GT__collapsible_card__content form .form-control {
-          border-radius: 0;
-          border: 1px solid #e3e8f2;
-          color: #969696;
-          font-size: 12px;
-          font-weight: 500;
-          padding: 12px 12px;
-          height: auto;
-          line-height: 16px; }
-        .Product_Cart_Payment .CartTab .tab-content .Product_Payment__Left .GT__card .GT__collapsible_card__content form .GT_button {
-          background-color: #19bcc9;
-          padding: 10px;
-          font-family: "Quicksand", sans-serif;
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          border-radius: 3px;
-          line-height: 26px;
-          font-size: 15px;
-          color: #fff;
-          font-weight: 600;
-          text-decoration: none;
-          border: none;
-          outline: none; }
-  .Product_Cart_Payment .CartTab .tab-content .Product_Payment__Right {
-    width: 420px;
-    float: left;
-    margin-left: 20px; }
-    .Product_Cart_Payment .CartTab .tab-content .Product_Payment__Right .GT__Payment_Tab .nav-tabs {
-      border: none;
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 15px; }
-      .Product_Cart_Payment .CartTab .tab-content .Product_Payment__Right .GT__Payment_Tab .nav-tabs .nav-item .nav-link {
-        width: 95px;
-        padding: 5px;
-        border: 1px solid #d8d8da;
-        border-radius: 5px;
-        background-color: #f7f6fb;
-        height: 65px;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center; }
-        .Product_Cart_Payment .CartTab .tab-content .Product_Payment__Right .GT__Payment_Tab .nav-tabs .nav-item .nav-link i {
-          padding-bottom: 5px; }
-          .Product_Cart_Payment .CartTab .tab-content .Product_Payment__Right .GT__Payment_Tab .nav-tabs .nav-item .nav-link i img {
-            width: 25px; }
-        .Product_Cart_Payment .CartTab .tab-content .Product_Payment__Right .GT__Payment_Tab .nav-tabs .nav-item .nav-link span {
-          font-size: 11px;
-          font-weight: 700;
-          color: #545865;
-          font-family: "Quicksand", sans-serif;
-          text-transform: uppercase; }
-      .Product_Cart_Payment .CartTab .tab-content .Product_Payment__Right .GT__Payment_Tab .nav-tabs .nav-item .nav-link.active {
-        border: 1px solid #19bcc9;
-        background-color: #f3f1f7; }
-        .Product_Cart_Payment .CartTab .tab-content .Product_Payment__Right .GT__Payment_Tab .nav-tabs .nav-item .nav-link.active::after {
-          content: '';
-          position: absolute;
-          background-image: url(../images/PaymentActive.png);
-          background-repeat: no-repeat;
-          background-size: 32px;
-          width: 32px;
-          height: 32px;
-          top: -15px;
-          right: -15px; }
-    .Product_Cart_Payment .CartTab .tab-content .Product_Payment__Right .GT__Payment_Tab .tab-content .GT__card {
-      box-shadow: 0 2px 6px 0 rgba(1, 55, 92, 0.12);
-      border: 1px solid #8cdde3;
-      border-radius: 3px;
-      background-color: #fff;
-      transition-duration: 0.3s;
-      transition-property: box-shadow, border-color;
-      position: relative;
-      margin-bottom: 14px; }
-      .Product_Cart_Payment .CartTab .tab-content .Product_Payment__Right .GT__Payment_Tab .tab-content .GT__card .GT_payment__holder {
-        padding: 18px; }
-        .Product_Cart_Payment .CartTab .tab-content .Product_Payment__Right .GT__Payment_Tab .tab-content .GT__card .GT_payment__holder form label {
-          font-family: "Quicksand", sans-serif;
-          font-size: 14px;
-          color: #5a5e6b;
-          font-weight: 600;
-          line-height: 14px; }
-        .Product_Cart_Payment .CartTab .tab-content .Product_Payment__Right .GT__Payment_Tab .tab-content .GT__card .GT_payment__holder form .form-control {
-          border: 1px solid #c5c5c5;
-          height: 40px;
-          font-family: "Quicksand", sans-serif;
-          font-size: 14px;
-          font-weight: 600; }
-    .Product_Cart_Payment .CartTab .tab-content .Product_Payment__Right .GT_payment__to_checkout .GT_button {
-      background-color: #19bcc9;
-      padding: 10px;
-      font-family: "Quicksand", sans-serif;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      border-radius: 3px;
-      line-height: 26px;
-      font-size: 15px;
-      color: #fff;
-      font-weight: 600;
-      text-decoration: none; }
-    .Product_Cart_Payment .CartTab .tab-content .Product_Payment__Right .GT_alert {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      margin-top: 5px; }
-      .Product_Cart_Payment .CartTab .tab-content .Product_Payment__Right .GT_alert .GT_alert__icon img {
-        width: 14px; }
-      .Product_Cart_Payment .CartTab .tab-content .Product_Payment__Right .GT_alert .GT_text__tiny {
-        font-size: 11px;
-        font-weight: 600;
-        color: #636770;
-        font-family: "Quicksand", sans-serif; }
+    margin-left: 20px;
+    height: 15px; }
 
 /*# sourceMappingURL=style.css.map */
