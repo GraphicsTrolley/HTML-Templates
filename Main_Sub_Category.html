@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Graphic Trolley</title>
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/nivo-slider.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script type="text/javascript" src="js/greensock/TweenMax.min.js"></script>
+
+</head>
+
+<body>
+    <header class="MainHeader">
+
+        <nav class="navbar navbar-expand-lg SecondaryNavbar fixed-top navWrapper">
+            <a class="navbar-brand" href="Index.html"><img src="images/GT_WebPage.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto Menu">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AboutUs.html">About us</a>
+                    </li>                    
+                    <li class="nav-item dropdown mega-dropdown">
+                        <a href="Main_Sub_Category.html" class="dropdown-toggle">3D Models</a>
+                        <div class="dropdown-menu mega-dropdown-menu">
+                            <ul class="dropdown-menu-flex">
+                                <li>
+                                    <ul>
+                                        <li><a href="Product.html"><i class="fas fa-print"></i>3D Print Models</a></li>
+                                        <li><a href="Product.html"><i class="fas fa-cubes"></i>Freelance 3D Projects</a></li>
+                                        <li><a href="Product.html"><i class="fas fa-cube"></i>Free 3D Models</a></li>
+                                        <li><a href="Product.html"><i class="fas fa-percent"></i>Discounts</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="Product.html"><i class="fas fa-plane"></i> Aircarft</a></li>
+                                        <li><a href="Product.html"><i class="fas fa-cat"></i> Animals</a></li>
+                                        <li><a href="Product.html"><i class="fas fa-hotel"></i> Architectural</a></li>
+                                        <li><a href="Product.html"><i class="fas fa-house-damage"></i> Exterior</a></li>
+                                        <li><a href="Product.html"><i class="fas fa-stopwatch"></i> Interior</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="Product.html"><i class="fas fa-car"></i> Car</a></li>
+                                        <li><a href="Product.html"><i class="fas fa-female"></i> Character</a></li>
+                                        <li><a href="Product.html"><i class="fas fa-couch"></i> Furniture</a></li>
+                                        <li><a href="Product.html"><i class="fas fa-bath"></i> Household</a></li>
+                                        <li><a href="Product.html"><i class="fas fa-industry"></i> Industrial</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="Product.html"><i class="fas fa-leaf"></i> Plant</a></li>
+                                        <li><a href="Product.html"><i class="fas fa-bicycle"></i> Vehicle</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact us</a>
+                    </li>
+                </ul>
+                <!-- <div class="Information">
+                    <div class="Info">
+                        <a class="nav-link" href="javascript:void(0)">Call us now <span>: (+91 95952225121)</span></a>
+                    </div>
+                    <div class="Info">
+                        <a class="nav-link" href="javascript:void(0)">Email <span>: arockiadass85@gmail.com</span></a>
+                    </div>
+                </div> -->
+                <div class="GobalSearch">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Search 1000 of 3D Models" id="example-search-input">
+                        <span class="input-group-append">
+                            <button class="btn ms-n5" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="ScrollCart">
+                    <a href="javascript:void(0)">
+                        <img src="images/shopping-cart.svg" />
+                        <span>0</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg TopBar fixed-top navWrapper">
+            <a class="navbar-brand" href="javascript:void(0)"><span>20% Discount</span> on Selected Items</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Topnavbar"
+                aria-controls="Topnavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="Topnavbar">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Account.html"><i><img src="images/User.svg"></i>Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Wishlist.html"><i><img src="images/Wishlist.svg"></i>Wishlist</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Product-Cart_Payment.html"><i><img src="images/Cart.svg"></i>Cart <span class="CartCount">2</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Help</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="images/ProfilePic.svg" />
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right Profile"
+                            aria-labelledby="navbarDropdownMenuLink">
+                            <div class="ProfileTitle">
+                                <i class="UserProfile">
+                                    <img src="images/ProfilePic.svg" />
+                                </i>
+                                <div class="Profile_Right">
+                                    <span class="Username">Nikesh Sam</span>
+                                    <span class="UserDesignation">Beginner</span>
+                                </div>
+                                <i class="UserLogout">
+                                    <img src="images/ProfileLogout.svg" />
+                                </i>
+                            </div>
+                            <hr>
+                            <ul class="List">
+                                <li><a href="#"><i class="fas fa-rocket"></i> Publishing</a></li>
+                                <li><a href="#"><i class="fas fa-cube"></i> My Models</a></li>
+                                <li><a href="#"><i class="fas fa-chart-line"></i> My Sales</a></li>
+                                <li><a href="#"><i class="fas fa-chart-bar"></i> Analytics</a></li>
+                                <li><a href="#"><i class="fas fa-dollar-sign"></i> Freelance 3D Projects</a></li>
+                                <hr>
+                                <li><a href="#"><i class="fas fa-history"></i> My Purchases</a></li>
+                                <li><a href="#"><i class="fas fa-heart"></i> 3D Model Wishlist</a></li>
+                                <li><a href="#"><i class="fas fa-user-friends"></i> Find Freelances</a></li>
+                                <hr>
+                                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="BreadCrumb">
+                    <div class="container">
+                        <div class="row">
+                            <h6>Graphics Trolley | <span class="Currentpage"> Category</span></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section style="padding:40px 0 60px" class="GT_main__category">
+            <div class="container p-0">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h6>Explore 3D Models <span>Categories</span></h6>
+                        <p>Buy or free-download professional 3D models ready to be used in CG projects, film and video production, animation, visualizations, games, VR/AR, and others. Assets are available for download in many industry-accepted formats including MAX, OBJ, FBX, 3DS, STL, C4D, BLEND, MA, MB and other. If you are searching for high poly or real-time 3D assets, we have a leading digital art library for all your needs.</p>
+                    </div>                    
+                    <div class="col-md-4 col">
+                        <div class="GT_category mb-4">                                                        
+                            <div class="GT_category__content" style="background-image: url(images/Category/Animal.jpg); background-repeat: no-repeat;">
+                                <a href="" class="GT_category__link">
+                                    <div class="GT_category__content_upper"><span>Aircraft</span> 3D Models</div>
+                                </a>                                
+                            </div>
+                            <div class="GT_category__footer">
+                                <ul class="GT_list">
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-plane"></i>
+                                            <h6 class="GT_subcategory__title">Commerical</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-helicopter"></i>
+                                            <h6 class="GT_subcategory__title">Helicopter</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="far fa-clock"></i>
+                                            <h6 class="GT_subcategory__title">Historic</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-fighter-jet"></i>
+                                            <h6 class="GT_subcategory__title">Jet</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-meteor"></i>
+                                            <h6 class="GT_subcategory__title">Military</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-cog"></i>
+                                            <h6 class="GT_subcategory__title">Part</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-unlock-alt"></i>
+                                            <h6 class="GT_subcategory__title">Private</h6>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col">
+                        <div class="GT_category mb-4">                                                        
+                            <div class="GT_category__content" style="background-image: url(images/Category/Animal.jpg); background-repeat: no-repeat;">
+                                <a href="" class="GT_category__link">
+                                    <div class="GT_category__content_upper"><span>Animals</span> 3D Models</div>
+                                </a>                                
+                            </div>
+                            <div class="GT_category__footer">
+                                <ul class="GT_list">
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-plane"></i>
+                                            <h6 class="GT_subcategory__title">Commerical</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-helicopter"></i>
+                                            <h6 class="GT_subcategory__title">Helicopter</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="far fa-clock"></i>
+                                            <h6 class="GT_subcategory__title">Historic</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-fighter-jet"></i>
+                                            <h6 class="GT_subcategory__title">Jet</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-meteor"></i>
+                                            <h6 class="GT_subcategory__title">Military</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-cog"></i>
+                                            <h6 class="GT_subcategory__title">Part</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-unlock-alt"></i>
+                                            <h6 class="GT_subcategory__title">Private</h6>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col">
+                        <div class="GT_category mb-4">                                                        
+                            <div class="GT_category__content" style="background-image: url(images/Category/Arch.jpg); background-repeat: no-repeat;">
+                                <a href="" class="GT_category__link">
+                                    <div class="GT_category__content_upper"><span>Architectural </span> 3D Models</div>
+                                </a>                                
+                            </div>
+                            <div class="GT_category__footer">
+                                <ul class="GT_list">
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-plane"></i>
+                                            <h6 class="GT_subcategory__title">Commerical</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-helicopter"></i>
+                                            <h6 class="GT_subcategory__title">Helicopter</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="far fa-clock"></i>
+                                            <h6 class="GT_subcategory__title">Historic</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-fighter-jet"></i>
+                                            <h6 class="GT_subcategory__title">Jet</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-meteor"></i>
+                                            <h6 class="GT_subcategory__title">Military</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-cog"></i>
+                                            <h6 class="GT_subcategory__title">Part</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-unlock-alt"></i>
+                                            <h6 class="GT_subcategory__title">Private</h6>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col">
+                        <div class="GT_category mb-4">                                                        
+                            <div class="GT_category__content" style="background-image: url(images/Category/Exteriors.jpg); background-repeat: no-repeat;">
+                                <a href="" class="GT_category__link">
+                                    <div class="GT_category__content_upper"><span>Exteriors</span> 3D Models</div>
+                                </a>                                
+                            </div>
+                            <div class="GT_category__footer">
+                                <ul class="GT_list">
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-plane"></i>
+                                            <h6 class="GT_subcategory__title">Commerical</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-helicopter"></i>
+                                            <h6 class="GT_subcategory__title">Helicopter</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="far fa-clock"></i>
+                                            <h6 class="GT_subcategory__title">Historic</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-fighter-jet"></i>
+                                            <h6 class="GT_subcategory__title">Jet</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-meteor"></i>
+                                            <h6 class="GT_subcategory__title">Military</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-cog"></i>
+                                            <h6 class="GT_subcategory__title">Part</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-unlock-alt"></i>
+                                            <h6 class="GT_subcategory__title">Private</h6>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col">
+                        <div class="GT_category mb-4">                                                        
+                            <div class="GT_category__content" style="background-image: url(images/Category/Animal.jpg); background-repeat: no-repeat;">
+                                <a href="" class="GT_category__link">
+                                    <div class="GT_category__content_upper"><span>Interiors</span> 3D Models</div>
+                                </a>                                
+                            </div>
+                            <div class="GT_category__footer">
+                                <ul class="GT_list">
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-plane"></i>
+                                            <h6 class="GT_subcategory__title">Commerical</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-helicopter"></i>
+                                            <h6 class="GT_subcategory__title">Helicopter</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="far fa-clock"></i>
+                                            <h6 class="GT_subcategory__title">Historic</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-fighter-jet"></i>
+                                            <h6 class="GT_subcategory__title">Jet</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-meteor"></i>
+                                            <h6 class="GT_subcategory__title">Military</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-cog"></i>
+                                            <h6 class="GT_subcategory__title">Part</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-unlock-alt"></i>
+                                            <h6 class="GT_subcategory__title">Private</h6>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col">
+                        <div class="GT_category mb-4">                                                        
+                            <div class="GT_category__content" style="background-image: url(images/Category/Car.jpg); background-repeat: no-repeat;">
+                                <a href="" class="GT_category__link">
+                                    <div class="GT_category__content_upper"><span>Car</span> 3D Models</div>
+                                </a>                                
+                            </div>
+                            <div class="GT_category__footer">
+                                <ul class="GT_list">
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-plane"></i>
+                                            <h6 class="GT_subcategory__title">Commerical</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-helicopter"></i>
+                                            <h6 class="GT_subcategory__title">Helicopter</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="far fa-clock"></i>
+                                            <h6 class="GT_subcategory__title">Historic</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-fighter-jet"></i>
+                                            <h6 class="GT_subcategory__title">Jet</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-meteor"></i>
+                                            <h6 class="GT_subcategory__title">Military</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-cog"></i>
+                                            <h6 class="GT_subcategory__title">Part</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-unlock-alt"></i>
+                                            <h6 class="GT_subcategory__title">Private</h6>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col">
+                        <div class="GT_category mb-4">                                                        
+                            <div class="GT_category__content" style="background-image: url(images/Category/Character.jpg); background-repeat: no-repeat;">
+                                <a href="" class="GT_category__link">
+                                    <div class="GT_category__content_upper"><span>Character</span> 3D Models</div>
+                                </a>                                
+                            </div>
+                            <div class="GT_category__footer">
+                                <ul class="GT_list">
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-plane"></i>
+                                            <h6 class="GT_subcategory__title">Commerical</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-helicopter"></i>
+                                            <h6 class="GT_subcategory__title">Helicopter</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="far fa-clock"></i>
+                                            <h6 class="GT_subcategory__title">Historic</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-fighter-jet"></i>
+                                            <h6 class="GT_subcategory__title">Jet</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-meteor"></i>
+                                            <h6 class="GT_subcategory__title">Military</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-cog"></i>
+                                            <h6 class="GT_subcategory__title">Part</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-unlock-alt"></i>
+                                            <h6 class="GT_subcategory__title">Private</h6>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col">
+                        <div class="GT_category mb-4">                                                        
+                            <div class="GT_category__content" style="background-image: url(images/Category/Furniture.jpg); background-repeat: no-repeat;">
+                                <a href="" class="GT_category__link">
+                                    <div class="GT_category__content_upper"><span>Furniture</span> 3D Models</div>
+                                </a>                                
+                            </div>
+                            <div class="GT_category__footer">
+                                <ul class="GT_list">
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-plane"></i>
+                                            <h6 class="GT_subcategory__title">Commerical</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-helicopter"></i>
+                                            <h6 class="GT_subcategory__title">Helicopter</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="far fa-clock"></i>
+                                            <h6 class="GT_subcategory__title">Historic</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-fighter-jet"></i>
+                                            <h6 class="GT_subcategory__title">Jet</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-meteor"></i>
+                                            <h6 class="GT_subcategory__title">Military</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-cog"></i>
+                                            <h6 class="GT_subcategory__title">Part</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-unlock-alt"></i>
+                                            <h6 class="GT_subcategory__title">Private</h6>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col">
+                        <div class="GT_category mb-4">                                                        
+                            <div class="GT_category__content" style="background-image: url(images/Category/Animal.jpg); background-repeat: no-repeat;">
+                                <a href="" class="GT_category__link">
+                                    <div class="GT_category__content_upper"><span>Household</span> 3D Models</div>
+                                </a>                                
+                            </div>
+                            <div class="GT_category__footer">
+                                <ul class="GT_list">
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-plane"></i>
+                                            <h6 class="GT_subcategory__title">Commerical</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-helicopter"></i>
+                                            <h6 class="GT_subcategory__title">Helicopter</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="far fa-clock"></i>
+                                            <h6 class="GT_subcategory__title">Historic</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-fighter-jet"></i>
+                                            <h6 class="GT_subcategory__title">Jet</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-meteor"></i>
+                                            <h6 class="GT_subcategory__title">Military</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-cog"></i>
+                                            <h6 class="GT_subcategory__title">Part</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-unlock-alt"></i>
+                                            <h6 class="GT_subcategory__title">Private</h6>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col">
+                        <div class="GT_category">                                                        
+                            <div class="GT_category__content" style="background-image: url(images/Category/Industrial.jpg); background-repeat: no-repeat;">
+                                <a href="" class="GT_category__link">
+                                    <div class="GT_category__content_upper"><span>Industrial</span> 3D Models</div>
+                                </a>                                
+                            </div>
+                            <div class="GT_category__footer">
+                                <ul class="GT_list">
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-plane"></i>
+                                            <h6 class="GT_subcategory__title">Commerical</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-helicopter"></i>
+                                            <h6 class="GT_subcategory__title">Helicopter</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="far fa-clock"></i>
+                                            <h6 class="GT_subcategory__title">Historic</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-fighter-jet"></i>
+                                            <h6 class="GT_subcategory__title">Jet</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-meteor"></i>
+                                            <h6 class="GT_subcategory__title">Military</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-cog"></i>
+                                            <h6 class="GT_subcategory__title">Part</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-unlock-alt"></i>
+                                            <h6 class="GT_subcategory__title">Private</h6>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col">
+                        <div class="GT_category">                                                        
+                            <div class="GT_category__content" style="background-image: url(images/Category/Plant.jpg); background-repeat: no-repeat;">
+                                <a href="" class="GT_category__link">
+                                    <div class="GT_category__content_upper"><span>Plant</span> 3D Models</div>
+                                </a>                                
+                            </div>
+                            <div class="GT_category__footer">
+                                <ul class="GT_list">
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-plane"></i>
+                                            <h6 class="GT_subcategory__title">Commerical</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-helicopter"></i>
+                                            <h6 class="GT_subcategory__title">Helicopter</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="far fa-clock"></i>
+                                            <h6 class="GT_subcategory__title">Historic</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-fighter-jet"></i>
+                                            <h6 class="GT_subcategory__title">Jet</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-meteor"></i>
+                                            <h6 class="GT_subcategory__title">Military</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-cog"></i>
+                                            <h6 class="GT_subcategory__title">Part</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-unlock-alt"></i>
+                                            <h6 class="GT_subcategory__title">Private</h6>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col">
+                        <div class="GT_category">                                                        
+                            <div class="GT_category__content" style="background-image: url(images/Category/Vehicle.jpg); background-repeat: no-repeat;">
+                                <a href="" class="GT_category__link">
+                                    <div class="GT_category__content_upper"><span>Vehicle</span> 3D Models</div>
+                                </a>                                
+                            </div>
+                            <div class="GT_category__footer">
+                                <ul class="GT_list">
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-plane"></i>
+                                            <h6 class="GT_subcategory__title">Commerical</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-helicopter"></i>
+                                            <h6 class="GT_subcategory__title">Helicopter</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="far fa-clock"></i>
+                                            <h6 class="GT_subcategory__title">Historic</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-fighter-jet"></i>
+                                            <h6 class="GT_subcategory__title">Jet</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-meteor"></i>
+                                            <h6 class="GT_subcategory__title">Military</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-cog"></i>
+                                            <h6 class="GT_subcategory__title">Part</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-unlock-alt"></i>
+                                            <h6 class="GT_subcategory__title">Private</h6>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="clear"></div>
+    </main>
+
+    <footer>
+        <div class="Footer_Row1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="FooterMenu">
+                            <h5>Store</h5>
+                            <ul>
+                                <li><a href="#">Buy 3D Models</a></li>
+                                <li><a href="#">Best Selling</a></li>
+                                <li><a href="#">Categories</a></li>
+                                <li><a href="#">Join With Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="FooterMenu">
+                            <h5>Quick Links</h5>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Help Desk</a></li>
+                                <li><a href="#">FAQ’s</a></li>
+                                <li><a href="#">Terms of Use</a></li>
+                                <li><a href="#">Security & Privacy Policy</a></li>
+                                <li><a href="#">Refund Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="FooterMenu">
+                            <h5>Recent Work</h5>
+                            <ul class="RecentWork">
+                                <li><a href="#"><img src="images/Img_1.png" /></a></li>
+                                <li><a href="#"><img src="images/Img_2.png" /></a></li>
+                                <li><a href="#"><img src="images/Img_3.png" /></a></li>
+                            </ul>
+                            <ul class="RecentWork">
+                                <li><a href="#"><img src="images/Img_4.png" /></a></li>
+                                <li><a href="#"><img src="images/Img_5.png" /></a></li>
+                                <li><a href="#"><img src="images/Img_6.png" /></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="FooterMenu">
+                            <h5>Contact Us</h5>
+                            <ul class="Contact">
+                                <li><a href="#">+91 9916553151</a></li>
+                                <li><a href="#">arockiadass85@gmail.com</a></li>
+                                <li><a href="#">79, Nyniappa Maistttry St, Park <br /> Town,Chennai, Tamil Nadu, <br />
+                                        INDIA - 600003</a></li>
+                            </ul>
+                        </div>
+                        <div class="FooterMenu" style="margin-top: 25px;">
+                            <h5>Follow Us</h5>
+                            <ul class="SocialMedia">
+                                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Footer_Row2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="#">&#169; 2021 Graphics Trolley. All Rights Reserved.</a>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <a href="#" class="cards"><img src="images/Cards.png" /></a>
+                        <span>We Accept</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PRICING -->
+    <div class="modal fade ModalCommon" id="Offer" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Make Offer</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img
+                            src="images/PopupClose.svg" /></button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-4">Enter the price at which you would be willing to purchase this product.</p>
+                    <form class="">
+                        <div class="form-group form-group__Price">
+                            <label for="inputAddress">Price</label>
+                            <div class="input-group mb-2 mr-sm-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">$</div>
+                                </div>
+                                <input type="number" class="form-control" id="inlineFormInputGroupUsername2">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Message</label>
+                            <textarea placeholder="Type here" class="form-control" id="exampleFormControlTextarea1"
+                                rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Make Offer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRICING -->
+    <div class="modal fade ModalCommon" id="Message" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Message me</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img
+                            src="images/PopupClose.svg" /></button>
+                </div>
+                <div class="modal-body">
+                    <form class="">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Subject</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Message</label>
+                            <textarea placeholder="Type here" class="form-control" id="exampleFormControlTextarea1"
+                                rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Sent Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- REQUEST FORMAT -->
+    <div class="modal fade ModalCommon" id="Format" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Convert files</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img
+                            src="images/PopupClose.svg" /></button>
+                </div>
+                <div class="modal-body">
+                    <p>CGTrader 3D design team is ready to help you by converting this model to your desired format.
+                        Please provide us information below so we can proceed with your request.</p>
+                    <p class="font-italic font-weight-normal" style="font-size: 14px;">Note: not all format conversions
+                        are possible and sometimes it is possible to use existing file formats in your selected
+                        software. Due to a high number of requests, please allow some time for our team to contact you.
+                    </p>
+                    <form class="">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Software you want to use the model on:</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Select software</option>
+                                <option>Other</option>
+                                <option>Autodesk 3ds Max</option>
+                                <option>Blender</option>
+                                <option>Cinema 4D</option>
+                                <option>MODO</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Software release year:</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Select release year</option>
+                                <option>2021</option>
+                                <option>2020</option>
+                                <option>2019</option>
+                                <option>2018</option>
+                                <option>2017</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">File format you require:</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Select format</option>
+                                <option>Other</option>
+                                <option>.dxf</option>
+                                <option>.3dm</option>
+                                <option>.blend</option>
+                                <option>.iges</option>
+                                <option>.stl</option>
+                                <option>.stp</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Comment</label>
+                            <textarea placeholder="Type here" class="form-control" id="exampleFormControlTextarea1"
+                                rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Send conversion request</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery.nivo.slider.js"></script> -->
+    <script type="text/javascript" src="js/jquery.superscrollorama.js"></script>
+    <script type="text/javascript" src="js/all.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+</body>
+
+</html>

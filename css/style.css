@@ -97,6 +97,12 @@ body {
 .cd12 {
   background: #7affdb; }
 
+.GT__button_green {
+  background-color: #19bcc9; }
+
+.GT__button_danger {
+  background-color: #ea1e3a; }
+
 .TopBar {
   background-color: transparent;
   height: 50px;
@@ -154,7 +160,7 @@ body {
     margin: 0;
     box-shadow: 0px 0px 10px 0px rgba(135, 154, 190, 0.3) !important; }
     .TopBar .Profile hr {
-      border-top: 1px solid #d6d5ff; }
+      border-top: 1px solid #c7fbff; }
     .TopBar .Profile .ProfileTitle {
       display: flex;
       flex-direction: row;
@@ -181,7 +187,8 @@ body {
         width: 20px; }
     .TopBar .Profile .List {
       margin: 0;
-      padding: 0; }
+      padding: 0;
+      list-style: none; }
       .TopBar .Profile .List li {
         list-style: none; }
         .TopBar .Profile .List li:hover {
@@ -197,7 +204,7 @@ body {
           align-items: center; }
           .TopBar .Profile .List li a svg {
             width: 45px;
-            color: #009688; }
+            color: #2db4bf; }
 
 .SecondaryNavbar {
   margin-top: 50px;
@@ -990,7 +997,7 @@ main {
 .Footer_Row1 {
   background: #3f36b9;
   background: linear-gradient(to right, #3f36b9 0, #20206b 100%);
-  padding: 90px 0 85px; }
+  padding: 70px 0 70px; }
   .Footer_Row1 .FooterMenu {
     float: left;
     width: 100%;
@@ -1591,7 +1598,7 @@ main {
       padding-bottom: 35px; }
       .ProductResult .RightProductList .Product_Items_Main .Product_Col .ProductList {
         border-radius: 12px 12px 0 0;
-        border: 1px solid #f8d7f2;
+        border: 1px solid #87d6dc;
         box-shadow: 1px 3px 21px -8px rgba(0, 0, 0, 0.15);
         -webkit-box-shadow: 1px 3px 21px -8px rgba(0, 0, 0, 0.15);
         -moz-box-shadow: 1px 3px 21px -8px rgba(0, 0, 0, 0.15);
@@ -1611,7 +1618,7 @@ main {
           padding: 15px 0;
           position: relative;
           border-radius: 12px 12px 0 0;
-          background-image: linear-gradient(to bottom, #fbf9ed, #fbeaf8); }
+          background-color: #f5feff; }
           .ProductResult .RightProductList .Product_Items_Main .Product_Col .ProductList .ProductImg img {
             margin: auto;
             -webkit-transition: all .4s ease;
@@ -1631,7 +1638,8 @@ main {
           background-color: #fff;
           width: 100%;
           padding: 8px 12px;
-          position: relative; }
+          position: relative;
+          border-top: 1px solid #87d6dc; }
           .ProductResult .RightProductList .Product_Items_Main .Product_Col .ProductList .ProductDetails .ProDetails_1 {
             display: flex;
             flex-direction: row; }
@@ -2024,12 +2032,11 @@ main {
 
 .BreadCrumb {
   background-color: #e5fdff;
-  padding: 5px;
   width: 100%; }
   .BreadCrumb h6 {
     color: #5d5d5d;
     font-size: 14.5px;
-    font-weight: 500;
+    font-weight: 600;
     font-family: "Quicksand", sans-serif;
     margin: 0;
     height: 50px;
@@ -3160,5 +3167,121 @@ main {
         font-weight: 600;
         color: #636770;
         font-family: "Quicksand", sans-serif; }
+
+.GT_main__category h6 {
+  font-size: 30px;
+  font-weight: 400;
+  color: #050748;
+  font-family: "Quicksand", sans-serif;
+  margin-bottom: 20px; }
+  .GT_main__category h6 span {
+    font-weight: 700; }
+.GT_main__category p {
+  color: #5d5d5d;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 0.1px;
+  margin-bottom: 45px; }
+.GT_main__category .GT_category {
+  box-shadow: 0 2px 6px 0 rgba(1, 55, 92, 0.12);
+  border: 1px solid #8cdde3;
+  border-radius: 4px;
+  height: 275px;
+  display: flex;
+  flex-direction: column; }
+  .GT_main__category .GT_category .GT_category__content {
+    height: calc(100% - 45px);
+    border-radius: 4px 4px 0 0; }
+    .GT_main__category .GT_category .GT_category__content .GT_category__content_upper {
+      color: #ea1d39;
+      font-size: 15.5px;
+      font-family: "Quicksand", sans-serif;
+      font-weight: 500;
+      line-height: 14px;
+      display: inline-block;
+      padding: 12px; }
+      .GT_main__category .GT_category .GT_category__content .GT_category__content_upper span {
+        font-weight: 700; }
+  .GT_main__category .GT_category .GT_category__footer {
+    background-color: #eefeff;
+    border-top: 1px solid #b5f3f8;
+    border-radius: 0 0 4px 4px; }
+    .GT_main__category .GT_category .GT_category__footer .GT_list {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      overflow-x: auto;
+      overflow-y: hidden;
+      justify-content: space-evenly; }
+      .GT_main__category .GT_category .GT_category__footer .GT_list li a {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 45px; }
+        .GT_main__category .GT_category .GT_category__footer .GT_list li a svg {
+          color: #404040;
+          font-size: 16px; }
+        .GT_main__category .GT_category .GT_category__footer .GT_list li a h6 {
+          color: #202020;
+          font-size: 12.5px;
+          font-weight: 700;
+          margin: 0;
+          line-height: 18px; }
+
+.GT_Filter .GT_product_search {
+  display: flex;
+  flex-direction: row;
+  width: 100%; }
+  .GT_Filter .GT_product_search form {
+    width: 100%; }
+    .GT_Filter .GT_product_search form .GT_product_search__field .form-control, .GT_Filter .GT_product_search form .GT_product_search__type .form-control, .GT_Filter .GT_product_search form .GT_product_search__category .form-control {
+      border: 1px solid #cfd6e4;
+      border-radius: 0;
+      font-size: 13px;
+      color: #909090;
+      font-family: "Quicksand", sans-serif;
+      font-weight: 600;
+      height: 40px; }
+    .GT_Filter .GT_product_search form .GT_product_search__action {
+      display: flex;
+      flex-direction: row;
+      grid-gap: 10px; }
+      .GT_Filter .GT_product_search form .GT_product_search__action button {
+        height: 40px;
+        width: calc(100% - 50px);
+        font-family: "Quicksand", sans-serif;
+        background-color: #19bcc9;
+        border-radius: 3px;
+        outline: none;
+        border: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 15px; }
+      .GT_Filter .GT_product_search form .GT_product_search__action .Close {
+        width: 40px;
+        height: 40px;
+        background-color: #ea1d39;
+        border-radius: 3px;
+        font-family: "Quicksand", sans-serif; }
+.GT_Filter .GT_filter__buttons {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 10px;
+  justify-content: center; }
+  .GT_Filter .GT_filter__buttons .GT_Button {
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 10px 18px;
+    border-radius: 3px;
+    line-height: 18px;
+    font-family: "Quicksand", sans-serif;
+    text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */

@@ -9,19 +9,22 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="css/all.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="css/nivo-slider.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script type="text/javascript" src="js/greensock/TweenMax.min.js"></script>
 
 </head>
 
@@ -43,7 +46,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="AboutUs.html">About us</a>
-                    </li>                    
+                    </li>
                     <li class="nav-item dropdown mega-dropdown">
                         <a href="Main_Sub_Category.html" class="dropdown-toggle">3D Models</a>
                         <div class="dropdown-menu mega-dropdown-menu">
@@ -51,7 +54,8 @@
                                 <li>
                                     <ul>
                                         <li><a href="Product.html"><i class="fas fa-print"></i>3D Print Models</a></li>
-                                        <li><a href="Product.html"><i class="fas fa-cubes"></i>Freelance 3D Projects</a></li>
+                                        <li><a href="Product.html"><i class="fas fa-cubes"></i>Freelance 3D Projects</a>
+                                        </li>
                                         <li><a href="Product.html"><i class="fas fa-cube"></i>Free 3D Models</a></li>
                                         <li><a href="Product.html"><i class="fas fa-percent"></i>Discounts</a></li>
                                     </ul>
@@ -100,7 +104,8 @@
                 </div> -->
                 <div class="GobalSearch">
                     <div class="input-group">
-                        <input class="form-control" type="search" placeholder="Search 1000 of 3D Models" id="example-search-input">
+                        <input class="form-control" type="search" placeholder="Search 1000 of 3D Models"
+                            id="example-search-input">
                         <span class="input-group-append">
                             <button class="btn ms-n5" type="button">
                                 <i class="fa fa-search"></i>
@@ -133,17 +138,18 @@
                         <a class="nav-link" href="Wishlist.html"><i><img src="images/Wishlist.svg"></i>Wishlist</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Product-Cart_Payment.html"><i><img src="images/Cart.svg"></i>Cart <span class="CartCount">2</span></a>
+                        <a class="nav-link" href="Product-Cart_Payment.html"><i><img src="images/Cart.svg"></i>Cart
+                            <span class="CartCount">2</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Contact.html">Help</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img src="images/ProfilePic.svg" />
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right Profile"
-                            aria-labelledby="navbarDropdownMenuLink">
+                        <div class="dropdown-menu dropdown-menu-right Profile" aria-labelledby="navbarDropdownMenuLink">
                             <div class="ProfileTitle">
                                 <i class="UserProfile">
                                     <img src="images/ProfilePic.svg" />
@@ -179,92 +185,77 @@
     </header>
 
     <main>
-        <section>
-            <div id="slider-panel-inner" class="fixed_margin slider-panel-inner">
-                <div class="slider-wrapper theme-default">
-                    <div id="slider2" class="nivoSlider">
-                        <img class="nivo-main-image" src="images/AboutBanner.jpg" style="display: inline;">
-                        <div class="nivo-caption" style="display: block;">
-                            <h5>Contact Us</h5>
-                            <ul class="breadcrumb">
-                                <li><a href="#">Home |</a></li>
-                                <li><a href="#">Contact us</a></li>
-                            </ul>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="BreadCrumb">
+                    <div class="container">
+                        <div class="row">
+                            <h6>Graphics Trolley | Profile | <span class="Currentpage"> My Wishlist</span></h6>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section style="padding:80px 0" class="ContactUs">
-            <div class="container">
+        </div>
+        <section style="padding:40px 0 60px" class="GT_Filter">
+            <div class="container p-0">
                 <div class="row">
-                    <div class="col-md-6">
-                        <h6>CONTACT US</h6>
-                        <h2>Have Question? Write a <br/>Message</h2>
-                        <p>We will catch you as early as we receive the message</p>
-                        <form class="ContactFromMain" method="post" accept-charset="UTF-8">                            
-                            <div class="form-group ContactForm">
-                                <label for="customer_email">Enter Name</label>
-                                <input class="form-control" type="text" value="" name="customer[email]">
-                            </div>
-                            <div class="form-group ContactForm">
-                                <label for="customer_password">Enter Email Address</label>
-                                <input class="form-control" type="password" value="" name="customer[password]">
-                            </div>
-                            <div class="form-group ContactForm">
-                                <label for="customer_password">Enter Mobile Number</label>
-                                <input class="form-control" type="number" value="" name="customer[password]">
-                            </div>
-                            <div class="form-group ContactForm">
-                                <label for="customer_password">Select Requirement</label>
-                                <input class="form-control" type="text" value="" name="customer[password]">
-                            </div>
-                            <div class="form-group ContactFormArea">
-                                <label for="customer_password">Enter your Message</label>
-                                <textarea class="form-control" type="text" value=""></textarea>
-                            </div>
-                            <div class="form-group">
-                                <button class="btn-main bg-btn" type="submit"
-                                    style="font-size: 17px; letter-spacing: 0.3px;">SUBMIT</button>                                
-                            </div>                                                     
-                        </form>
-                    </div>  
-                    <div class="col-md-6">
-                        <div class="ContactDetails Cont_BG_1">
-                            <div class="ContactLeft">
-                                <i><img src="images/ContPhone.svg" /></i>
-                            </div>
-                            <div class="ContactRight">
-                                <h5>Phone:</h5>
-                                <p>Assistance hours: Monday – Friday, 9 am to 5 pm</p>
-                                <span>+91 99165 53151</span>
-                            </div>
+                    <div class="col-md-12">
+                        <div class="GT_product_search">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="GT_product_search__field">
+                                            <input type="text" class="form-control" name="keywords"
+                                                placeholder="Search Query" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="GT_product_search__type">
+                                            <select class="form-control" id="SearchType">
+                                                <option>All Types</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="GT_product_search__category">
+                                            <select class="form-control" id="SearchCategory">
+                                                <option>All Categories</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="GT_product_search__action">
+                                            <button type="submit" name="button">Filter</button>
+                                            <a href="#" class="Close"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                        <div class="ContactDetails Cont_BG_2">
-                            <div class="ContactLeft">
-                                <i><img src="images/ContEmail.svg" /></i>
-                            </div>
-                            <div class="ContactRight">
-                                <h5>Email:</h5>
-                                <p>Our support team will get back to in 24-h during standard business hours.</p>
-                                <span>arockiadass85@gmail.com</span>
-                            </div>
-                        </div>
-                        <div class="ContactDetails Cont_BG_3">
-                            <div class="ContactLeft">
-                                <i><img src="images/ContLocation.svg" /></i>
-                            </div>
-                            <div class="ContactRight">
-                                <h5>Location:</h5>
-                                <p>We Are On office: Monday – Friday, 9 am to 5 pm</p>
-                                <span>79, Nyniappa Maistttry St, Park Town, 
-                                    Chennai, Tamil Nadu, INDIA - 600003</span>
-                            </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="GT_filter__buttons mt-4">
+                            <a href="#" class="GT_Button GT__button_danger GT__remove_selected">REMOVE SELECTED</a>
+                            <a href="#" class="GT_Button GT__button_green GT__purchase_selected">ADD SELECTED MODELS TO CART</a>
+                            <a href="#" class="GT_Button GT__button_green GT__purchase_all">ADD ALL MODELS TO CART</a>
+                            <a href="#" class="GT_Button GT__button_green GT__link_to_my_purchases">GO TO MY PURCHASES</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <div class="clear"></div>
     </main>
 
     <footer>
@@ -299,14 +290,14 @@
                         <div class="FooterMenu">
                             <h5>Recent Work</h5>
                             <ul class="RecentWork">
-                                <li><a href="#"><img src="Images/Img_1.png" /></a></li>
-                                <li><a href="#"><img src="Images/Img_2.png" /></a></li>
-                                <li><a href="#"><img src="Images/Img_3.png" /></a></li>
+                                <li><a href="#"><img src="images/Img_1.png" /></a></li>
+                                <li><a href="#"><img src="images/Img_2.png" /></a></li>
+                                <li><a href="#"><img src="images/Img_3.png" /></a></li>
                             </ul>
                             <ul class="RecentWork">
-                                <li><a href="#"><img src="Images/Img_4.png" /></a></li>
-                                <li><a href="#"><img src="Images/Img_5.png" /></a></li>
-                                <li><a href="#"><img src="Images/Img_6.png" /></a></li>
+                                <li><a href="#"><img src="images/Img_4.png" /></a></li>
+                                <li><a href="#"><img src="images/Img_5.png" /></a></li>
+                                <li><a href="#"><img src="images/Img_6.png" /></a></li>
                             </ul>
                         </div>
                     </div>
@@ -340,7 +331,7 @@
                         <a href="#">&#169; 2021 Graphics Trolley. All Rights Reserved.</a>
                     </div>
                     <div class="col-md-6 text-right">
-                        <a href="#" class="cards"><img src="Images/Cards.png" /></a>
+                        <a href="#" class="cards"><img src="images/Cards.png" /></a>
                         <span>We Accept</span>
                     </div>
                 </div>
@@ -349,44 +340,16 @@
     </footer>
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery.nivo.slider.js"></script> -->
+    <script type="text/javascript" src="js/jquery.superscrollorama.js"></script>
     <script type="text/javascript" src="js/all.js"></script>
     <script type="text/javascript" src="js/slick.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
 
-    <script>
-        $(document).on('ready', function () {   
-                     
-            $.fn.jQuerySimpleCounter = function( options ) {
-                var settings = $.extend({
-                    start:  0,
-                    end:    100,
-                    easing: 'swing',
-                    duration: 400,
-                    complete: ''
-                }, options );
-
-                var thisElement = $(this);
-
-                $({count: settings.start}).animate({count: settings.end}, {
-                    duration: settings.duration,
-                    easing: settings.easing,
-                    step: function() {
-                        var mathCount = Math.ceil(this.count);
-                        thisElement.text(mathCount);
-                    },
-                    complete: settings.complete
-                });
-            };
-
-        $('#number1').jQuerySimpleCounter({end: 12000,duration: 3000});
-        $('#number2').jQuerySimpleCounter({end: 55,duration: 3000});
-        $('#number3').jQuerySimpleCounter({end: 359,duration: 2000});
-        $('#number4').jQuerySimpleCounter({end: 246,duration: 2500});
-
-        });
-    </script>
 </body>
 
 </html>
