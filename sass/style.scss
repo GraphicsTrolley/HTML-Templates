@@ -1125,13 +1125,13 @@ to {bottom: 20px; opacity: 1}
     p{color: #5d5d5d; font-weight: 600; font-size: 14px; font-family: $Secondary-Font; letter-spacing: 0.1px; margin-bottom: 45px;}
 
     .GT_category{box-shadow: 0 2px 6px 0 rgba(1, 55, 92, 12%); border: 1px solid #8cdde3; border-radius: 4px;height: 275px; display: flex; flex-direction: column;
-        .GT_category__content{ height: calc(100% - 45px); border-radius: 4px 4px 0 0;
+        .GT_category__content{height: calc(100% - 45px); border-radius: 4px 4px 0 0;
             .GT_category__content_upper{color: $Primary-Bg-Color; font-size: 15.5px; font-family: $Secondary-Font; font-weight: 500; line-height: 14px; display: inline-block; padding: 12px;
                 span{font-weight: 700;}
             }  
         }
-        .GT_category__footer{ background-color: #eefeff; border-top: 1px solid #b5f3f8; border-radius: 0 0 4px 4px;
-            .GT_list{ display: flex; flex-direction: row; @include ClearUlLi; overflow-x: auto; overflow-y: hidden; justify-content: space-evenly;
+        .GT_category__footer{background-color: #eefeff; border-top: 1px solid #b5f3f8; border-radius: 0 0 4px 4px;
+            .GT_list{@include ClearFlex_Row; @include ClearUlLi; overflow: hidden; justify-content: center; grid-gap: 15px;
                 li{
                     a{text-decoration: none; @include ClearFlex_Column; justify-content: center; align-items: center; height: 45px; 
                         svg{color: #404040; font-size: 16px;}

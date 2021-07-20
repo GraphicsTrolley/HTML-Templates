@@ -3213,9 +3213,9 @@ main {
       margin: 0;
       padding: 0;
       list-style: none;
-      overflow-x: auto;
-      overflow-y: hidden;
-      justify-content: space-evenly; }
+      overflow: hidden;
+      justify-content: center;
+      grid-gap: 15px; }
       .GT_main__category .GT_category .GT_category__footer .GT_list li a {
         text-decoration: none;
         display: flex;
