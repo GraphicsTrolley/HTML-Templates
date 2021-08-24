@@ -733,6 +733,125 @@
         </div>
     </footer>
 
+    <!-- LOGIN--MODAL -->
+
+    <div class="modal fade ModalCommon" id="Login" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img
+                            src="images/PopupClose.svg" /></button>
+                </div>
+                <div class="modal-body">
+                    <form class="">
+                        <div class="CommonTabBlue">
+                            <ul class="nav nav-pills mb-5" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" data-toggle="pill" href="#LogInPage"
+                                        role="tab" aria-controls="pills-home" aria-selected="true">Log In</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" data-toggle="pill" href="#Registration"
+                                        role="tab" aria-controls="pills-profile" aria-selected="false">Registration</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" data-toggle="pill" href="#RestorePassword"
+                                        role="tab" aria-controls="pills-profile" aria-selected="false">Restore
+                                        Password</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="LogInPage" role="tabpanel"
+                                    aria-labelledby="LogInPage">                                    
+                                    <div class="customer_item_wrap">
+                                        <form method="post" accept-charset="UTF-8">
+                                            <div class="form-group">
+                                                <label for="customer_email">Email address</label>
+                                                <input class="form-control" type="email" value=""
+                                                    name="customer[email]">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="customer_password">Password</label>
+                                                <input class="form-control" type="password" value=""
+                                                    name="customer[password]">
+                                            </div>
+                                            <div class="form-group mt-4">
+                                                <button class="btn-Unique" type="submit">LOGIN <i
+                                                        class="fas fa-sign-in-alt"></i></button>
+                                                <a href="#" class="text-right">Forgot Password?</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Registration" role="tabpanel"
+                                    aria-labelledby="Registration">
+                                    <div class="customer_item_wrap">
+                                        <form method="post" accept-charset="UTF-8">                                            
+                                            <div class="form-group">
+                                                <label for="customer_email">Name</label>
+                                                <input class="form-control" type="email" value="" name="customer[firstname]">
+                                            </div>                                            
+                                            <div class="form-group">
+                                                <label for="customer_email">Email address</label>
+                                                <input class="form-control" type="email" value="" name="customer[email]">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="customer_password">Password</label>
+                                                <input class="form-control" type="password" value="" name="customer[password]">
+                                            </div>                                            
+                                            <div class="TeamsCondition">
+                                                <span>Do you want us to send you updates on <b>Graphics Trolley</b> features,
+                                                    community news and special offers?</span>
+                                                <button class="" type="submit" name="Yes"> Yes</button>
+                                                <button class="" type="submit" name="No"> No</button>
+                                                <p>You can change your subscription preferences at any time in the account
+                                                    settings. See our Privacy Policy for more information.</p>
+                                            </div>
+                                            <div class="form-group mt-4">
+                                                <button class="btn-Unique" type="submit">REGISTER <i class="fas fa-sign-in-alt"></i></button>
+                                                <a href="#" class="text-right">Forgot Password?</a>
+                                            </div>                                        
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="RestorePassword" role="tabpanel"
+                                    aria-labelledby="RestorePassword">
+                                    <div class="customer_item_wrap">
+                                        <form method="post" accept-charset="UTF-8">                                            
+                                            <p>We will send you an email to reset your password</p>
+                                            <div class="form-group">
+                                                <label for="customer_email">Email address</label>
+                                                <input class="form-control" type="email" value="" name="ResetPassword">
+                                            </div>
+                                            <div class="form-group" style="margin-top: 30px;">
+                                                <button class="btn-Unique" type="submit">SUBMIT <i class="fas fa-sign-in-alt"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="LoginDiv">
+                        <h5>OR</h5>
+                        <div class="form-group text-center">
+                            <button class="btn-main bg-btn" type="submit" name="Facebook"><i
+                                    class="fas fa-sign-in-alt"></i> Facebook</button>
+                            <button class="btn-main bg-btn" type="submit" name="Google"><i
+                                    class="fas fa-sign-in-alt"></i> Google</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOGIN--MODAL -->
+
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
